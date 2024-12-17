@@ -1,4 +1,3 @@
-// src/ebpf_program.rs
 #![no_std]
 #![no_main]
 
