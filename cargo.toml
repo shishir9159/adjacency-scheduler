@@ -1,0 +1,40 @@
+[workspace]
+resolver = "2"
+members = [
+    "connection_tracking",
+    "adjacency_scheduler"
+]
+
+# common dependencies
+[workspace.dependencies]
+aya = "0.13.1"
+tokio = { version = "1.42.0", features = ["full"] }
+
+[package]
+name = "adjacency_scheduler"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+aya-bpf = "0.7"
+aya-log-ebpf = "0.7"
+
+[build-dependencies]
+aya-bpf-bindings = "0.7"
+
+[lib]
+crate-type = ["staticlib"]
+
+[profile.release]
+panic = "abort"
+lto = true
+
+# user space
+[package]
+name = "connection_tracking"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+aya = "0.7"
+tokio = { version = "1", features = ["full"] }
