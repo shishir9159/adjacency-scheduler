@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bb0ef09e-1da3-4e04-bc43-5586c036937a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/cargo.toml" afterDir="false" />
+    <list default="true" id="bb0ef09e-1da3-4e04-bc43-5586c036937a" name="Changes" comment="cargo.toml added">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cargo.toml" beforeDir="false" afterPath="$PROJECT_DIR$/cargo.toml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,11 +56,24 @@
       <option name="presentableId" value="Default" />
       <updated>1734470011584</updated>
       <workItem from="1734470012850" duration="451000" />
-      <workItem from="1734470485299" duration="426000" />
+      <workItem from="1734470485299" duration="596000" />
     </task>
+    <task id="LOCAL-00001" summary="cargo.toml added">
+      <option name="closed" value="true" />
+      <created>1734471019847</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1734471019847</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="cargo.toml added" />
+    <option name="LAST_COMMIT_MESSAGE" value="cargo.toml added" />
   </component>
 </project>

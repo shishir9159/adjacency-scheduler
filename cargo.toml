@@ -10,7 +10,7 @@ members = [
 aya = "0.13.1"
 tokio = { version = "1.42.0", features = ["full"] }
 
-[package]
+[workspace.package]
 name = "adjacency_scheduler"
 version = "0.1.0"
 edition = "2024"
@@ -34,7 +34,3 @@ lto = true
 name = "connection_tracking"
 version = "0.1.0"
 edition = "2024"
-
-[dependencies]
-aya = "0.7"
-tokio = { version = "1", features = ["full"] }
