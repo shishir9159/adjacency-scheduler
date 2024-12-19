@@ -1,4 +1,4 @@
-use aya::{Bpf, maps::HashMap, util::online_cpus};
+use aya::{Ebpf, programs::KProbe, maps::HashMap, util::online_cpus};
 use aya::programs::TracePoint;
 use std::convert::TryInto;
 use std::net::Ipv4Addr;
@@ -8,7 +8,7 @@ use tokio::time::interval;
 
 #[tokio::main]
 async fn main() -> Result<(), Box<dyn std::error::Error>> {
-    let mut bpf = Bpf::load_file("dataplane/src/ebpf_program.o")?;
+    let mut bpf = Ebpf::load_file("dataplane/src/ebpf_program.o")?;
     let program: &mut TracePoint = bpf.program_mut("tracepoint_net_dev_xmit")?.try_into()?;
     program.load()?;
     program.attach("net", "net_dev_xmit")?;

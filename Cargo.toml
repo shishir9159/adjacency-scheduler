@@ -1,36 +1,36 @@
 [workspace]
 resolver = "2"
-members = [
-    "connection_tracking",
-    "adjacency_scheduler"
-]
-
-# common dependencies
-[workspace.dependencies]
-aya = "0.13.1"
-tokio = { version = "1.42.0", features = ["full"] }
 
 [workspace.package]
-name = "adjacency_scheduler"
+name = "adjacency-scheduler"
 version = "0.1.0"
-edition = "2024"
+authors = ["shishir9159 nahidhasan43@iut-dhaka.edu"]
+edition = "2021"
+rust-version = "1.83"
+license = "MIT"
+readme = "README.md"
+repository = "https://github.com/shishir9159/adjacency-scheduler"
+description = """
 
-[dependencies]
-aya-bpf = "0.7"
-aya-log-ebpf = "0.7"
+"""
 
-[build-dependencies]
-aya-bpf-bindings = "0.7"
+[workspace.dependencies]
+aya = "0.13.1"
+aya-ebpf = "0.1.1"
+aya-log-ebpf = "0.1.1"
+tokio = { version = "1.42.0", features = ["full"] }
 
-[lib]
-crate-type = ["staticlib"]
+[workspace.build-dependencies]
+aya-ebpf-bindings = "0.1.1"
 
-[profile.release]
-panic = "abort"
+#[workspace.lib]
+#crate-type = ["staticlib"]
+
+#[workspace]
+#members = [
+#    "connection_tracking"
+#    , "adjacency-scheduler"]
+
+#[profile.release]
+#panic = "abort"
 lto = true
-
-# user space
-[package]
-name = "connection_tracking"
-version = "0.1.0"
-edition = "2024"
