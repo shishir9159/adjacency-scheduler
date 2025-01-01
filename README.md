@@ -2,16 +2,14 @@
 
 ## Prerequisites
 
-1. stable rust toolchains: `rustup toolchain install stable`
-2. nightly rust toolchains: `rustup toolchain install nightly --component rust-src`
+1. Install a rust stable toolchain: `rustup install stable`
+2. Install a rust nightly toolchain: `rustup install nightly`
+3. Install bpf-linker: `cargo install bpf-linker`
 
 ## Build & Run
 
 Use `cargo build`, `cargo check`, etc. as normal. Run your program with:
 
-```Bash
-cargo run --release --config 'target."cfg(all())".runner="sudo -E"'
+```shell
+RUST_LOG=info cargo run --config 'target."cfg(all())".runner="sudo -E"'
 ```
-
-Cargo build scripts are used to automatically build the eBPF correctly and include it in the
-program.

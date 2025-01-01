@@ -1,0 +1,17 @@
+[package]
+name = "cgroup-skb-egress-ebpf"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+aya-ebpf = { git = "https://github.com/aya-rs/aya" }
+aya-log-ebpf = { git = "https://github.com/aya-rs/aya" }
+cgroup-skb-egress-common = { path = "../cgroup-skb-egress-common" }
+memoffset = "0.9"
+
+[build-dependencies]
+which = { version = "7.0.0", default-features = false }
+
+[[bin]]
+name = "cgroup-skb-egress"
+path = "src/main.rs"

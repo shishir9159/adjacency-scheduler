@@ -1,23 +1,32 @@
 [package]
-name = "adjacency-scheduler"
+name = "cgroup-skb-egress"
 version = "0.1.0"
 edition = "2021"
+publish = false
 
 [dependencies]
-adjacency-scheduler-common = { path = "../adjacency-scheduler-common", features = ["user"] }
+aya = { git = "https://github.com/aya-rs/aya", features = ["async_tokio"] }
+aya-log = { git = "https://github.com/aya-rs/aya" }
+cgroup-skb-egress-common = { path = "../cgroup-skb-egress-common", features = [
+  "user",
+] }
+anyhow = "1"
+clap = { version = "4.1", features = ["derive"] }
+env_logger = "0.11"
+log = "0.4"
+tokio = { version = "1.25", features = [
+  "macros",
+  "rt",
+  "rt-multi-thread",
+  "net",
+  "signal",
+] }
+bytes = "1"
 
-anyhow = { workspace = true, default-features = true }
-aya = { workspace = true }
-aya-log = { workspace = true }
-env_logger = { workspace = true }
-libc = { workspace = true }
-log = { workspace = true }
-tokio = { workspace = true, features = ["macros", "rt", "rt-multi-thread", "net", "signal"] }
 
-clap = { workspace = true, features = ["derive"] }
 [build-dependencies]
-anyhow = { workspace = true }
-aya-build = { workspace = true }
+aya-build = { git = "https://github.com/aya-rs/aya" }
+anyhow = "1"
 # TODO(https://github.com/rust-lang/cargo/issues/12375): this should be an artifact dependency, but
 # it's not possible to tell cargo to use `-Z build-std` to build it. We cargo-in-cargo in the build
 # script to build this, but we want to teach cargo about the dependecy so that cache invalidation
@@ -30,8 +39,8 @@ aya-build = { workspace = true }
 # Finally note that *any* usage of `artifact = ...` in *any* Cargo.toml in the workspace breaks
 # workflows with stable cargo; stable cargo outright refuses to load manifests that use unstable
 # features.
-adjacency-scheduler-ebpf = { path = "../adjacency-scheduler-ebpf" }
+cgroup-skb-egress-ebpf = { path = "../cgroup-skb-egress-ebpf" }
 
 [[bin]]
-name = "adjacency-scheduler"
+name = "cgroup-skb-egress"
 path = "src/main.rs"
