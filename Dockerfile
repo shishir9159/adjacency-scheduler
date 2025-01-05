@@ -9,6 +9,9 @@ RUN set -x && apt-get update && apt-get install -y \
 WORKDIR /app
 COPY . .
 
+RUN rustup install stable && \
+    rustup toolchain install nightly --component rust-src
+
 RUN cargo install bpf-linker bindgen-cli cargo-generate
 RUN cargo build --target=x86_64-unknown-linux-gnu
 RUN RUST_LOG=info cargo run --bin xtask codegen cgroup-skb-egress-ebpf/src/bindings.rs
