@@ -2,7 +2,7 @@ module github.com/shishir9159/adjacency-scheduler/scheduler
 
 go 1.23.1
 
-        require (
+require (
         github.com/gofiber/fiber/v2 v2.52.5
         github.com/gofiber/swagger v1.1.0
         github.com/quic-go/quic-go v0.48.2
@@ -17,4 +17,4 @@ go 1.23.1
         k8s.io/apimachinery v0.27.14
         k8s.io/client-go v0.27.14
         k8s.io/kubectl v0.26.14
-        )
+)

@@ -7,17 +7,12 @@
     <cargoProject FILE="$PROJECT_DIR$/Cargo.toml" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="750a0656-4394-404c-8d18-871d64c01604" name="Changes" comment="go mod package initialization">
-      <change afterPath="$PROJECT_DIR$/scheduler/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scheduler/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scheduler/main.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/consumer/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/producer/Dockerfile" afterDir="false" />
+    <list default="true" id="750a0656-4394-404c-8d18-871d64c01604" name="Changes" comment="build error">
+      <change afterPath="$PROJECT_DIR$/scheduler/client.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cgroup-skb-egress-common/src/lib.rs" beforeDir="false" afterPath="$PROJECT_DIR$/cgroup-skb-egress-common/src/lib.rs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cgroup-skb-egress/src/main.rs" beforeDir="false" afterPath="$PROJECT_DIR$/cgroup-skb-egress/src/main.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scheduler/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/scheduler/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scheduler/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/scheduler/go.mod" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scheduler/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/scheduler/main.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -149,7 +144,7 @@
       <updated>1735728254426</updated>
       <workItem from="1735728258737" duration="1052000" />
       <workItem from="1735857309688" duration="7000" />
-      <workItem from="1736033582001" duration="9686000" />
+      <workItem from="1736033582001" duration="11030000" />
     </task>
     <task id="LOCAL-00001" summary="updated project from the scratch">
       <option name="closed" value="true" />
@@ -191,7 +186,15 @@
       <option name="project" value="LOCAL" />
       <updated>1736044690405</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="build error">
+      <option name="closed" value="true" />
+      <created>1736048201883</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1736048201883</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -203,6 +206,7 @@
     <MESSAGE value="updated dockerfile" />
     <MESSAGE value="nightly toolchain" />
     <MESSAGE value="go mod package initialization" />
-    <option name="LAST_COMMIT_MESSAGE" value="go mod package initialization" />
+    <MESSAGE value="build error" />
+    <option name="LAST_COMMIT_MESSAGE" value="build error" />
   </component>
 </project>
