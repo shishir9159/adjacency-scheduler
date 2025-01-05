@@ -15,6 +15,8 @@ use cgroup_skb_egress_common::PacketLog;
 #[derive(Debug, Parser)]
 struct Opt {
 //    #[clap(short, long, default_value = "/sys/fs/cgroup/unified")]
+// targeting the cgroupv2 containing all kubernetes pod
+//     todo: include memory QOS for next k8s update
    #[clap(short, long, default_value = "/sys/fs/cgroup/kubepods.slice/kubepods-burstable.slice/")]
     cgroup_path: String,
 }
@@ -25,10 +27,8 @@ async fn main() -> Result<(), anyhow::Error> {
 
     env_logger::init();
 
-    // This will include your eBPF object file as raw bytes at compile-time and load it at
-    // runtime. This approach is recommended for most real-world use cases. If you would
-    // like to specify the eBPF program at runtime rather than at compile-time, you can
-    // reach for `Ebpf::load_file` instead.
+    // todo: Ebpf::load_file for runtime updates
+    //  to the updated ebpf bytecodes
     let mut bpf = aya::Ebpf::load(aya::include_bytes_aligned!(concat!(
         env!("OUT_DIR"),
         "/cgroup-skb-egress"

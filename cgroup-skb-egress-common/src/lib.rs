@@ -7,5 +7,10 @@ pub struct PacketLog {
     pub action: i32,
 }
 
+pub struct Log {
+    pub packet_counts: u64,
+    pub packets: PacketLog,
+}
+
 #[cfg(feature = "user")]
 unsafe impl aya::Pod for PacketLog {}

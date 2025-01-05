@@ -7,7 +7,18 @@
     <cargoProject FILE="$PROJECT_DIR$/Cargo.toml" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="750a0656-4394-404c-8d18-871d64c01604" name="Changes" comment="nightly toolchain" />
+    <list default="true" id="750a0656-4394-404c-8d18-871d64c01604" name="Changes" comment="go mod package initialization">
+      <change afterPath="$PROJECT_DIR$/scheduler/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scheduler/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scheduler/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/consumer/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/producer/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cgroup-skb-egress-common/src/lib.rs" beforeDir="false" afterPath="$PROJECT_DIR$/cgroup-skb-egress-common/src/lib.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cgroup-skb-egress/src/main.rs" beforeDir="false" afterPath="$PROJECT_DIR$/cgroup-skb-egress/src/main.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scheduler/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/scheduler/go.mod" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -54,6 +65,7 @@
     "RunOnceActivity.git.unshallow": "true",
     "RunOnceActivity.rust.reset.selective.auto.import": "true",
     "git-widget-placeholder": "main",
+    "last_opened_file_path": "/home/carmack/adjacency-scheduler/test/producer",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -64,6 +76,12 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/test/producer" />
+      <recent name="$PROJECT_DIR$/test/consumer" />
+    </key>
+  </component>
   <component name="RunManager" selected="Cargo.Test adjacency-scheduler">
     <configuration name="Run cgroup-skb-egress" type="CargoCommandRunConfiguration" factoryName="Cargo Command">
       <option name="command" value="run --package cgroup-skb-egress-ebpf --bin cgroup-skb-egress" />
@@ -131,7 +149,7 @@
       <updated>1735728254426</updated>
       <workItem from="1735728258737" duration="1052000" />
       <workItem from="1735857309688" duration="7000" />
-      <workItem from="1736033582001" duration="6760000" />
+      <workItem from="1736033582001" duration="9686000" />
     </task>
     <task id="LOCAL-00001" summary="updated project from the scratch">
       <option name="closed" value="true" />
@@ -165,7 +183,15 @@
       <option name="project" value="LOCAL" />
       <updated>1736043360116</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="go mod package initialization">
+      <option name="closed" value="true" />
+      <created>1736044690405</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1736044690405</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -176,6 +202,7 @@
     <MESSAGE value="dockerfile" />
     <MESSAGE value="updated dockerfile" />
     <MESSAGE value="nightly toolchain" />
-    <option name="LAST_COMMIT_MESSAGE" value="nightly toolchain" />
+    <MESSAGE value="go mod package initialization" />
+    <option name="LAST_COMMIT_MESSAGE" value="go mod package initialization" />
   </component>
 </project>
