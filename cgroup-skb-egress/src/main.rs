@@ -14,7 +14,8 @@ use cgroup_skb_egress_common::PacketLog;
 
 #[derive(Debug, Parser)]
 struct Opt {
-    #[clap(short, long, default_value = "/sys/fs/cgroup/unified")]
+//    #[clap(short, long, default_value = "/sys/fs/cgroup/unified")]
+   #[clap(short, long, default_value = "/sys/fs/cgroup/kubepods.slice/kubepods-burstable.slice/")]
     cgroup_path: String,
 }
 
