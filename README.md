@@ -17,3 +17,10 @@ RUST_LOG=info cargo run --config 'target."cfg(all())".runner="sudo -E"'
 
 sudo iptables -t nat -A PREROUTING -d 10.0.0.7 -p tcp --dport 6443 -j DNAT --to-destination 10.0.0.9:6443
 sudo iptables -t nat -A POSTROUTING -d 10.0.0.9 -p tcp --dport 6443 -j MASQUERADE
+
+```shell
+wget https://github.com/fullstorydev/grpcurl/releases/download/v1.9.3/grpcurl_1.9.3_linux_x86_64.tar.gz
+tar xzvf grpcurl_*_linux_x86_64.tar.gz
+sudo cp grpcurl /usr/bin/
+sudo chmod +x /bin/grpcurl
+```
