@@ -5,7 +5,9 @@ LABEL authors="carmack"
 RUN set -x && apt-get update && apt-get install -y \
     ca-certificates curl && \
     rm -rf /var/lib/apt/lists/* && \
-    apt install linux-tools-5.8.0-63-generic
+    apt install linux-tools-generic
+
+#    apt install linux-tools-5.8.0-63-generic
 
 WORKDIR /app
 COPY . .
