@@ -7,12 +7,9 @@
     <cargoProject FILE="$PROJECT_DIR$/Cargo.toml" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="750a0656-4394-404c-8d18-871d64c01604" name="Changes" comment="docker build">
-      <change afterPath="$PROJECT_DIR$/cgroup-skb-egress/need_to_be_converted_to_rust/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cgroup-skb-egress/need_to_be_converted_to_rust/go.mod" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cgroup-skb-egress/need_to_be_converted_to_rust/main.go" afterDir="false" />
+    <list default="true" id="750a0656-4394-404c-8d18-871d64c01604" name="Changes" comment="crictl inspection completed">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -145,7 +142,8 @@
       <workItem from="1735728258737" duration="1052000" />
       <workItem from="1735857309688" duration="7000" />
       <workItem from="1736033582001" duration="12286000" />
-      <workItem from="1736147750721" duration="3569000" />
+      <workItem from="1736147750721" duration="4876000" />
+      <workItem from="1736448567924" duration="3178000" />
     </task>
     <task id="LOCAL-00001" summary="updated project from the scratch">
       <option name="closed" value="true" />
@@ -203,7 +201,15 @@
       <option name="project" value="LOCAL" />
       <updated>1736058559213</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="crictl inspection completed">
+      <option name="closed" value="true" />
+      <created>1736157705118</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1736157705118</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -217,6 +223,7 @@
     <MESSAGE value="go mod package initialization" />
     <MESSAGE value="build error" />
     <MESSAGE value="docker build" />
-    <option name="LAST_COMMIT_MESSAGE" value="docker build" />
+    <MESSAGE value="crictl inspection completed" />
+    <option name="LAST_COMMIT_MESSAGE" value="crictl inspection completed" />
   </component>
 </project>

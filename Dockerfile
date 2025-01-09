@@ -14,6 +14,7 @@ RUN rustup install stable && \
     rustup toolchain install nightly --component rust-src
 
 RUN export PATH=/usr/lib/linux-tools/5.8.0-63-generic:$PATH
+RUN rustup target add wasm32-unknown-unknown
 RUN cargo install bpf-linker bindgen-cli cargo-generate
 RUN cargo build --target=x86_64-unknown-linux-gnu --release
 RUN file="$(ls -la .)" && echo $file
