@@ -7,9 +7,7 @@
     <cargoProject FILE="$PROJECT_DIR$/Cargo.toml" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="750a0656-4394-404c-8d18-871d64c01604" name="Changes" comment="update">
-      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
-    </list>
+    <list default="true" id="750a0656-4394-404c-8d18-871d64c01604" name="Changes" comment="source doesn't work" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -144,7 +142,7 @@
       <workItem from="1736033582001" duration="12286000" />
       <workItem from="1736147750721" duration="4876000" />
       <workItem from="1736448567924" duration="22067000" />
-      <workItem from="1736527943383" duration="1315000" />
+      <workItem from="1736527943383" duration="2035000" />
     </task>
     <task id="LOCAL-00001" summary="updated project from the scratch">
       <option name="closed" value="true" />
@@ -354,14 +352,21 @@
       <option name="project" value="LOCAL" />
       <updated>1736528534527</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="source doesn't work">
+      <option name="closed" value="true" />
+      <created>1736529368865</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1736529368865</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="updated project from the scratch" />
     <MESSAGE value="dockerfile" />
     <MESSAGE value="updated dockerfile" />
     <MESSAGE value="nightly toolchain" />
@@ -386,6 +391,7 @@
     <MESSAGE value="home of PATH" />
     <MESSAGE value="dilemma" />
     <MESSAGE value="update" />
-    <option name="LAST_COMMIT_MESSAGE" value="update" />
+    <MESSAGE value="source doesn't work" />
+    <option name="LAST_COMMIT_MESSAGE" value="source doesn't work" />
   </component>
 </project>
