@@ -11,9 +11,7 @@ RUN set -x && apt-get update && apt-get install -y \
     rm -rf /var/lib/apt/lists/*
 #    apt install linux-tools-5.8.0-63-generic
 
-RUN curl https://sh.rustup.rs -sSf | sh -s -- -y
-
-#sh -s -- --default-toolchain nightly -y
+RUN curl https://sh.rustup.rs -sSf | sh -s -- --default-toolchain nightly -y
 #RUN echo 'source $HOME/.cargo/env' >> $HOME/.bashrc
 ENV PATH="$PATH:~/.cargo/bin"
 
