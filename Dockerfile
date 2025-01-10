@@ -13,6 +13,7 @@ RUN set -x && apt-get update && apt-get install -y \
 
 RUN curl https://sh.rustup.rs -sSf | sh -s -- --default-toolchain nightly -y
 #RUN echo 'source $HOME/.cargo/env' >> $HOME/.bashrc
+RUN export PATH="$HOME/.cargo/bin:$PATH"
 ENV PATH="$PATH:~/.cargo/bin"
 
 #RUN source "$HOME/.cargo/env"
