@@ -7,7 +7,9 @@
     <cargoProject FILE="$PROJECT_DIR$/Cargo.toml" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="750a0656-4394-404c-8d18-871d64c01604" name="Changes" comment="bookworm" />
+    <list default="true" id="750a0656-4394-404c-8d18-871d64c01604" name="Changes" comment="debian">
+      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -140,7 +142,7 @@
       <workItem from="1735857309688" duration="7000" />
       <workItem from="1736033582001" duration="12286000" />
       <workItem from="1736147750721" duration="4876000" />
-      <workItem from="1736448567924" duration="19076000" />
+      <workItem from="1736448567924" duration="19188000" />
     </task>
     <task id="LOCAL-00001" summary="updated project from the scratch">
       <option name="closed" value="true" />
@@ -286,7 +288,15 @@
       <option name="project" value="LOCAL" />
       <updated>1736505592248</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="debian">
+      <option name="closed" value="true" />
+      <created>1736506149646</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1736506149646</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -311,6 +321,7 @@
     <MESSAGE value="extra dependency removed" />
     <MESSAGE value="debugging ongoing" />
     <MESSAGE value="bookworm" />
-    <option name="LAST_COMMIT_MESSAGE" value="bookworm" />
+    <MESSAGE value="debian" />
+    <option name="LAST_COMMIT_MESSAGE" value="debian" />
   </component>
 </project>

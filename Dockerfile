@@ -5,10 +5,9 @@ LABEL authors="carmack"
 WORKDIR /app
 COPY . .
 
-RUN echo deb http://cloudfront.debian.net/debian sid main >> /etc/apt/sources.list && \
-    sudo apt-get install -y bpfcc-tools libbpfcc libbpfcc-dev linux-headers-$(uname -r)
+RUN echo deb http://cloudfront.debian.net/debian sid main >> /etc/apt/sources.list
 RUN set -x && apt-get update && apt-get install -y \
-    ca-certificates curl pkg-config  && \
+    ca-certificates curl pkg-config bpfcc-tools libbpfcc libbpfcc-dev linux-headers-$(uname -r)  && \
     rm -rf /var/lib/apt/lists/*
 #    apt install linux-tools-5.8.0-63-generic
 
