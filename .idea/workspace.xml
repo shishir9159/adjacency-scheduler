@@ -7,7 +7,7 @@
     <cargoProject FILE="$PROJECT_DIR$/Cargo.toml" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="750a0656-4394-404c-8d18-871d64c01604" name="Changes" comment="env of PATH">
+    <list default="true" id="750a0656-4394-404c-8d18-871d64c01604" name="Changes" comment="home of PATH">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
     </list>
@@ -144,7 +144,7 @@
       <workItem from="1735857309688" duration="7000" />
       <workItem from="1736033582001" duration="12286000" />
       <workItem from="1736147750721" duration="4876000" />
-      <workItem from="1736448567924" duration="21441000" />
+      <workItem from="1736448567924" duration="21855000" />
     </task>
     <task id="LOCAL-00001" summary="updated project from the scratch">
       <option name="closed" value="true" />
@@ -330,7 +330,15 @@
       <option name="project" value="LOCAL" />
       <updated>1736507690281</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="home of PATH">
+      <option name="closed" value="true" />
+      <created>1736517254031</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1736517254031</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -359,6 +367,7 @@
     <MESSAGE value="making the dockerfile compact" />
     <MESSAGE value="gave up" />
     <MESSAGE value="env of PATH" />
-    <option name="LAST_COMMIT_MESSAGE" value="env of PATH" />
+    <MESSAGE value="home of PATH" />
+    <option name="LAST_COMMIT_MESSAGE" value="home of PATH" />
   </component>
 </project>
