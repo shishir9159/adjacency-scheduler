@@ -7,7 +7,7 @@
     <cargoProject FILE="$PROJECT_DIR$/Cargo.toml" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="750a0656-4394-404c-8d18-871d64c01604" name="Changes" comment="gave up" />
+    <list default="true" id="750a0656-4394-404c-8d18-871d64c01604" name="Changes" comment="env of PATH" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -141,7 +141,7 @@
       <workItem from="1735857309688" duration="7000" />
       <workItem from="1736033582001" duration="12286000" />
       <workItem from="1736147750721" duration="4876000" />
-      <workItem from="1736448567924" duration="20186000" />
+      <workItem from="1736448567924" duration="20644000" />
     </task>
     <task id="LOCAL-00001" summary="updated project from the scratch">
       <option name="closed" value="true" />
@@ -311,7 +311,15 @@
       <option name="project" value="LOCAL" />
       <updated>1736506858153</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="env of PATH">
+      <option name="closed" value="true" />
+      <created>1736507208882</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1736507208882</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -339,6 +347,7 @@
     <MESSAGE value="debian" />
     <MESSAGE value="making the dockerfile compact" />
     <MESSAGE value="gave up" />
-    <option name="LAST_COMMIT_MESSAGE" value="gave up" />
+    <MESSAGE value="env of PATH" />
+    <option name="LAST_COMMIT_MESSAGE" value="env of PATH" />
   </component>
 </project>
