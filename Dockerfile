@@ -14,6 +14,7 @@ RUN set -x && apt-get update && apt-get install -y \
 RUN curl https://sh.rustup.rs -sSf | bash -s -- -y
 #RUN echo 'source $HOME/.cargo/env' >> $HOME/.bashrc
 ENV PATH "$PATH:~/.cargo/bin"
+RUN . "$HOME/.cargo/env"
 RUN rustup install stable && \
     rustup toolchain install nightly --component rust-src
 
