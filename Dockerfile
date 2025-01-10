@@ -6,7 +6,7 @@ WORKDIR /app
 COPY . .
 
 RUN set -x && apt-get update && apt-get install -y \
-    extra-runtime-dependencies ca-certificates curl pkg-config && \
+    ca-certificates curl pkg-config && \
     rm -rf /var/lib/apt/lists/*
 #    apt install linux-tools-5.8.0-63-generic
 
