@@ -7,9 +7,7 @@
     <cargoProject FILE="$PROJECT_DIR$/Cargo.toml" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="750a0656-4394-404c-8d18-871d64c01604" name="Changes" comment="everyday there is something to learn">
-      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
-    </list>
+    <list default="true" id="750a0656-4394-404c-8d18-871d64c01604" name="Changes" comment="everyday there is something to learn" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -144,7 +142,7 @@
       <workItem from="1736033582001" duration="12286000" />
       <workItem from="1736147750721" duration="4876000" />
       <workItem from="1736448567924" duration="22067000" />
-      <workItem from="1736527943383" duration="4048000" />
+      <workItem from="1736527943383" duration="4513000" />
     </task>
     <task id="LOCAL-00001" summary="updated project from the scratch">
       <option name="closed" value="true" />
@@ -410,7 +408,15 @@
       <option name="project" value="LOCAL" />
       <updated>1736550919916</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="everyday there is something to learn">
+      <option name="closed" value="true" />
+      <created>1736551385179</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1736551385179</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
