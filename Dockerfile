@@ -1,23 +1,17 @@
-FROM ubuntu:latest
+FROM rust:bookworm
 #AS builder
 LABEL authors="carmack"
 
 WORKDIR /app
 COPY . .
 
-#RUN echo deb http://cloudfront.debian.net/debian sid main >> /etc/apt/sources.list
+RUN echo deb http://cloudfront.debian.net/debian sid main >> /etc/apt/sources.list
+RUN echo $(uname -sr)
 RUN set -x && apt-get update && apt-get install -y \
-    build-essential ca-certificates curl pkg-config bpfcc-tools linux-headers-$(uname -r)  && \
+    ca-certificates curl pkg-config bpfcc-tools libbpfcc libbpfcc-dev linux-headers-$(uname -r)  && \
     rm -rf /var/lib/apt/lists/*
 #    apt install linux-tools-5.8.0-63-generic
 
-RUN curl https://sh.rustup.rs -sSf | sh -s -- --default-toolchain nightly -y
-#RUN echo 'source $HOME/.cargo/env' >> $HOME/.bashrc
-RUN export PATH="$HOME/.cargo/bin:$PATH"
-ENV PATH="$PATH:~/.cargo/bin"
-
-#RUN source "$HOME/.cargo/env"
-RUN . "$HOME/.cargo/env"
 RUN rustup install stable && \
     rustup toolchain install nightly --component rust-src
 

@@ -7,9 +7,11 @@
     <cargoProject FILE="$PROJECT_DIR$/Cargo.toml" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="750a0656-4394-404c-8d18-871d64c01604" name="Changes" comment="changing shell arguments">
+    <list default="true" id="750a0656-4394-404c-8d18-871d64c01604" name="Changes" comment="EXPORT">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dockerfile.bk" beforeDir="false" afterPath="$PROJECT_DIR$/ubuntu-Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -145,7 +147,7 @@
       <workItem from="1736033582001" duration="12286000" />
       <workItem from="1736147750721" duration="4876000" />
       <workItem from="1736448567924" duration="22067000" />
-      <workItem from="1736527943383" duration="2935000" />
+      <workItem from="1736527943383" duration="3728000" />
     </task>
     <task id="LOCAL-00001" summary="updated project from the scratch">
       <option name="closed" value="true" />
@@ -379,15 +381,29 @@
       <option name="project" value="LOCAL" />
       <updated>1736549209455</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="image verseion">
+      <option name="closed" value="true" />
+      <created>1736549821566</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1736549821566</updated>
+    </task>
+    <task id="LOCAL-00031" summary="EXPORT">
+      <option name="closed" value="true" />
+      <created>1736550017818</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1736550017818</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="nightly toolchain" />
-    <MESSAGE value="go mod package initialization" />
     <MESSAGE value="build error" />
     <MESSAGE value="docker build" />
     <MESSAGE value="crictl inspection completed" />
@@ -411,6 +427,8 @@
     <MESSAGE value="source doesn't work" />
     <MESSAGE value="changing shell" />
     <MESSAGE value="changing shell arguments" />
-    <option name="LAST_COMMIT_MESSAGE" value="changing shell arguments" />
+    <MESSAGE value="image verseion" />
+    <MESSAGE value="EXPORT" />
+    <option name="LAST_COMMIT_MESSAGE" value="EXPORT" />
   </component>
 </project>
