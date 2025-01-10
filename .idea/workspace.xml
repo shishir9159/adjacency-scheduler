@@ -7,11 +7,8 @@
     <cargoProject FILE="$PROJECT_DIR$/Cargo.toml" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="750a0656-4394-404c-8d18-871d64c01604" name="Changes" comment="EXPORT">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="750a0656-4394-404c-8d18-871d64c01604" name="Changes" comment="everyday there is something to learn">
       <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dockerfile.bk" beforeDir="false" afterPath="$PROJECT_DIR$/ubuntu-Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -147,7 +144,7 @@
       <workItem from="1736033582001" duration="12286000" />
       <workItem from="1736147750721" duration="4876000" />
       <workItem from="1736448567924" duration="22067000" />
-      <workItem from="1736527943383" duration="3728000" />
+      <workItem from="1736527943383" duration="4048000" />
     </task>
     <task id="LOCAL-00001" summary="updated project from the scratch">
       <option name="closed" value="true" />
@@ -397,14 +394,29 @@
       <option name="project" value="LOCAL" />
       <updated>1736550017818</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="EXPORT">
+      <option name="closed" value="true" />
+      <created>1736550643124</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1736550643124</updated>
+    </task>
+    <task id="LOCAL-00033" summary="everyday there is something to learn">
+      <option name="closed" value="true" />
+      <created>1736550919916</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1736550919916</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="build error" />
     <MESSAGE value="docker build" />
     <MESSAGE value="crictl inspection completed" />
     <MESSAGE value="wasm test" />
@@ -429,6 +441,7 @@
     <MESSAGE value="changing shell arguments" />
     <MESSAGE value="image verseion" />
     <MESSAGE value="EXPORT" />
-    <option name="LAST_COMMIT_MESSAGE" value="EXPORT" />
+    <MESSAGE value="everyday there is something to learn" />
+    <option name="LAST_COMMIT_MESSAGE" value="everyday there is something to learn" />
   </component>
 </project>
