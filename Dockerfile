@@ -12,7 +12,8 @@ RUN set -x && apt-get update && apt-get install -y \
 #    apt install linux-tools-5.8.0-63-generic
 
 RUN curl https://sh.rustup.rs -sSf | bash -s -- -y
-RUN echo 'source $HOME/.cargo/env' >> $HOME/.bashrc
+#RUN echo 'source $HOME/.cargo/env' >> $HOME/.bashrc
+ENV PATH="/root/.cargo/bin:${PATH}"
 
 RUN rustup install stable && \
     rustup toolchain install nightly --component rust-src
