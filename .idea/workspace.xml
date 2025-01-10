@@ -7,10 +7,7 @@
     <cargoProject FILE="$PROJECT_DIR$/Cargo.toml" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="750a0656-4394-404c-8d18-871d64c01604" name="Changes" comment="extra dependency removed">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
-    </list>
+    <list default="true" id="750a0656-4394-404c-8d18-871d64c01604" name="Changes" comment="debugging ongoing" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -143,7 +140,7 @@
       <workItem from="1735857309688" duration="7000" />
       <workItem from="1736033582001" duration="12286000" />
       <workItem from="1736147750721" duration="4876000" />
-      <workItem from="1736448567924" duration="17886000" />
+      <workItem from="1736448567924" duration="18510000" />
     </task>
     <task id="LOCAL-00001" summary="updated project from the scratch">
       <option name="closed" value="true" />
@@ -273,7 +270,15 @@
       <option name="project" value="LOCAL" />
       <updated>1736502676853</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="debugging ongoing">
+      <option name="closed" value="true" />
+      <created>1736504760431</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1736504760431</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -296,6 +301,7 @@
     <MESSAGE value="extra-runtime-dependencies updated" />
     <MESSAGE value="--verbose... for debugging purposes" />
     <MESSAGE value="extra dependency removed" />
-    <option name="LAST_COMMIT_MESSAGE" value="extra dependency removed" />
+    <MESSAGE value="debugging ongoing" />
+    <option name="LAST_COMMIT_MESSAGE" value="debugging ongoing" />
   </component>
 </project>

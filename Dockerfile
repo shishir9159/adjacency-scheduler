@@ -1,4 +1,4 @@
-FROM rust:latest
+FROM rust:bookworm
 #AS builder
 LABEL authors="carmack"
 
