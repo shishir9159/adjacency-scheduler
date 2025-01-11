@@ -7,7 +7,7 @@
     <cargoProject FILE="$PROJECT_DIR$/Cargo.toml" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="750a0656-4394-404c-8d18-871d64c01604" name="Changes" comment="linux-headers-6.1.0-28-amd64">
+    <list default="true" id="750a0656-4394-404c-8d18-871d64c01604" name="Changes" comment="libclang">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
     </list>
@@ -145,7 +145,7 @@
       <workItem from="1736033582001" duration="12286000" />
       <workItem from="1736147750721" duration="4876000" />
       <workItem from="1736448567924" duration="22067000" />
-      <workItem from="1736527943383" duration="5845000" />
+      <workItem from="1736527943383" duration="7077000" />
     </task>
     <task id="LOCAL-00001" summary="updated project from the scratch">
       <option name="closed" value="true" />
@@ -427,15 +427,29 @@
       <option name="project" value="LOCAL" />
       <updated>1736553010999</updated>
     </task>
-    <option name="localTasksCounter" value="36" />
+    <task id="LOCAL-00036" summary="bpftool">
+      <option name="closed" value="true" />
+      <created>1736557765892</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1736557765892</updated>
+    </task>
+    <task id="LOCAL-00037" summary="libclang">
+      <option name="closed" value="true" />
+      <created>1736558662864</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1736558662864</updated>
+    </task>
+    <option name="localTasksCounter" value="38" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="crictl inspection completed" />
-    <MESSAGE value="wasm test" />
     <MESSAGE value="making generic tools installation universal" />
     <MESSAGE value="making generic tools installation" />
     <MESSAGE value="updated docker file" />
@@ -459,6 +473,8 @@
     <MESSAGE value="EXPORT" />
     <MESSAGE value="everyday there is something to learn" />
     <MESSAGE value="linux-headers-6.1.0-28-amd64" />
-    <option name="LAST_COMMIT_MESSAGE" value="linux-headers-6.1.0-28-amd64" />
+    <MESSAGE value="bpftool" />
+    <MESSAGE value="libclang" />
+    <option name="LAST_COMMIT_MESSAGE" value="libclang" />
   </component>
 </project>

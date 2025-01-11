@@ -8,7 +8,7 @@ COPY . .
 RUN echo deb http://cloudfront.debian.net/debian sid main >> /etc/apt/sources.list
 RUN echo $(uname -sr)
 RUN set -x && apt-get update && apt-get install -y \
-    bpftool ca-certificates curl pkg-config bpfcc-tools libclang libbpfcc libbpfcc-dev linux-headers-6.1.0-28-amd64  && \
+    bpftool ca-certificates curl pkg-config bpfcc-tools libclang-dev libbpfcc libbpfcc-dev linux-headers-6.1.0-28-amd64  && \
     rm -rf /var/lib/apt/lists/*
 #    apt install linux-tools-5.8.0-63-generic
 
