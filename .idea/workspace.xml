@@ -7,7 +7,10 @@
     <cargoProject FILE="$PROJECT_DIR$/Cargo.toml" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="750a0656-4394-404c-8d18-871d64c01604" name="Changes" comment="everyday there is something to learn" />
+    <list default="true" id="750a0656-4394-404c-8d18-871d64c01604" name="Changes" comment="linux-headers-6.1.0-28-amd64">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -142,7 +145,7 @@
       <workItem from="1736033582001" duration="12286000" />
       <workItem from="1736147750721" duration="4876000" />
       <workItem from="1736448567924" duration="22067000" />
-      <workItem from="1736527943383" duration="4513000" />
+      <workItem from="1736527943383" duration="5845000" />
     </task>
     <task id="LOCAL-00001" summary="updated project from the scratch">
       <option name="closed" value="true" />
@@ -416,14 +419,21 @@
       <option name="project" value="LOCAL" />
       <updated>1736551385179</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL-00035" summary="linux-headers-6.1.0-28-amd64">
+      <option name="closed" value="true" />
+      <created>1736553010999</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1736553010999</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="docker build" />
     <MESSAGE value="crictl inspection completed" />
     <MESSAGE value="wasm test" />
     <MESSAGE value="making generic tools installation universal" />
@@ -448,6 +458,7 @@
     <MESSAGE value="image verseion" />
     <MESSAGE value="EXPORT" />
     <MESSAGE value="everyday there is something to learn" />
-    <option name="LAST_COMMIT_MESSAGE" value="everyday there is something to learn" />
+    <MESSAGE value="linux-headers-6.1.0-28-amd64" />
+    <option name="LAST_COMMIT_MESSAGE" value="linux-headers-6.1.0-28-amd64" />
   </component>
 </project>
