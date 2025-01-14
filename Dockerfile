@@ -9,7 +9,7 @@ COPY . .
 #RUN #echo deb http://cloudfront.debian.net/debian sid main >> /etc/apt/sources.list)
 
 RUN set -x && apt-get update && apt-get install -y \
-    bpftool bpfcc-tools ca-certificates curl libbpfcc clang-dev pkg-config linux-headers-6.1.0-28-amd64  && \
+    bpftool bpfcc-tools ca-certificates curl libbpfcc clang pkg-config linux-headers-6.1.0-28-amd64  && \
     rm -rf /var/lib/apt/lists/*
 
 RUN rustup install stable && \
