@@ -76,8 +76,7 @@ fn containersID() -> anyhow::Result<()> {
 
 }
 
-#[tokio::main]
-async fn main() -> Result<(), anyhow::Error> {
+async fn container_by_nodes() -> Result<(), anyhow::Error> {
     let opt = Opt::parse();
 
     env_logger::init();
