@@ -34,7 +34,6 @@ func main() {
 	select {}
 
 
-
 }
 
 func schedulePodToNode(pod *corev1.Pod, nodeName string, clientset *kubernetes.Clientset) error {

@@ -7,9 +7,14 @@
     <cargoProject FILE="$PROJECT_DIR$/Cargo.toml" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="750a0656-4394-404c-8d18-871d64c01604" name="Changes" comment="listing containers, but it is a wrong design choice. Listing should be done with containerd or cri-api by namespace">
+    <list default="true" id="750a0656-4394-404c-8d18-871d64c01604" name="Changes" comment="switched to clang-dev">
+      <change afterPath="$PROJECT_DIR$/test/consumer/go.mod" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/consumer/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/producer/go.mod" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/producer/main.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scheduler/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/scheduler/main.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -153,7 +158,11 @@
       <workItem from="1736448567924" duration="22067000" />
       <workItem from="1736527943383" duration="10469000" />
       <workItem from="1736629336232" duration="13233000" />
-      <workItem from="1736893071656" duration="38000" />
+      <workItem from="1736893071656" duration="6739000" />
+      <workItem from="1737013117009" duration="6000" />
+      <workItem from="1737177167026" duration="77000" />
+      <workItem from="1737445760153" duration="1679000" />
+      <workItem from="1737453819411" duration="5709000" />
     </task>
     <task id="LOCAL-00001" summary="updated project from the scratch">
       <option name="closed" value="true" />
@@ -515,15 +524,29 @@
       <option name="project" value="LOCAL" />
       <updated>1736650628013</updated>
     </task>
-    <option name="localTasksCounter" value="46" />
+    <task id="LOCAL-00046" summary="typo in the Dockerfile">
+      <option name="closed" value="true" />
+      <created>1736893121689</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1736893121689</updated>
+    </task>
+    <task id="LOCAL-00047" summary="switched to clang-dev">
+      <option name="closed" value="true" />
+      <created>1736893254619</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1736893254619</updated>
+    </task>
+    <option name="localTasksCounter" value="48" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="bookworm" />
-    <MESSAGE value="debian" />
     <MESSAGE value="making the dockerfile compact" />
     <MESSAGE value="gave up" />
     <MESSAGE value="env of PATH" />
@@ -547,6 +570,8 @@
     <MESSAGE value="fixing cloudfront" />
     <MESSAGE value="os error file not found" />
     <MESSAGE value="listing containers, but it is a wrong design choice. Listing should be done with containerd or cri-api by namespace" />
-    <option name="LAST_COMMIT_MESSAGE" value="listing containers, but it is a wrong design choice. Listing should be done with containerd or cri-api by namespace" />
+    <MESSAGE value="typo in the Dockerfile" />
+    <MESSAGE value="switched to clang-dev" />
+    <option name="LAST_COMMIT_MESSAGE" value="switched to clang-dev" />
   </component>
 </project>
