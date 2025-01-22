@@ -1,3 +1,5 @@
+mod inspect;
+
 use std::net::Ipv4Addr;
 use k8s_openapi::api::core::v1::Pod;
 use kube::{

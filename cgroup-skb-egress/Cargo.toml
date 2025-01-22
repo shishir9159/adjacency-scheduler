@@ -27,6 +27,10 @@ k8s-openapi = { version = "0.24.0", features = ["latest"] }
 tracing-subscriber = "0.3.19"
 tracing = "0.1.41"
 serde = { version = "1.0.216", features = ["derive"] }
+serde_json = "1.0.134"
+reqwest = { version = "0.11", features = ["json"] }
+prost-types = "0.13.4"
+tonic = "0.12.3"
 
 
 
