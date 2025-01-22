@@ -1,5 +1,4 @@
 use clap::Parser;
-use prost_types::Any;
 use serde_json;
 use tonix_unix::UnixStream;
 use tokio::net::UnixStream;
