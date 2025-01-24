@@ -7,7 +7,7 @@
     <cargoProject FILE="$PROJECT_DIR$/Cargo.toml" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="750a0656-4394-404c-8d18-871d64c01604" name="Changes" comment="fixing docker errors">
+    <list default="true" id="750a0656-4394-404c-8d18-871d64c01604" name="Changes" comment="cargo build">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
     </list>
@@ -148,14 +148,6 @@
       <workItem from="1736448567924" duration="22067000" />
       <workItem from="1736527943383" duration="10469000" />
       <workItem from="1736629336232" duration="2607000" />
-    </task>
-    <task id="LOCAL-00001" summary="updated project from the scratch">
-      <option name="closed" value="true" />
-      <created>1735728495741</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1735728495741</updated>
     </task>
     <task id="LOCAL-00002" summary="dockerfile">
       <option name="closed" value="true" />
@@ -541,14 +533,21 @@
       <option name="project" value="LOCAL" />
       <updated>1737725502753</updated>
     </task>
-    <option name="localTasksCounter" value="50" />
+    <task id="LOCAL-00050" summary="cargo build">
+      <option name="closed" value="true" />
+      <created>1737726444541</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1737726444541</updated>
+    </task>
+    <option name="localTasksCounter" value="51" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="env of PATH" />
     <MESSAGE value="home of PATH" />
     <MESSAGE value="dilemma" />
     <MESSAGE value="update" />
@@ -573,6 +572,7 @@
     <MESSAGE value="fixing error" />
     <MESSAGE value="fixingdocker errors" />
     <MESSAGE value="fixing docker errors" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixing docker errors" />
+    <MESSAGE value="cargo build" />
+    <option name="LAST_COMMIT_MESSAGE" value="cargo build" />
   </component>
 </project>
