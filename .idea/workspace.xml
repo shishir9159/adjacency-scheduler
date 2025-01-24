@@ -7,8 +7,7 @@
     <cargoProject FILE="$PROJECT_DIR$/Cargo.toml" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="750a0656-4394-404c-8d18-871d64c01604" name="Changes" comment="updated tags">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="750a0656-4394-404c-8d18-871d64c01604" name="Changes" comment="another try">
       <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -148,14 +147,6 @@
       <workItem from="1736448567924" duration="22067000" />
       <workItem from="1736527943383" duration="10469000" />
       <workItem from="1736629336232" duration="2607000" />
-    </task>
-    <task id="LOCAL-00004" summary="nightly toolchain">
-      <option name="closed" value="true" />
-      <created>1736043360116</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1736043360116</updated>
     </task>
     <task id="LOCAL-00005" summary="go mod package initialization">
       <option name="closed" value="true" />
@@ -541,14 +532,21 @@
       <option name="project" value="LOCAL" />
       <updated>1737728374195</updated>
     </task>
-    <option name="localTasksCounter" value="53" />
+    <task id="LOCAL-00053" summary="another try">
+      <option name="closed" value="true" />
+      <created>1737734644958</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1737734644959</updated>
+    </task>
+    <option name="localTasksCounter" value="54" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="update" />
     <MESSAGE value="source doesn't work" />
     <MESSAGE value="changing shell" />
     <MESSAGE value="changing shell arguments" />
@@ -573,6 +571,7 @@
     <MESSAGE value="cargo build" />
     <MESSAGE value="exact cargo build" />
     <MESSAGE value="updated tags" />
-    <option name="LAST_COMMIT_MESSAGE" value="updated tags" />
+    <MESSAGE value="another try" />
+    <option name="LAST_COMMIT_MESSAGE" value="another try" />
   </component>
 </project>

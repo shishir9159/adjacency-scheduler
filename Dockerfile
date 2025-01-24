@@ -20,6 +20,7 @@ RUN cargo build
 RUN #cargo build --target=x86_64-unknown-linux-gnu --profile=release-with-debug
 
 RUN RUST_LOG=info cargo run --bin xtask --verbose codegen cgroup-skb-egress-ebpf/src/bindings.rs
+RUN echo $(ls -1 /app/debug/)
 #CMD ["RUST_LOG=info cargo run --bin cgroup-skb-egress --config 'target.\"cfg(all())\".runner=\"sudo -E\"'\""]
 CMD ["/app/debug/cgroup-skb-egress"]
 #CMD ["/app/target/x86_64-unknown-linux-gnu/release/cgroup-skb-egress"]
