@@ -11,9 +11,10 @@ resolver = "2"
 default-members = ["xtask", "cgroup-skb-egress", "cgroup-skb-egress-common"]
 
 [profile.release.package.cgroup-skb-egress-ebpf]
+# debug = 2
 debug = true
 codegen-units = 1
 
-#[profile.release-with-debug]
-#inherits = "release"
-#debug = true
+[profile.release-with-debug]
+inherits = "release"
+debug = true
