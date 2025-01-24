@@ -7,7 +7,7 @@
     <cargoProject FILE="$PROJECT_DIR$/Cargo.toml" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="750a0656-4394-404c-8d18-871d64c01604" name="Changes" comment="updated debug profile info with multi stage docker image built attempt">
+    <list default="true" id="750a0656-4394-404c-8d18-871d64c01604" name="Changes" comment="0.345 error: the argument '--release' cannot be used with '--profile &lt;PROFILE-NAME&gt;'">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
     </list>
@@ -509,14 +509,21 @@
       <option name="project" value="LOCAL" />
       <updated>1737722949454</updated>
     </task>
-    <option name="localTasksCounter" value="46" />
+    <task id="LOCAL-00046" summary="0.345 error: the argument '--release' cannot be used with '--profile &lt;PROFILE-NAME&gt;'">
+      <option name="closed" value="true" />
+      <created>1737724069081</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1737724069081</updated>
+    </task>
+    <option name="localTasksCounter" value="47" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="bookworm" />
     <MESSAGE value="debian" />
     <MESSAGE value="making the dockerfile compact" />
     <MESSAGE value="gave up" />
@@ -541,6 +548,7 @@
     <MESSAGE value="fixing cloudfront" />
     <MESSAGE value="updated dockerfile" />
     <MESSAGE value="updated debug profile info with multi stage docker image built attempt" />
-    <option name="LAST_COMMIT_MESSAGE" value="updated debug profile info with multi stage docker image built attempt" />
+    <MESSAGE value="0.345 error: the argument '--release' cannot be used with '--profile &lt;PROFILE-NAME&gt;'" />
+    <option name="LAST_COMMIT_MESSAGE" value="0.345 error: the argument '--release' cannot be used with '--profile &lt;PROFILE-NAME&gt;'" />
   </component>
 </project>
