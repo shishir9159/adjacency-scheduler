@@ -7,8 +7,7 @@
     <cargoProject FILE="$PROJECT_DIR$/Cargo.toml" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="750a0656-4394-404c-8d18-871d64c01604" name="Changes" comment="0.345 error: the argument '--release' cannot be used with '--profile &lt;PROFILE-NAME&gt;'">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="750a0656-4394-404c-8d18-871d64c01604" name="Changes" comment="fixing error">
       <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -517,14 +516,21 @@
       <option name="project" value="LOCAL" />
       <updated>1737724069081</updated>
     </task>
-    <option name="localTasksCounter" value="47" />
+    <task id="LOCAL-00047" summary="fixing error">
+      <option name="closed" value="true" />
+      <created>1737724929637</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1737724929637</updated>
+    </task>
+    <option name="localTasksCounter" value="48" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="debian" />
     <MESSAGE value="making the dockerfile compact" />
     <MESSAGE value="gave up" />
     <MESSAGE value="env of PATH" />
@@ -549,6 +555,7 @@
     <MESSAGE value="updated dockerfile" />
     <MESSAGE value="updated debug profile info with multi stage docker image built attempt" />
     <MESSAGE value="0.345 error: the argument '--release' cannot be used with '--profile &lt;PROFILE-NAME&gt;'" />
-    <option name="LAST_COMMIT_MESSAGE" value="0.345 error: the argument '--release' cannot be used with '--profile &lt;PROFILE-NAME&gt;'" />
+    <MESSAGE value="fixing error" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixing error" />
   </component>
 </project>
