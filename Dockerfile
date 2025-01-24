@@ -5,7 +5,7 @@ WORKDIR /app
 COPY . .
 
 RUN set -x && apt-get update && apt-get install -y \
-    bpftool bpfcc-tools libbpfcc clang pkg-config linux-headers-6.1.0-28-amd64 \
+    bpftool bpfcc-tools libbpfcc clang pkg-config linux-headers-6.1.0-28-amd64
 #    \
 #    && \
 #    rm -rf /var/lib/apt/lists/*
