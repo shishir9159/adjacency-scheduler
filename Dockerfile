@@ -15,7 +15,7 @@ RUN rustup install stable && \
 # run as root user
 
 RUN cargo install bpf-linker bindgen-cli cargo-generate
-RUN cargo build --target=x86_64-unknown-linux-gnu --release
+RUN CARGO_PROFILE_RELEASE_DEBUG=true cargo build --target=x86_64-unknown-linux-gnu --release
 RUN RUST_LOG=info cargo run --bin xtask --verbose codegen cgroup-skb-egress-ebpf/src/bindings.rs
 #CMD ["RUST_LOG=info cargo run --bin cgroup-skb-egress --config 'target.\"cfg(all())\".runner=\"sudo -E\"'\""]
 CMD ["/app/target/x86_64-unknown-linux-gnu/release/cgroup-skb-egress"]

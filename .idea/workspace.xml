@@ -7,7 +7,10 @@
     <cargoProject FILE="$PROJECT_DIR$/Cargo.toml" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="750a0656-4394-404c-8d18-871d64c01604" name="Changes" comment="adding old files from the server to github" />
+    <list default="true" id="750a0656-4394-404c-8d18-871d64c01604" name="Changes" comment="fixing the Dockerfile for main branch by making it consistent with containersID branch">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -156,6 +159,7 @@
       <workItem from="1737177167026" duration="77000" />
       <workItem from="1737445760153" duration="1679000" />
       <workItem from="1737453819411" duration="8499000" />
+      <workItem from="1737721760932" duration="124000" />
     </task>
     <task id="LOCAL-00001" summary="updated project from the scratch">
       <option name="closed" value="true" />
@@ -554,6 +558,17 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="env of PATH" />
