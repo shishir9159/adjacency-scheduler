@@ -21,7 +21,8 @@ RUN #cargo build --target=x86_64-unknown-linux-gnu --profile=release-with-debug
 
 RUN RUST_LOG=info cargo run --bin xtask --verbose codegen cgroup-skb-egress-ebpf/src/bindings.rs
 #CMD ["RUST_LOG=info cargo run --bin cgroup-skb-egress --config 'target.\"cfg(all())\".runner=\"sudo -E\"'\""]
-CMD ["/app/target/x86_64-unknown-linux-gnu/release/cgroup-skb-egress"]
+CMD ["/app/debug/cgroup-skb-egress"]
+#CMD ["/app/target/x86_64-unknown-linux-gnu/release/cgroup-skb-egress"]
 
 #FROM debian:bookworm-slim
 #RUN set -x && apt-get update && apt-get install -y \
