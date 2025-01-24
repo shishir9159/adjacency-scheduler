@@ -7,8 +7,8 @@
     <cargoProject FILE="$PROJECT_DIR$/Cargo.toml" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="750a0656-4394-404c-8d18-871d64c01604" name="Changes" comment="updated dockerfile">
-      <change beforePath="$PROJECT_DIR$/Cargo.toml" beforeDir="false" afterPath="$PROJECT_DIR$/Cargo.toml" afterDir="false" />
+    <list default="true" id="750a0656-4394-404c-8d18-871d64c01604" name="Changes" comment="updated debug profile info with multi stage docker image built attempt">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -501,14 +501,21 @@
       <option name="project" value="LOCAL" />
       <updated>1737722801229</updated>
     </task>
-    <option name="localTasksCounter" value="45" />
+    <task id="LOCAL-00045" summary="updated debug profile info with multi stage docker image built attempt">
+      <option name="closed" value="true" />
+      <created>1737722949453</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1737722949454</updated>
+    </task>
+    <option name="localTasksCounter" value="46" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="debugging ongoing" />
     <MESSAGE value="bookworm" />
     <MESSAGE value="debian" />
     <MESSAGE value="making the dockerfile compact" />
@@ -533,6 +540,7 @@
     <MESSAGE value="cargo run" />
     <MESSAGE value="fixing cloudfront" />
     <MESSAGE value="updated dockerfile" />
-    <option name="LAST_COMMIT_MESSAGE" value="updated dockerfile" />
+    <MESSAGE value="updated debug profile info with multi stage docker image built attempt" />
+    <option name="LAST_COMMIT_MESSAGE" value="updated debug profile info with multi stage docker image built attempt" />
   </component>
 </project>
