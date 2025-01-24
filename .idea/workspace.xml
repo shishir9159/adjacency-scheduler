@@ -7,7 +7,7 @@
     <cargoProject FILE="$PROJECT_DIR$/Cargo.toml" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="750a0656-4394-404c-8d18-871d64c01604" name="Changes" comment="another try">
+    <list default="true" id="750a0656-4394-404c-8d18-871d64c01604" name="Changes" comment="another try of update">
       <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -147,14 +147,6 @@
       <workItem from="1736448567924" duration="22067000" />
       <workItem from="1736527943383" duration="10469000" />
       <workItem from="1736629336232" duration="2607000" />
-    </task>
-    <task id="LOCAL-00005" summary="go mod package initialization">
-      <option name="closed" value="true" />
-      <created>1736044690405</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1736044690405</updated>
     </task>
     <task id="LOCAL-00006" summary="build error">
       <option name="closed" value="true" />
@@ -540,14 +532,21 @@
       <option name="project" value="LOCAL" />
       <updated>1737734644959</updated>
     </task>
-    <option name="localTasksCounter" value="54" />
+    <task id="LOCAL-00054" summary="another try of update">
+      <option name="closed" value="true" />
+      <created>1737734689570</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1737734689570</updated>
+    </task>
+    <option name="localTasksCounter" value="55" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="source doesn't work" />
     <MESSAGE value="changing shell" />
     <MESSAGE value="changing shell arguments" />
     <MESSAGE value="image verseion" />
@@ -572,6 +571,7 @@
     <MESSAGE value="exact cargo build" />
     <MESSAGE value="updated tags" />
     <MESSAGE value="another try" />
-    <option name="LAST_COMMIT_MESSAGE" value="another try" />
+    <MESSAGE value="another try of update" />
+    <option name="LAST_COMMIT_MESSAGE" value="another try of update" />
   </component>
 </project>
