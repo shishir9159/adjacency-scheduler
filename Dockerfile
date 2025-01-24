@@ -16,18 +16,19 @@ RUN rustup install stable && \
 # run as root user
 
 RUN cargo install bpf-linker bindgen-cli cargo-generate
-RUN cargo build
+#RUN cargo build --target=x86_64-unknown-linux-gnu --profile=release-with-debug
 RUN cargo build --target=x86_64-unknown-linux-gnu
 
 RUN RUST_LOG=info cargo run --bin xtask --verbose codegen cgroup-skb-egress-ebpf/src/bindings.rs
 #CMD ["RUST_LOG=info cargo run --bin cgroup-skb-egress --config 'target.\"cfg(all())\".runner=\"sudo -E\"'\""]
-CMD ["/app/target/debug/cgroup-skb-egress"]
+#CMD ["/app/target/debug/cgroup-skb-egress"]
 #CMD ["/app/target/x86_64-unknown-linux-gnu/release/cgroup-skb-egress"]
+#CMD ["/app/target/x86_64-unknown-linux-gnu/debug/cgroup-skb-egress"]
 
-#FROM debian:bookworm-slim
-#RUN set -x && apt-get update && apt-get install -y \
-#    ca-certificates curl && \
-#    rm -rf /var/lib/apt/lists/*
-#
-#COPY --from=builder /app/target/x86_64-unknown-linux-gnu/release/cgroup-skb-egress /app/server
-#CMD ["/app/server"]
+FROM debian:bookworm-slim
+RUN set -x && apt-get update && apt-get install -y \
+    ca-certificates curl && \
+    rm -rf /var/lib/apt/lists/*
+
+COPY --from=builder /app/target/x86_64-unknown-linux-gnu/debug/cgroup-skb-egress /app/server
+CMD ["/app/server"]

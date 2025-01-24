@@ -7,9 +7,8 @@
     <cargoProject FILE="$PROJECT_DIR$/Cargo.toml" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="750a0656-4394-404c-8d18-871d64c01604" name="Changes" comment="missed target">
+    <list default="true" id="750a0656-4394-404c-8d18-871d64c01604" name="Changes" comment="build'em all">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cargo.toml" beforeDir="false" afterPath="$PROJECT_DIR$/Cargo.toml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -149,14 +148,6 @@
       <workItem from="1736448567924" duration="22067000" />
       <workItem from="1736527943383" duration="10469000" />
       <workItem from="1736629336232" duration="2607000" />
-    </task>
-    <task id="LOCAL-00007" summary="docker build">
-      <option name="closed" value="true" />
-      <created>1736058559213</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1736058559213</updated>
     </task>
     <task id="LOCAL-00008" summary="crictl inspection completed">
       <option name="closed" value="true" />
@@ -542,14 +533,21 @@
       <option name="project" value="LOCAL" />
       <updated>1737735842131</updated>
     </task>
-    <option name="localTasksCounter" value="56" />
+    <task id="LOCAL-00056" summary="build'em all">
+      <option name="closed" value="true" />
+      <created>1737737448244</created>
+      <option name="number" value="00056" />
+      <option name="presentableId" value="LOCAL-00056" />
+      <option name="project" value="LOCAL" />
+      <updated>1737737448244</updated>
+    </task>
+    <option name="localTasksCounter" value="57" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="changing shell arguments" />
     <MESSAGE value="image verseion" />
     <MESSAGE value="EXPORT" />
     <MESSAGE value="everyday there is something to learn" />
@@ -574,6 +572,7 @@
     <MESSAGE value="another try" />
     <MESSAGE value="another try of update" />
     <MESSAGE value="missed target" />
-    <option name="LAST_COMMIT_MESSAGE" value="missed target" />
+    <MESSAGE value="build'em all" />
+    <option name="LAST_COMMIT_MESSAGE" value="build'em all" />
   </component>
 </project>
