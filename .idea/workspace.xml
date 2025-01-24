@@ -7,8 +7,8 @@
     <cargoProject FILE="$PROJECT_DIR$/Cargo.toml" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="750a0656-4394-404c-8d18-871d64c01604" name="Changes" comment="fixing cloudfront">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="750a0656-4394-404c-8d18-871d64c01604" name="Changes" comment="updated dockerfile">
+      <change beforePath="$PROJECT_DIR$/Cargo.toml" beforeDir="false" afterPath="$PROJECT_DIR$/Cargo.toml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -493,14 +493,21 @@
       <option name="project" value="LOCAL" />
       <updated>1736630084610</updated>
     </task>
-    <option name="localTasksCounter" value="44" />
+    <task id="LOCAL-00044" summary="updated dockerfile">
+      <option name="closed" value="true" />
+      <created>1737722801229</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1737722801229</updated>
+    </task>
+    <option name="localTasksCounter" value="45" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="extra dependency removed" />
     <MESSAGE value="debugging ongoing" />
     <MESSAGE value="bookworm" />
     <MESSAGE value="debian" />
@@ -525,6 +532,7 @@
     <MESSAGE value="cleaning up readme" />
     <MESSAGE value="cargo run" />
     <MESSAGE value="fixing cloudfront" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixing cloudfront" />
+    <MESSAGE value="updated dockerfile" />
+    <option name="LAST_COMMIT_MESSAGE" value="updated dockerfile" />
   </component>
 </project>
