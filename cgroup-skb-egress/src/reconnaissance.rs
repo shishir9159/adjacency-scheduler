@@ -1,31 +1,28 @@
-use kube::{
-    config::{Config, Kubeconfig},
-    Client,
-};
-use std::error::Error;
+use hyper_util::rt::TokioExecutor;
+use k8s_openapi::api::core::v1::Pod;
+use tower::BoxError;
+use tracing::*;
 
-async fn create_client() -> Result<Client, Box<dyn Error>> {
-    // Try to load in-cluster configuration
-    let config = match Config::infer().await {
-        Ok(cfg) => cfg,
-        Err(_) => {
-            // Fallback to loading from kubeconfig file
-            let kubeconfig_path = Kubeconfig::read_from(
-                std::env::var("KUBECONFIG").unwrap_or_else(|_| {
-                    dirs::home_dir()
-                        .map(|p| p.join(".kube/config"))
-                        .expect("Cannot determine home directory")
-                        .to_string_lossy()
-                        .into_owned()
-                }),
-            )?;
+use kube::{client::ConfigExt, Api, Client, Config, ResourceExt};
 
-            // Config::from_kubeconfig(&).await?
-        }
-    };
+#[tokio::main]
+async fn main() -> anyhow::Result<()> {
+    tracing_subscriber::fmt::init();
 
-    // Create Kubernetes client
-    let client = Client::try_from(config)?;
+    let config = Config::infer().await?;
 
-    Ok(client)
+    let https = config.rustls_https_connector()?;
+    let service = tower::ServiceBuilder::new()
+        .layer(config.base_uri_layer())
+        .option_layer(config.auth_layer()?)
+        .map_err(BoxError::from)
+        .service(hyper_util::client::legacy::Client::builder(TokioExecutor::new()).build(https));
+    let client = Client::new(service, config.default_namespace);
+
+    let pods: Api<Pod> = Api::default_namespaced(client);
+    for p in pods.list(&Default::default()).await? {
+        info!("{}", p.name_any());
+    }
+
+    Ok(())
 }

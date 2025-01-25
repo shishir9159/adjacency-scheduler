@@ -7,11 +7,10 @@
     <cargoProject FILE="$PROJECT_DIR$/Cargo.toml" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="750a0656-4394-404c-8d18-871d64c01604" name="Changes" comment="fixing the Dockerfile for main branch by making it consistent with containersID branch">
-      <change afterPath="$PROJECT_DIR$/cgroup-skb-egress/src/reconnaissance.rs" afterDir="false" />
+    <list default="true" id="750a0656-4394-404c-8d18-871d64c01604" name="Changes" comment="custom client for the watcher">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cgroup-skb-egress/Cargo.toml" beforeDir="false" afterPath="$PROJECT_DIR$/cgroup-skb-egress/Cargo.toml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cgroup-skb-egress/src/main.rs" beforeDir="false" afterPath="$PROJECT_DIR$/cgroup-skb-egress/src/main.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cgroup-skb-egress/src/reconnaissance.rs" beforeDir="false" afterPath="$PROJECT_DIR$/cgroup-skb-egress/src/reconnaissance.rs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -162,14 +161,6 @@
       <workItem from="1737445760153" duration="1679000" />
       <workItem from="1737453819411" duration="8499000" />
       <workItem from="1737721760932" duration="124000" />
-    </task>
-    <task id="LOCAL-00001" summary="updated project from the scratch">
-      <option name="closed" value="true" />
-      <created>1735728495741</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1735728495741</updated>
     </task>
     <task id="LOCAL-00002" summary="dockerfile">
       <option name="closed" value="true" />
@@ -555,7 +546,15 @@
       <option name="project" value="LOCAL" />
       <updated>1737548547339</updated>
     </task>
-    <option name="localTasksCounter" value="50" />
+    <task id="LOCAL-00050" summary="custom client for the watcher">
+      <option name="closed" value="true" />
+      <created>1737796684354</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1737796684354</updated>
+    </task>
+    <option name="localTasksCounter" value="51" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -573,7 +572,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="env of PATH" />
     <MESSAGE value="home of PATH" />
     <MESSAGE value="dilemma" />
     <MESSAGE value="update" />
@@ -598,6 +596,7 @@
     <MESSAGE value="switched to clang-dev" />
     <MESSAGE value="updated producer and consumer, middleware's work is still in progress" />
     <MESSAGE value="adding old files from the server to github" />
-    <option name="LAST_COMMIT_MESSAGE" value="adding old files from the server to github" />
+    <MESSAGE value="custom client for the watcher" />
+    <option name="LAST_COMMIT_MESSAGE" value="custom client for the watcher" />
   </component>
 </project>
