@@ -4,7 +4,7 @@
 
 ## Build & Run
 
-Ubuntu
+### Ubuntu
 ```Bash
 apt install -y build-essential pkg-config
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
@@ -18,8 +18,21 @@ RUST_LOG=info cargo run --bin cgroup-skb-egress --config 'target."cfg(all())".ru
 ```
 
 unfortunately, rust binding differs from debian to rhel 8
+### RHEL 8 
 
-RHEL 8
+Unfortunately, RHEL 8 isn't configured to support cgroupv2 and it's crucial for our project to work.
+
+we will need to add the following argument in /etc/default/grub file within GRUB_CMDLINE_LINUX:
+```
+systemd.unified_cgroup_hierarchy=1
+```
+
+then we need to run the following commands and reboot each node:
+```shell
+#grub2-mkconfig -o /boot/grub2/grub.cfg
+grub2-mkconfig -o /boot/efi/EFI/redhat/grub.cfg
+```
+
 ```shell
 yum install -y clang gcc openssl openssl-devel pkg-config
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
