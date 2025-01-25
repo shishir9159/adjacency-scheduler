@@ -7,8 +7,10 @@
     <cargoProject FILE="$PROJECT_DIR$/Cargo.toml" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="750a0656-4394-404c-8d18-871d64c01604" name="Changes" comment="multi stage">
-      <change beforePath="$PROJECT_DIR$/Cargo.toml" beforeDir="false" afterPath="$PROJECT_DIR$/Cargo.toml" afterDir="false" />
+    <list default="true" id="750a0656-4394-404c-8d18-871d64c01604" name="Changes" comment="cargo profile updated">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -147,14 +149,6 @@
       <workItem from="1736448567924" duration="22067000" />
       <workItem from="1736527943383" duration="10469000" />
       <workItem from="1736629336232" duration="2607000" />
-    </task>
-    <task id="LOCAL-00009" summary="wasm test">
-      <option name="closed" value="true" />
-      <created>1736464989726</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1736464989726</updated>
     </task>
     <task id="LOCAL-00010" summary="making generic tools installation universal">
       <option name="closed" value="true" />
@@ -540,14 +534,21 @@
       <option name="project" value="LOCAL" />
       <updated>1737738531865</updated>
     </task>
-    <option name="localTasksCounter" value="58" />
+    <task id="LOCAL-00058" summary="cargo profile updated">
+      <option name="closed" value="true" />
+      <created>1737738597218</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1737738597218</updated>
+    </task>
+    <option name="localTasksCounter" value="59" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="EXPORT" />
     <MESSAGE value="everyday there is something to learn" />
     <MESSAGE value="linux-headers-6.1.0-28-amd64" />
     <MESSAGE value="bpftool" />
@@ -572,6 +573,7 @@
     <MESSAGE value="missed target" />
     <MESSAGE value="build'em all" />
     <MESSAGE value="multi stage" />
-    <option name="LAST_COMMIT_MESSAGE" value="multi stage" />
+    <MESSAGE value="cargo profile updated" />
+    <option name="LAST_COMMIT_MESSAGE" value="cargo profile updated" />
   </component>
 </project>

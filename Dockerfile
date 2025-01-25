@@ -17,6 +17,7 @@ RUN rustup install stable && \
 
 RUN cargo install bpf-linker bindgen-cli cargo-generate
 #RUN cargo build --target=x86_64-unknown-linux-gnu --profile=release-with-debug
+#RUN cargo build --target=x86_64-unknown-linux-gnu --release
 RUN cargo build --target=x86_64-unknown-linux-gnu
 
 RUN RUST_LOG=info cargo run --bin xtask --verbose codegen cgroup-skb-egress-ebpf/src/bindings.rs

@@ -4,31 +4,33 @@
 
 ## Build & Run
 
+Ubuntu
 ```Bash
-apt install build-essential
+apt install -y build-essential pkg-config
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 . "$HOME/.cargo/env"
 rustup install stable
 rustup toolchain install nightly --component rust-src
-cargo install bpf-linker
-cargo install bindgen-cli
-cargo install cargo-generate
-apt install -y pkg-config
+cargo install bpf-linker bindgen-cli cargo-generate
 cargo build --target=x86_64-unknown-linux-gnu --release
 RUST_LOG=info cargo run --bin xtask codegen cgroup-skb-egress-ebpf/src/bindings.rs
 RUST_LOG=info cargo run --bin cgroup-skb-egress --config 'target."cfg(all())".runner="sudo -E"'
-RUST_LOG=info cargo run --config 'target."cfg(all())".runner="sudo -E"'
 ```
 
+unfortunately, rust binding differs from debian to rhel 8
+
+RHEL 8
 ```shell
-cargo install bpf-linker
-cargo install bindgen-cli
-cargo install cargo-generate
-cargo build --target=x86_64-unknown-linux-gnu
-cargo build --release --target=x86_64-unknown-linux-musl
+yum install -y clang gcc openssl openssl-devel pkg-config
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+. "$HOME/.cargo/env"
+rustup install stable
+rustup toolchain install nightly --component rust-src
+cargo install bpf-linker bindgen-cli cargo-generate
+cargo build --target=x86_64-unknown-linux-gnu --release
 RUST_LOG=info cargo run --bin xtask codegen cgroup-skb-egress-ebpf/src/bindings.rs
 RUST_LOG=info cargo run --bin cgroup-skb-egress --config 'target."cfg(all())".runner="sudo -E"'
-RUST_LOG=info cargo run --config 'target."cfg(all())".runner="sudo -E"'
+#RUST_LOG=info cargo run --config 'target ."cfg(all())".runner="sudo -E"'
 ```
 
 
