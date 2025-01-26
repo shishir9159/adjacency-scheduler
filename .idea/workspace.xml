@@ -7,10 +7,16 @@
     <cargoProject FILE="$PROJECT_DIR$/Cargo.toml" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="750a0656-4394-404c-8d18-871d64c01604" name="Changes" comment="custom client for the watcher">
+    <list default="true" id="750a0656-4394-404c-8d18-871d64c01604" name="Changes" comment="updated readme">
+      <change afterPath="$PROJECT_DIR$/manifests/clusterRoleBinding.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manifests/clusterrole.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manifests/configMap.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manifests/deployment.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manifests/ingress-grpc.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manifests/ingress.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manifests/service.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manifests/serviceAccount.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cgroup-skb-egress/Cargo.toml" beforeDir="false" afterPath="$PROJECT_DIR$/cgroup-skb-egress/Cargo.toml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cgroup-skb-egress/src/reconnaissance.rs" beforeDir="false" afterPath="$PROJECT_DIR$/cgroup-skb-egress/src/reconnaissance.rs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,6 +60,9 @@
   &quot;associatedIndex&quot;: 3
 }</component>
   <component name="ProjectId" id="2r1Yrz44dQDc3wMENPlMbdntiUX" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -161,6 +170,7 @@
       <workItem from="1737445760153" duration="1679000" />
       <workItem from="1737453819411" duration="8499000" />
       <workItem from="1737721760932" duration="124000" />
+      <workItem from="1737877888919" duration="691000" />
     </task>
     <task id="LOCAL-00002" summary="dockerfile">
       <option name="closed" value="true" />

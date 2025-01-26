@@ -1,0 +1,52 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: adjacency
+  namespace: default
+  labels:
+    app: adjacency
+spec:
+  selector:
+    matchLabels:
+      app: adjacency
+  template:
+    metadata:
+      labels:
+        app: adjacency
+    spec:
+      nodeName: robi-infra-poc-2 # testing
+      containers:
+        - image: quay.io/klovercloud/adjacency:latest
+          imagePullPolicy: Always
+          name: adjacency
+          securityContext:
+            privileged: true   # Run as a privileged container
+            capabilities:
+              add:
+                - SYS_ADMIN      # Add necessary capabilities
+                - SYS_BPF        # Allow BPF operations
+          envFrom:
+            - configMapRef:
+                name: adjacency
+          ports:
+            - containerPort: 80
+              name: adjacency
+            - containerPort: 50051
+              name: adjacency-grpc
+          volumeMounts:
+            - mountPath: /sys/fs/cgroup/kubepods.slice/kubepods-burstable.slice/
+              name: volume
+            - mountPath: /cgroup-skb-egress
+              name: c
+              readOnly: true
+      terminationGracePeriodSeconds: 60
+      schedulerName: default-scheduler
+      #      TODO: serviceAccount
+      serviceAccountName: adjacency
+      volumes:
+        - name: volume
+          hostPath:
+            path: /sys/fs/cgroup/kubepods.slice/kubepods-burstable.slice/
+        - name: c
+          hostPath:
+            path: /cgroup-skb-egress
