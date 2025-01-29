@@ -11,6 +11,6 @@ resolver = "2"
 default-members = ["cgroup-skb-egress"]
 #default-members = ["xtask", "cgroup-skb-egress", "cgroup-skb-egress-common"]
 
-[profile.release.package.cgroup-skb-egress-ebpf]
-debug = 2
-codegen-units = 1
+#[profile.release.package.cgroup-skb-egress-ebpf]
+#debug = 2
+#codegen-units = 1

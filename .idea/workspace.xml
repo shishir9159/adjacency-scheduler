@@ -7,7 +7,8 @@
     <cargoProject FILE="$PROJECT_DIR$/Cargo.toml" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="750a0656-4394-404c-8d18-871d64c01604" name="Changes" comment="faster iteration dockerfile">
+    <list default="true" id="750a0656-4394-404c-8d18-871d64c01604" name="Changes" comment="removed all part of eBPF programs">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Cargo.toml" beforeDir="false" afterPath="$PROJECT_DIR$/Cargo.toml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -166,23 +167,7 @@
       <workItem from="1737453819411" duration="8499000" />
       <workItem from="1737721760932" duration="124000" />
       <workItem from="1737877888919" duration="691000" />
-      <workItem from="1738135562164" duration="956000" />
-    </task>
-    <task id="LOCAL-00004" summary="nightly toolchain">
-      <option name="closed" value="true" />
-      <created>1736043360116</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1736043360116</updated>
-    </task>
-    <task id="LOCAL-00005" summary="go mod package initialization">
-      <option name="closed" value="true" />
-      <created>1736044690405</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1736044690405</updated>
+      <workItem from="1738135562164" duration="2582000" />
     </task>
     <task id="LOCAL-00006" summary="build error">
       <option name="closed" value="true" />
@@ -560,7 +545,23 @@
       <option name="project" value="LOCAL" />
       <updated>1738136198307</updated>
     </task>
-    <option name="localTasksCounter" value="53" />
+    <task id="LOCAL-00053" summary="disabled ebpf bytecode compilation for a bit">
+      <option name="closed" value="true" />
+      <created>1738136586800</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1738136586800</updated>
+    </task>
+    <task id="LOCAL-00054" summary="removed all part of eBPF programs">
+      <option name="closed" value="true" />
+      <created>1738137416642</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1738137416642</updated>
+    </task>
+    <option name="localTasksCounter" value="55" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -578,8 +579,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="update" />
-    <MESSAGE value="source doesn't work" />
     <MESSAGE value="changing shell" />
     <MESSAGE value="changing shell arguments" />
     <MESSAGE value="image verseion" />
@@ -603,6 +602,8 @@
     <MESSAGE value="custom client for the watcher" />
     <MESSAGE value="restructuring" />
     <MESSAGE value="faster iteration dockerfile" />
-    <option name="LAST_COMMIT_MESSAGE" value="faster iteration dockerfile" />
+    <MESSAGE value="disabled ebpf bytecode compilation for a bit" />
+    <MESSAGE value="removed all part of eBPF programs" />
+    <option name="LAST_COMMIT_MESSAGE" value="removed all part of eBPF programs" />
   </component>
 </project>
