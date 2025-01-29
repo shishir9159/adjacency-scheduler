@@ -7,9 +7,8 @@
     <cargoProject FILE="$PROJECT_DIR$/Cargo.toml" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="750a0656-4394-404c-8d18-871d64c01604" name="Changes" comment="restructuring">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mandlebot.Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/mandlebot.Dockerfile" afterDir="false" />
+    <list default="true" id="750a0656-4394-404c-8d18-871d64c01604" name="Changes" comment="faster iteration dockerfile">
+      <change beforePath="$PROJECT_DIR$/Cargo.toml" beforeDir="false" afterPath="$PROJECT_DIR$/Cargo.toml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -167,15 +166,7 @@
       <workItem from="1737453819411" duration="8499000" />
       <workItem from="1737721760932" duration="124000" />
       <workItem from="1737877888919" duration="691000" />
-      <workItem from="1738135562164" duration="619000" />
-    </task>
-    <task id="LOCAL-00003" summary="updated dockerfile">
-      <option name="closed" value="true" />
-      <created>1736041901119</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1736041901120</updated>
+      <workItem from="1738135562164" duration="956000" />
     </task>
     <task id="LOCAL-00004" summary="nightly toolchain">
       <option name="closed" value="true" />
@@ -561,7 +552,15 @@
       <option name="project" value="LOCAL" />
       <updated>1738135427517</updated>
     </task>
-    <option name="localTasksCounter" value="52" />
+    <task id="LOCAL-00052" summary="faster iteration dockerfile">
+      <option name="closed" value="true" />
+      <created>1738136198307</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1738136198307</updated>
+    </task>
+    <option name="localTasksCounter" value="53" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -579,7 +578,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="dilemma" />
     <MESSAGE value="update" />
     <MESSAGE value="source doesn't work" />
     <MESSAGE value="changing shell" />
@@ -604,6 +602,7 @@
     <MESSAGE value="adding old files from the server to github" />
     <MESSAGE value="custom client for the watcher" />
     <MESSAGE value="restructuring" />
-    <option name="LAST_COMMIT_MESSAGE" value="restructuring" />
+    <MESSAGE value="faster iteration dockerfile" />
+    <option name="LAST_COMMIT_MESSAGE" value="faster iteration dockerfile" />
   </component>
 </project>

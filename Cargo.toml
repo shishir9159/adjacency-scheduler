@@ -3,7 +3,7 @@ members = [
   "xtask",
   "cgroup-skb-egress",
   "cgroup-skb-egress-common",
-  "cgroup-skb-egress-ebpf",
+#  "cgroup-skb-egress-ebpf",
 ]
 
 resolver = "2"
