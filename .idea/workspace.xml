@@ -7,7 +7,7 @@
     <cargoProject FILE="$PROJECT_DIR$/Cargo.toml" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="750a0656-4394-404c-8d18-871d64c01604" name="Changes" comment="cargo profile updated">
+    <list default="true" id="750a0656-4394-404c-8d18-871d64c01604" name="Changes" comment="unfortunately unfortunate">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
@@ -151,14 +151,7 @@
       <workItem from="1736448567924" duration="22067000" />
       <workItem from="1736527943383" duration="10469000" />
       <workItem from="1736629336232" duration="2607000" />
-    </task>
-    <task id="LOCAL-00010" summary="making generic tools installation universal">
-      <option name="closed" value="true" />
-      <created>1736465736336</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1736465736336</updated>
+      <workItem from="1737906289348" duration="1441000" />
     </task>
     <task id="LOCAL-00011" summary="making generic tools installation">
       <option name="closed" value="true" />
@@ -544,14 +537,21 @@
       <option name="project" value="LOCAL" />
       <updated>1737738597218</updated>
     </task>
-    <option name="localTasksCounter" value="59" />
+    <task id="LOCAL-00059" summary="unfortunately unfortunate">
+      <option name="closed" value="true" />
+      <created>1737885850224</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1737885850224</updated>
+    </task>
+    <option name="localTasksCounter" value="60" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="everyday there is something to learn" />
     <MESSAGE value="linux-headers-6.1.0-28-amd64" />
     <MESSAGE value="bpftool" />
     <MESSAGE value="libclang" />
@@ -576,6 +576,7 @@
     <MESSAGE value="build'em all" />
     <MESSAGE value="multi stage" />
     <MESSAGE value="cargo profile updated" />
-    <option name="LAST_COMMIT_MESSAGE" value="cargo profile updated" />
+    <MESSAGE value="unfortunately unfortunate" />
+    <option name="LAST_COMMIT_MESSAGE" value="unfortunately unfortunate" />
   </component>
 </project>
