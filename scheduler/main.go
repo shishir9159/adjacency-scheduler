@@ -46,9 +46,7 @@ func schedulePodToNode(pod *corev1.Pod, nodeName string, clientset *kubernetes.C
 // AddFunc: func(obj interface{}) {
 //        pod := obj.(*corev1.Pod)
 //
-//        // Placeholder for your scheduling algorithm
-//        // This should determine the best node for the pod
-//        nodeName := findBestNodeForPod(pod)    // Assuming findBestNodeForPod is a function you'll implement that returns a nodeName
+//        nodeName := findBestNodeForPod(pod)
 //        if nodeName != "" {
 //            err := schedulePodToNode(pod, nodeName, clientset)
 //            if err != nil {

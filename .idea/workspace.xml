@@ -7,16 +7,14 @@
     <cargoProject FILE="$PROJECT_DIR$/Cargo.toml" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="750a0656-4394-404c-8d18-871d64c01604" name="Changes" comment="updated readme">
-      <change afterPath="$PROJECT_DIR$/manifests/clusterRoleBinding.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manifests/clusterrole.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manifests/configMap.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manifests/deployment.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manifests/ingress-grpc.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manifests/ingress.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manifests/service.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manifests/serviceAccount.yaml" afterDir="false" />
+    <list default="true" id="750a0656-4394-404c-8d18-871d64c01604" name="Changes" comment="restructuring">
+      <change afterPath="$PROJECT_DIR$/cgroup-skb-egress/src/ebpf-lifecycle.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mandlebot.Dockerfile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cgroup-skb-egress/Cargo.toml" beforeDir="false" afterPath="$PROJECT_DIR$/cgroup-skb-egress/Cargo.toml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cgroup-skb-egress/src/main.rs" beforeDir="false" afterPath="$PROJECT_DIR$/cgroup-skb-egress/src/main.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cgroup-skb-egress/src/reconnaissance.rs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scheduler/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/scheduler/main.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -582,7 +580,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="home of PATH" />
     <MESSAGE value="dilemma" />
     <MESSAGE value="update" />
     <MESSAGE value="source doesn't work" />
@@ -607,6 +604,7 @@
     <MESSAGE value="updated producer and consumer, middleware's work is still in progress" />
     <MESSAGE value="adding old files from the server to github" />
     <MESSAGE value="custom client for the watcher" />
-    <option name="LAST_COMMIT_MESSAGE" value="custom client for the watcher" />
+    <MESSAGE value="restructuring" />
+    <option name="LAST_COMMIT_MESSAGE" value="restructuring" />
   </component>
 </project>

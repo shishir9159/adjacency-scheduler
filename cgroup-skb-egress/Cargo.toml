@@ -57,4 +57,4 @@ cgroup-skb-egress-ebpf = { path = "../cgroup-skb-egress-ebpf" }
 
 [[bin]]
 name = "cgroup-skb-egress"
-path = "src/main.rs"
+path = "src/ebpf-lifecycle.rs"
