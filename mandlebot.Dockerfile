@@ -5,8 +5,7 @@ LABEL authors="carmack"
 WORKDIR /app
 
 RUN set -x && rm -f /etc/apt/apt.conf.d/docker-clean && \
-    apt-get update && apt-get install -y && \
-    ca-certificates curl  && \
+    apt-get update && apt-get install -y ca-certificates curl && \
     rm -rf /var/lib/apt/lists/*
 
 RUN rustup install stable && \
