@@ -6,7 +6,10 @@ WORKDIR /app
 COPY . .
 
 #    bpftool bpfcc-tools libbpfcc clang pkg-config linux-headers-6.1.0-28-amd64 \
-RUN set -x && apt-get update && apt-get install -y \
+RUN set -x && --mount=target=/var/lib/apt/lists,type=cache,sharing=locked \
+    --mount=target=/var/cache/apt,type=cache,sharing=locked \
+    rm -f /etc/apt/apt.conf.d/docker-clean \
+    apt-get update && apt-get install -y && \
     ca-certificates curl  && \
     rm -rf /var/lib/apt/lists/*
 

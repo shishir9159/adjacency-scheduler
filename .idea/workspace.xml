@@ -7,9 +7,10 @@
     <cargoProject FILE="$PROJECT_DIR$/Cargo.toml" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="750a0656-4394-404c-8d18-871d64c01604" name="Changes" comment="removed all part of eBPF programs">
+    <list default="true" id="750a0656-4394-404c-8d18-871d64c01604" name="Changes" comment="removed all part of eBPF program build for faster iteration">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cargo.toml" beforeDir="false" afterPath="$PROJECT_DIR$/Cargo.toml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cgroup-skb-egress/src/main.rs" beforeDir="false" afterPath="$PROJECT_DIR$/cgroup-skb-egress/src/main.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mandlebot.Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/mandlebot.Dockerfile" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -167,15 +168,10 @@
       <workItem from="1737453819411" duration="8499000" />
       <workItem from="1737721760932" duration="124000" />
       <workItem from="1737877888919" duration="691000" />
-      <workItem from="1738135562164" duration="2582000" />
-    </task>
-    <task id="LOCAL-00006" summary="build error">
-      <option name="closed" value="true" />
-      <created>1736048201883</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1736048201883</updated>
+      <workItem from="1738135562164" duration="8268000" />
+      <workItem from="1738220660357" duration="4254000" />
+      <workItem from="1738319327355" duration="5000" />
+      <workItem from="1738548071434" duration="220000" />
     </task>
     <task id="LOCAL-00007" summary="docker build">
       <option name="closed" value="true" />
@@ -561,7 +557,15 @@
       <option name="project" value="LOCAL" />
       <updated>1738137416642</updated>
     </task>
-    <option name="localTasksCounter" value="55" />
+    <task id="LOCAL-00055" summary="removed all part of eBPF program build for faster iteration">
+      <option name="closed" value="true" />
+      <created>1738138187910</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1738138187910</updated>
+    </task>
+    <option name="localTasksCounter" value="56" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -579,7 +583,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="changing shell" />
     <MESSAGE value="changing shell arguments" />
     <MESSAGE value="image verseion" />
     <MESSAGE value="EXPORT" />
@@ -604,6 +607,7 @@
     <MESSAGE value="faster iteration dockerfile" />
     <MESSAGE value="disabled ebpf bytecode compilation for a bit" />
     <MESSAGE value="removed all part of eBPF programs" />
-    <option name="LAST_COMMIT_MESSAGE" value="removed all part of eBPF programs" />
+    <MESSAGE value="removed all part of eBPF program build for faster iteration" />
+    <option name="LAST_COMMIT_MESSAGE" value="removed all part of eBPF program build for faster iteration" />
   </component>
 </project>
