@@ -11,7 +11,7 @@ RUN set -x && rm -f /etc/apt/apt.conf.d/docker-clean && \
 RUN rustup install stable && \
     rustup toolchain install nightly --component rust-src
 
-COPY Cargo.toml Cargo.lock ./
+COPY --parents Cargo.toml Cargo.lock cgroup-skb-egress*/Cargo.* ./
 RUN mkdir src && echo "fn main() {}" > src/main.rs
 # Build the dependencies without the actual source code to cache dependencies separately
 RUN cargo build --release
