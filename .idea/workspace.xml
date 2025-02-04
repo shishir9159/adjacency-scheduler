@@ -7,7 +7,7 @@
     <cargoProject FILE="$PROJECT_DIR$/Cargo.toml" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="750a0656-4394-404c-8d18-871d64c01604" name="Changes" comment="fixed it">
+    <list default="true" id="750a0656-4394-404c-8d18-871d64c01604" name="Changes" comment="glob copy">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mandlebot.Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/mandlebot.Dockerfile" afterDir="false" />
     </list>
@@ -170,15 +170,7 @@
       <workItem from="1738135562164" duration="8268000" />
       <workItem from="1738220660357" duration="4254000" />
       <workItem from="1738319327355" duration="5000" />
-      <workItem from="1738548071434" duration="3708000" />
-    </task>
-    <task id="LOCAL-00012" summary="updated docker file">
-      <option name="closed" value="true" />
-      <created>1736469677771</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1736469677771</updated>
+      <workItem from="1738548071434" duration="13294000" />
     </task>
     <task id="LOCAL-00013" summary="updated docker file and test">
       <option name="closed" value="true" />
@@ -564,7 +556,15 @@
       <option name="project" value="LOCAL" />
       <updated>1738589848033</updated>
     </task>
-    <option name="localTasksCounter" value="61" />
+    <task id="LOCAL-00061" summary="glob copy">
+      <option name="closed" value="true" />
+      <created>1738595047258</created>
+      <option name="number" value="00061" />
+      <option name="presentableId" value="LOCAL-00061" />
+      <option name="project" value="LOCAL" />
+      <updated>1738595047258</updated>
+    </task>
+    <option name="localTasksCounter" value="62" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -582,7 +582,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="linux-headers-6.1.0-28-amd64" />
     <MESSAGE value="bpftool" />
     <MESSAGE value="libclang" />
     <MESSAGE value="libclang dev" />
@@ -607,6 +606,7 @@
     <MESSAGE value="mandlebot" />
     <MESSAGE value="missed command delimiters" />
     <MESSAGE value="fixed it" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed it" />
+    <MESSAGE value="glob copy" />
+    <option name="LAST_COMMIT_MESSAGE" value="glob copy" />
   </component>
 </project>
