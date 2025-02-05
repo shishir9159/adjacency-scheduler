@@ -7,7 +7,8 @@
     <cargoProject FILE="$PROJECT_DIR$/Cargo.toml" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="750a0656-4394-404c-8d18-871d64c01604" name="Changes" comment="updated docker">
+    <list default="true" id="750a0656-4394-404c-8d18-871d64c01604" name="Changes" comment="removed copying before apt">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mandlebot.Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/mandlebot.Dockerfile" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -170,22 +171,6 @@
       <workItem from="1738220660357" duration="4254000" />
       <workItem from="1738319327355" duration="5000" />
       <workItem from="1738548071434" duration="13294000" />
-    </task>
-    <task id="LOCAL-00014" summary="extra-runtime-dependencies updated">
-      <option name="closed" value="true" />
-      <created>1736500972552</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1736500972552</updated>
-    </task>
-    <task id="LOCAL-00015" summary="--verbose... for debugging purposes">
-      <option name="closed" value="true" />
-      <created>1736502534258</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1736502534258</updated>
     </task>
     <task id="LOCAL-00016" summary="extra dependency removed">
       <option name="closed" value="true" />
@@ -563,7 +548,23 @@
       <option name="project" value="LOCAL" />
       <updated>1738755880919</updated>
     </task>
-    <option name="localTasksCounter" value="63" />
+    <task id="LOCAL-00063" summary="file already exists">
+      <option name="closed" value="true" />
+      <created>1738756639184</created>
+      <option name="number" value="00063" />
+      <option name="presentableId" value="LOCAL-00063" />
+      <option name="project" value="LOCAL" />
+      <updated>1738756639185</updated>
+    </task>
+    <task id="LOCAL-00064" summary="removed copying before apt">
+      <option name="closed" value="true" />
+      <created>1738757061440</created>
+      <option name="number" value="00064" />
+      <option name="presentableId" value="LOCAL-00064" />
+      <option name="project" value="LOCAL" />
+      <updated>1738757061440</updated>
+    </task>
+    <option name="localTasksCounter" value="65" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -581,8 +582,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="libclang" />
-    <MESSAGE value="libclang dev" />
     <MESSAGE value="fixed" />
     <MESSAGE value="dockerfile semi fixed" />
     <MESSAGE value="cleaning up readme" />
@@ -606,6 +605,8 @@
     <MESSAGE value="fixed it" />
     <MESSAGE value="glob copy" />
     <MESSAGE value="updated docker" />
-    <option name="LAST_COMMIT_MESSAGE" value="updated docker" />
+    <MESSAGE value="file already exists" />
+    <MESSAGE value="removed copying before apt" />
+    <option name="LAST_COMMIT_MESSAGE" value="removed copying before apt" />
   </component>
 </project>

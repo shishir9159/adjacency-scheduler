@@ -15,8 +15,8 @@ RUN rustup install stable && \
 RUN cargo install bpf-linker bindgen-cli cargo-generate
 # cgroup-skb-egress*/src/main.rs
 COPY --parents Cargo.toml Cargo.lock cgroup-skb-egress*/Cargo.* xtask ./
-RUN mkdir -p cgroup-skb-egress*/src &&  echo "fn main() {}" | tee cgroup-skb-egress*/src/main.rs
-#RUN mkdir src && echo "fn main() {}" > src/main.rs
+
+RUN mkdir -p cgroup-skb-egress*/src && main=$"#[panic_handler]\nfn main() {}" && echo "$main" | tee cgroup-skb-egress*/src/main.rs
 # Build the dependencies without the actual source code to cache dependencies separately
 # RUN cargo fetch
 RUN cargo build --release
