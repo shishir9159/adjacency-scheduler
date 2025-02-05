@@ -22,7 +22,7 @@ RUN main=$"#[panic_handler]\nfn main() {}" && echo "$main" | tee cgroup-skb-egre
 
 # Build the dependencies without the actual source code to cache dependencies separately
 # RUN cargo fetch
-RUN cargo build --bin fetch-docker-build
+RUN cargo build --bins
 COPY . .
 
 RUN CARGO_PROFILE_RELEASE_DEBUG=true cargo build --target=x86_64-unknown-linux-gnu --release
