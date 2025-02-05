@@ -21,7 +21,7 @@ COPY --parents Cargo.toml Cargo.lock cgroup-skb-egress*/Cargo.* xtask ./
 RUN mkdir -p cgroup-skb-egress*/src && main=$"#[panic_handler]\nfn main() {}" && echo "$main" | tee cgroup-skb-egress*/src/main.rs
 # Build the dependencies without the actual source code to cache dependencies separately
 # RUN cargo fetch
-RUN cargo build --release
+RUN cargo build --bin fetch-docker-build
 COPY . .
 
 RUN CARGO_PROFILE_RELEASE_DEBUG=true cargo build --target=x86_64-unknown-linux-gnu --release
@@ -35,7 +35,3 @@ RUN set -x && apt-get update && apt-get install -y \
 
 COPY --from=builder /app/target/x86_64-unknown-linux-gnu/debug/cgroup-skb-egress /app/server
 CMD ["/app/server"]
-
-
-# RUN mkdir src && echo "fn main() {}" | tee cgroup-skb-egress*/src/main.rs
-# Build the dependencies without the actual source code to cache dependencies separately

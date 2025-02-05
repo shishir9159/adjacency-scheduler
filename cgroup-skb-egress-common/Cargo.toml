@@ -12,3 +12,6 @@ aya = { git = "https://github.com/aya-rs/aya", optional = true }
 
 [lib]
 path = "src/lib.rs"
+
+[fetch-docker-build]
+path = "src/main.rs"
