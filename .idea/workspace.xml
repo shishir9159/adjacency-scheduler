@@ -8,7 +8,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="750a0656-4394-404c-8d18-871d64c01604" name="Changes" comment="made it plural">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mandlebot.Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/mandlebot.Dockerfile" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -171,14 +170,6 @@
       <workItem from="1738220660357" duration="4254000" />
       <workItem from="1738319327355" duration="5000" />
       <workItem from="1738548071434" duration="13294000" />
-    </task>
-    <task id="LOCAL-00032" summary="EXPORT">
-      <option name="closed" value="true" />
-      <created>1736550643124</created>
-      <option name="number" value="00032" />
-      <option name="presentableId" value="LOCAL-00032" />
-      <option name="project" value="LOCAL" />
-      <updated>1736550643124</updated>
     </task>
     <task id="LOCAL-00033" summary="everyday there is something to learn">
       <option name="closed" value="true" />
@@ -564,7 +555,15 @@
       <option name="project" value="LOCAL" />
       <updated>1738791403094</updated>
     </task>
-    <option name="localTasksCounter" value="81" />
+    <task id="LOCAL-00081" summary="made it plural">
+      <option name="closed" value="true" />
+      <created>1738791932336</created>
+      <option name="number" value="00081" />
+      <option name="presentableId" value="LOCAL-00081" />
+      <option name="project" value="LOCAL" />
+      <updated>1738791932336</updated>
+    </task>
+    <option name="localTasksCounter" value="82" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
