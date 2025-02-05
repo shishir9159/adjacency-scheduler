@@ -7,9 +7,7 @@
     <cargoProject FILE="$PROJECT_DIR$/Cargo.toml" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="750a0656-4394-404c-8d18-871d64c01604" name="Changes" comment="empty file">
-      <change beforePath="$PROJECT_DIR$/mandlebot.Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/mandlebot.Dockerfile" afterDir="false" />
-    </list>
+    <list default="true" id="750a0656-4394-404c-8d18-871d64c01604" name="Changes" comment="fastest rust docker build from BD" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -170,22 +168,6 @@
       <workItem from="1738220660357" duration="4254000" />
       <workItem from="1738319327355" duration="5000" />
       <workItem from="1738548071434" duration="13294000" />
-    </task>
-    <task id="LOCAL-00021" summary="gave up">
-      <option name="closed" value="true" />
-      <created>1736506858153</created>
-      <option name="number" value="00021" />
-      <option name="presentableId" value="LOCAL-00021" />
-      <option name="project" value="LOCAL" />
-      <updated>1736506858153</updated>
-    </task>
-    <task id="LOCAL-00022" summary="env of PATH">
-      <option name="closed" value="true" />
-      <created>1736507208882</created>
-      <option name="number" value="00022" />
-      <option name="presentableId" value="LOCAL-00022" />
-      <option name="project" value="LOCAL" />
-      <updated>1736507208882</updated>
     </task>
     <task id="LOCAL-00023" summary="env of PATH">
       <option name="closed" value="true" />
@@ -563,7 +545,23 @@
       <option name="project" value="LOCAL" />
       <updated>1738762559558</updated>
     </task>
-    <option name="localTasksCounter" value="70" />
+    <task id="LOCAL-00070" summary="touch empty file">
+      <option name="closed" value="true" />
+      <created>1738762609069</created>
+      <option name="number" value="00070" />
+      <option name="presentableId" value="LOCAL-00070" />
+      <option name="project" value="LOCAL" />
+      <updated>1738762609069</updated>
+    </task>
+    <task id="LOCAL-00071" summary="fastest rust docker build from BD">
+      <option name="closed" value="true" />
+      <created>1738762839400</created>
+      <option name="number" value="00071" />
+      <option name="presentableId" value="LOCAL-00071" />
+      <option name="project" value="LOCAL" />
+      <updated>1738762839400</updated>
+    </task>
+    <option name="localTasksCounter" value="72" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -581,8 +579,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="fixing cloudfront" />
-    <MESSAGE value="os error file not found" />
     <MESSAGE value="listing containers, but it is a wrong design choice. Listing should be done with containerd or cri-api by namespace" />
     <MESSAGE value="typo in the Dockerfile" />
     <MESSAGE value="switched to clang-dev" />
@@ -606,6 +602,8 @@
     <MESSAGE value="fetch-docker-build" />
     <MESSAGE value="ignore lib" />
     <MESSAGE value="empty file" />
-    <option name="LAST_COMMIT_MESSAGE" value="empty file" />
+    <MESSAGE value="touch empty file" />
+    <MESSAGE value="fastest rust docker build from BD" />
+    <option name="LAST_COMMIT_MESSAGE" value="fastest rust docker build from BD" />
   </component>
 </project>
