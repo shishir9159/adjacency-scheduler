@@ -7,7 +7,9 @@
     <cargoProject FILE="$PROJECT_DIR$/Cargo.toml" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="750a0656-4394-404c-8d18-871d64c01604" name="Changes" comment="added lib">
+    <list default="true" id="750a0656-4394-404c-8d18-871d64c01604" name="Changes" comment="no panic">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cargo.toml" beforeDir="false" afterPath="$PROJECT_DIR$/Cargo.toml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mandlebot.Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/mandlebot.Dockerfile" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -170,22 +172,6 @@
       <workItem from="1738220660357" duration="4254000" />
       <workItem from="1738319327355" duration="5000" />
       <workItem from="1738548071434" duration="13294000" />
-    </task>
-    <task id="LOCAL-00034" summary="everyday there is something to learn">
-      <option name="closed" value="true" />
-      <created>1736551385179</created>
-      <option name="number" value="00034" />
-      <option name="presentableId" value="LOCAL-00034" />
-      <option name="project" value="LOCAL" />
-      <updated>1736551385179</updated>
-    </task>
-    <task id="LOCAL-00035" summary="linux-headers-6.1.0-28-amd64">
-      <option name="closed" value="true" />
-      <created>1736553010999</created>
-      <option name="number" value="00035" />
-      <option name="presentableId" value="LOCAL-00035" />
-      <option name="project" value="LOCAL" />
-      <updated>1736553010999</updated>
     </task>
     <task id="LOCAL-00036" summary="bpftool">
       <option name="closed" value="true" />
@@ -563,7 +549,23 @@
       <option name="project" value="LOCAL" />
       <updated>1738792244316</updated>
     </task>
-    <option name="localTasksCounter" value="83" />
+    <task id="LOCAL-00083" summary="redirection">
+      <option name="closed" value="true" />
+      <created>1738792553051</created>
+      <option name="number" value="00083" />
+      <option name="presentableId" value="LOCAL-00083" />
+      <option name="project" value="LOCAL" />
+      <updated>1738792553051</updated>
+    </task>
+    <task id="LOCAL-00084" summary="no panic">
+      <option name="closed" value="true" />
+      <created>1738792692075</created>
+      <option name="number" value="00084" />
+      <option name="presentableId" value="LOCAL-00084" />
+      <option name="project" value="LOCAL" />
+      <updated>1738792692075</updated>
+    </task>
+    <option name="localTasksCounter" value="85" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -581,8 +583,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="removed all part of eBPF program build for faster iteration" />
-    <MESSAGE value="enabling logging" />
     <MESSAGE value="mandlebot" />
     <MESSAGE value="missed command delimiters" />
     <MESSAGE value="fixed it" />
@@ -606,6 +606,8 @@
     <MESSAGE value="added ;" />
     <MESSAGE value="made it plural" />
     <MESSAGE value="added lib" />
-    <option name="LAST_COMMIT_MESSAGE" value="added lib" />
+    <MESSAGE value="redirection" />
+    <MESSAGE value="no panic" />
+    <option name="LAST_COMMIT_MESSAGE" value="no panic" />
   </component>
 </project>
