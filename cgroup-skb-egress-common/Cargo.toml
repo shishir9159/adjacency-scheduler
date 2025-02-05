@@ -10,8 +10,9 @@ user = ["aya"]
 [dependencies]
 aya = { git = "https://github.com/aya-rs/aya", optional = true }
 
+[[bin]]
+name = "fetch-docker-build"
+path = "src/main.rs"
+
 [lib]
 path = "src/lib.rs"
-
-[fetch-docker-build]
-path = "src/main.rs"
