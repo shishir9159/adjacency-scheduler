@@ -7,7 +7,7 @@
     <cargoProject FILE="$PROJECT_DIR$/Cargo.toml" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="750a0656-4394-404c-8d18-871d64c01604" name="Changes" comment="echoed tcp back from ether to ether">
+    <list default="true" id="750a0656-4394-404c-8d18-871d64c01604" name="Changes" comment="common man">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mandlebot.Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/mandlebot.Dockerfile" afterDir="false" />
     </list>
@@ -171,14 +171,6 @@
       <workItem from="1738220660357" duration="4254000" />
       <workItem from="1738319327355" duration="5000" />
       <workItem from="1738548071434" duration="13294000" />
-    </task>
-    <task id="LOCAL-00025" summary="dilemma">
-      <option name="closed" value="true" />
-      <created>1736517664604</created>
-      <option name="number" value="00025" />
-      <option name="presentableId" value="LOCAL-00025" />
-      <option name="project" value="LOCAL" />
-      <updated>1736517664604</updated>
     </task>
     <task id="LOCAL-00026" summary="update">
       <option name="closed" value="true" />
@@ -564,7 +556,15 @@
       <option name="project" value="LOCAL" />
       <updated>1738763602061</updated>
     </task>
-    <option name="localTasksCounter" value="74" />
+    <task id="LOCAL-00074" summary="common man">
+      <option name="closed" value="true" />
+      <created>1738763741973</created>
+      <option name="number" value="00074" />
+      <option name="presentableId" value="LOCAL-00074" />
+      <option name="project" value="LOCAL" />
+      <updated>1738763741973</updated>
+    </task>
+    <option name="localTasksCounter" value="75" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -582,7 +582,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="switched to clang-dev" />
     <MESSAGE value="updated producer and consumer, middleware's work is still in progress" />
     <MESSAGE value="adding old files from the server to github" />
     <MESSAGE value="custom client for the watcher" />
@@ -607,6 +606,7 @@
     <MESSAGE value="fastest rust docker build from BD" />
     <MESSAGE value="echoed tcp from ether to ether" />
     <MESSAGE value="echoed tcp back from ether to ether" />
-    <option name="LAST_COMMIT_MESSAGE" value="echoed tcp back from ether to ether" />
+    <MESSAGE value="common man" />
+    <option name="LAST_COMMIT_MESSAGE" value="common man" />
   </component>
 </project>

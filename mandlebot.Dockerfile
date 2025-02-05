@@ -15,8 +15,7 @@ RUN rustup install stable && \
 
 # run as root user
 RUN cargo install bpf-linker bindgen-cli cargo-generate
-# cgroup-skb-egress*/src/main.rs
-COPY --parents Cargo.toml Cargo.lock cgroup-skb-egress*/Cargo.* xtask ./
+COPY --parents Cargo.toml Cargo.lock cgroup-skb-egress*/Cargo.* cgroup-skb-egress*/src/main.rs xtask ./
 
 RUN mkdir -p cgroup-skb-egress*/src && main=$"#[panic_handler]\nfn main() {}" && echo "$main" | tee cgroup-skb-egress*/src/main.rs
 RUN echo "tcp" > cgroup-skb-egress-common/src/lib.rs
