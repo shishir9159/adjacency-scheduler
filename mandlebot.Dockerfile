@@ -3,7 +3,6 @@ FROM rust:bookworm AS builder
 LABEL authors="carmack"
 
 WORKDIR /app
-COPY . .
 
 RUN set -x && rm -f /etc/apt/apt.conf.d/docker-clean && apt-get update && apt-get install -y \
     bpftool bpfcc-tools ca-certificates curl libbpfcc clang pkg-config linux-headers-6.1.0-28-amd64  && \
