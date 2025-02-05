@@ -15,7 +15,3 @@ which = { version = "7.0.0", default-features = false }
 [[bin]]
 name = "cgroup-skb-egress"
 path = "src/main.rs"
-
-[[bin]]
-name = "fetch-docker-build"
-path = "src/main.rs"
