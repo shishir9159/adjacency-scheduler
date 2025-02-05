@@ -18,7 +18,7 @@ RUN cargo install bpf-linker bindgen-cli cargo-generate
 COPY --parents Cargo.toml Cargo.lock cgroup-skb-egress*/Cargo.* cgroup-skb-egress*/src/main.rs cgroup-skb-egress*/src/lib.rs xtask ./
 
 RUN find . -type d -name "cgroup-skb-egress*" -exec mkdir -p {}/src \;
-RUN main=$"fn main() {}" && echo "$main" | tee cgroup-skb-egress*/src/main.rs cgroup-skb-egress-common/src/lib.rs
+RUN main="fn main() {}" && echo "$main" | tee cgroup-skb-egress*/src/main.rs cgroup-skb-egress-common/src/lib.rs
 #RUN main=$"#[panic_handler]\nfn main() {}" && echo "$main" | tee cgroup-skb-egress*/src/main.rs
 #RUN echo "fn main() {}" > cgroup-skb-egress-common/src/lib.rs # I will fix you
 
@@ -36,5 +36,5 @@ RUN set -x && apt-get update && apt-get install -y \
     ca-certificates curl && \
     rm -rf /var/lib/apt/lists/*
 
-COPY --from=builder /app/target/x86_64-unknown-linux-gnu/debug/cgroup-skb-egress /app/server
+COPY --from=builder /app/target/x86_64-unknown-linux-gnu/release/cgroup-skb-egress /app/server
 CMD ["/app/server"]

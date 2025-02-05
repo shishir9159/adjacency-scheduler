@@ -7,11 +7,8 @@
     <cargoProject FILE="$PROJECT_DIR$/Cargo.toml" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="750a0656-4394-404c-8d18-871d64c01604" name="Changes" comment="no panic handler">
+    <list default="true" id="750a0656-4394-404c-8d18-871d64c01604" name="Changes" comment="removed fetch build">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cgroup-skb-egress-common/Cargo.toml" beforeDir="false" afterPath="$PROJECT_DIR$/cgroup-skb-egress-common/Cargo.toml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cgroup-skb-egress-ebpf/Cargo.toml" beforeDir="false" afterPath="$PROJECT_DIR$/cgroup-skb-egress-ebpf/Cargo.toml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cgroup-skb-egress/Cargo.toml" beforeDir="false" afterPath="$PROJECT_DIR$/cgroup-skb-egress/Cargo.toml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mandlebot.Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/mandlebot.Dockerfile" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -174,14 +171,6 @@
       <workItem from="1738220660357" duration="4254000" />
       <workItem from="1738319327355" duration="5000" />
       <workItem from="1738548071434" duration="13294000" />
-    </task>
-    <task id="LOCAL-00037" summary="libclang">
-      <option name="closed" value="true" />
-      <created>1736558662864</created>
-      <option name="number" value="00037" />
-      <option name="presentableId" value="LOCAL-00037" />
-      <option name="project" value="LOCAL" />
-      <updated>1736558662864</updated>
     </task>
     <task id="LOCAL-00038" summary="libclang dev">
       <option name="closed" value="true" />
@@ -567,7 +556,15 @@
       <option name="project" value="LOCAL" />
       <updated>1738794489281</updated>
     </task>
-    <option name="localTasksCounter" value="86" />
+    <task id="LOCAL-00086" summary="removed fetch build">
+      <option name="closed" value="true" />
+      <created>1738795407355</created>
+      <option name="number" value="00086" />
+      <option name="presentableId" value="LOCAL-00086" />
+      <option name="project" value="LOCAL" />
+      <updated>1738795407355</updated>
+    </task>
+    <option name="localTasksCounter" value="87" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -585,7 +582,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="missed command delimiters" />
     <MESSAGE value="fixed it" />
     <MESSAGE value="glob copy" />
     <MESSAGE value="updated docker" />
@@ -610,6 +606,7 @@
     <MESSAGE value="redirection" />
     <MESSAGE value="no panic" />
     <MESSAGE value="no panic handler" />
-    <option name="LAST_COMMIT_MESSAGE" value="no panic handler" />
+    <MESSAGE value="removed fetch build" />
+    <option name="LAST_COMMIT_MESSAGE" value="removed fetch build" />
   </component>
 </project>
