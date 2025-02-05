@@ -8,7 +8,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="750a0656-4394-404c-8d18-871d64c01604" name="Changes" comment="glob copy">
+      <change afterPath="$PROJECT_DIR$/cgroup-skb-egress/src/lookuptable.rs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cgroup-skb-egress/Cargo.toml" beforeDir="false" afterPath="$PROJECT_DIR$/cgroup-skb-egress/Cargo.toml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cgroup-skb-egress/src/ebpf-lifecycle.rs" beforeDir="false" afterPath="$PROJECT_DIR$/cgroup-skb-egress/src/ebpf-lifecycle.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cgroup-skb-egress/src/main.rs" beforeDir="false" afterPath="$PROJECT_DIR$/cgroup-skb-egress/src/main.rs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mandlebot.Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/mandlebot.Dockerfile" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />

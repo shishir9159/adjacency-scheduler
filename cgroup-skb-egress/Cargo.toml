@@ -29,13 +29,11 @@ tracing = "0.1.41"
 serde = { version = "1.0.216", features = ["derive"] }
 serde_json = "1.0.134"
 reqwest = { version = "0.11", features = ["json"] }
-prost-types = "0.13.4"
+prost-types = { version = "0.13.4" }
 tonic = "0.12.3"
 dirs = "6.0.0"
 hyper-util = "0.1.10"
 tower = "0.5.2"
-
-
 
 [build-dependencies]
 aya-build = { git = "https://github.com/aya-rs/aya" }

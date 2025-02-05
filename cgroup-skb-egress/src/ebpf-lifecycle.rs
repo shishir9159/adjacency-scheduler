@@ -1,4 +1,6 @@
 mod inspect;
+mod lookuptable;
+
 use std::net::Ipv4Addr;
 use aya::{
     maps::{perf::AsyncPerfEventArray, HashMap},
