@@ -18,7 +18,7 @@ RUN cargo install bpf-linker bindgen-cli cargo-generate
 # cgroup-skb-egress*/src/main.rs
 COPY --parents Cargo.toml Cargo.lock cgroup-skb-egress*/Cargo.* xtask ./
 
-RUN mkdir -p cgroup-skb-egress*/src && main=$"#[panic_handler]\nfn main() {}" && echo "$main" | tee cgroup-skb-egress*/src/main.rs
+RUN touch cgroup-skb-egress*/src/main.rs
 RUN main=$"" && echo "$main" | tee cgroup-skb-egress-common/src/lib.rs
 
 # Build the dependencies without the actual source code to cache dependencies separately
