@@ -19,7 +19,7 @@ COPY --parents Cargo.toml Cargo.lock cgroup-skb-egress*/Cargo.* cgroup-skb-egres
 
 RUN find . -type d -name "cgroup-skb-egress*" -exec mkdir -p {}/src \;
 RUN main=$"#[panic_handler]\nfn main() {}" && echo "$main" | tee cgroup-skb-egress*/src/main.rs
-RUN main=$"#[panic_handler]\nfn main() {}" && echo "$main" | tee cgroup-skb-egress-common/src/lib.rs # I will fix you
+RUN echo "#[panic_handler]\nfn main() {}" > cgroup-skb-egress-common/src/lib.rs # I will fix you
 
 # Build the dependen    cies without the actual source code to cache dependencies separately
 # RUN cargo fetch
