@@ -4,7 +4,9 @@ LABEL authors="carmack"
 
 WORKDIR /app
 
-RUN set -x && rm -f /etc/apt/apt.conf.d/docker-clean && apt-get update && apt-get install -y \
+RUN --mount=target=/var/lib/apt/lists,type=cache,sharing=locked \
+    --mount=target=/var/cache/apt/,type=cache,sharing=locked \
+    set -x && rm -f /etc/apt/apt.conf.d/docker-clean && apt-get update && apt-get install -y \
     bpftool bpfcc-tools ca-certificates curl libbpfcc clang pkg-config linux-headers-6.1.0-28-amd64  && \
     rm -rf /var/lib/apt/lists/*
 
