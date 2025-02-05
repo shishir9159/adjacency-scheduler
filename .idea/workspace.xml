@@ -7,7 +7,10 @@
     <cargoProject FILE="$PROJECT_DIR$/Cargo.toml" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="750a0656-4394-404c-8d18-871d64c01604" name="Changes" comment="fastest rust docker build from BD" />
+    <list default="true" id="750a0656-4394-404c-8d18-871d64c01604" name="Changes" comment="echoed tcp back from ether to ether">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mandlebot.Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/mandlebot.Dockerfile" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -168,22 +171,6 @@
       <workItem from="1738220660357" duration="4254000" />
       <workItem from="1738319327355" duration="5000" />
       <workItem from="1738548071434" duration="13294000" />
-    </task>
-    <task id="LOCAL-00023" summary="env of PATH">
-      <option name="closed" value="true" />
-      <created>1736507690281</created>
-      <option name="number" value="00023" />
-      <option name="presentableId" value="LOCAL-00023" />
-      <option name="project" value="LOCAL" />
-      <updated>1736507690281</updated>
-    </task>
-    <task id="LOCAL-00024" summary="home of PATH">
-      <option name="closed" value="true" />
-      <created>1736517254031</created>
-      <option name="number" value="00024" />
-      <option name="presentableId" value="LOCAL-00024" />
-      <option name="project" value="LOCAL" />
-      <updated>1736517254031</updated>
     </task>
     <task id="LOCAL-00025" summary="dilemma">
       <option name="closed" value="true" />
@@ -561,7 +548,23 @@
       <option name="project" value="LOCAL" />
       <updated>1738762839400</updated>
     </task>
-    <option name="localTasksCounter" value="72" />
+    <task id="LOCAL-00072" summary="echoed tcp from ether to ether">
+      <option name="closed" value="true" />
+      <created>1738763401825</created>
+      <option name="number" value="00072" />
+      <option name="presentableId" value="LOCAL-00072" />
+      <option name="project" value="LOCAL" />
+      <updated>1738763401825</updated>
+    </task>
+    <task id="LOCAL-00073" summary="echoed tcp back from ether to ether">
+      <option name="closed" value="true" />
+      <created>1738763602061</created>
+      <option name="number" value="00073" />
+      <option name="presentableId" value="LOCAL-00073" />
+      <option name="project" value="LOCAL" />
+      <updated>1738763602061</updated>
+    </task>
+    <option name="localTasksCounter" value="74" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -579,8 +582,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="listing containers, but it is a wrong design choice. Listing should be done with containerd or cri-api by namespace" />
-    <MESSAGE value="typo in the Dockerfile" />
     <MESSAGE value="switched to clang-dev" />
     <MESSAGE value="updated producer and consumer, middleware's work is still in progress" />
     <MESSAGE value="adding old files from the server to github" />
@@ -604,6 +605,8 @@
     <MESSAGE value="empty file" />
     <MESSAGE value="touch empty file" />
     <MESSAGE value="fastest rust docker build from BD" />
-    <option name="LAST_COMMIT_MESSAGE" value="fastest rust docker build from BD" />
+    <MESSAGE value="echoed tcp from ether to ether" />
+    <MESSAGE value="echoed tcp back from ether to ether" />
+    <option name="LAST_COMMIT_MESSAGE" value="echoed tcp back from ether to ether" />
   </component>
 </project>
