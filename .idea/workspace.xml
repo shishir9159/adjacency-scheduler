@@ -7,8 +7,8 @@
     <cargoProject FILE="$PROJECT_DIR$/Cargo.toml" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="750a0656-4394-404c-8d18-871d64c01604" name="Changes" comment="&amp;&amp; doesn't work with exec">
-      <change beforePath="$PROJECT_DIR$/mandlebot.Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/mandlebot.Dockerfile" afterDir="false" />
+    <list default="true" id="750a0656-4394-404c-8d18-871d64c01604" name="Changes" comment="disected">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -170,14 +170,6 @@
       <workItem from="1738220660357" duration="4254000" />
       <workItem from="1738319327355" duration="5000" />
       <workItem from="1738548071434" duration="13294000" />
-    </task>
-    <task id="LOCAL-00029" summary="changing shell arguments">
-      <option name="closed" value="true" />
-      <created>1736549209455</created>
-      <option name="number" value="00029" />
-      <option name="presentableId" value="LOCAL-00029" />
-      <option name="project" value="LOCAL" />
-      <updated>1736549209455</updated>
     </task>
     <task id="LOCAL-00030" summary="image verseion">
       <option name="closed" value="true" />
@@ -563,7 +555,15 @@
       <option name="project" value="LOCAL" />
       <updated>1738790230414</updated>
     </task>
-    <option name="localTasksCounter" value="78" />
+    <task id="LOCAL-00078" summary="disected">
+      <option name="closed" value="true" />
+      <created>1738790448855</created>
+      <option name="number" value="00078" />
+      <option name="presentableId" value="LOCAL-00078" />
+      <option name="project" value="LOCAL" />
+      <updated>1738790448855</updated>
+    </task>
+    <option name="localTasksCounter" value="79" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -581,7 +581,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="restructuring" />
     <MESSAGE value="faster iteration dockerfile" />
     <MESSAGE value="disabled ebpf bytecode compilation for a bit" />
     <MESSAGE value="removed all part of eBPF programs" />
@@ -606,6 +605,7 @@
     <MESSAGE value="cgroup-skb-egress*/src/main.rs" />
     <MESSAGE value="find and exec mkdir cgroup-skb-egress*/src/main.rs" />
     <MESSAGE value="&amp;&amp; doesn't work with exec" />
-    <option name="LAST_COMMIT_MESSAGE" value="&amp;&amp; doesn't work with exec" />
+    <MESSAGE value="disected" />
+    <option name="LAST_COMMIT_MESSAGE" value="disected" />
   </component>
 </project>
