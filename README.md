@@ -1,5 +1,10 @@
 # adjacency-scheduler
 
+## Assumptions
+not more than four containers per pod
+
+[//]: # (maybe a max config value wouldn't be so bad)
+
 ## Prerequisites
 
 ## Build & Run

@@ -1,12 +1,15 @@
 use anyhow::Context;
 use hyper_util::rt::TokioExecutor;
-use kube::{client::ConfigExt, Api, Client, Config, ResourceExt};
 use k8s_openapi::api::core::v1::Pod;
+use kube::{client::ConfigExt, Api, Client, Config, ResourceExt};
+use kube::api::ObjectList;
+use std::path::Path;
+use serde::Deserialize;
+use smallvec::SmallVec;
+use std::env;
+use std::collections::HashMap;
 use tower::BoxError;
 use tracing::*;
-use serde::Deserialize;
-use std::env;
-use kube::api::ObjectList;
 
 #[tokio::main]
 async fn main() -> anyhow::Result<()> {
@@ -29,6 +32,7 @@ async fn main() -> anyhow::Result<()> {
     info!("Using namespace: {}", namespace);
 
     let pods: Api<Pod> = Api::namespaced(client, &namespace);
+    let mut map: HashMap<String, SmallVec<[String; 4]>> = HashMap::new();
 
     // let list:ObjectList<Pod>;
     match pods.list(&Default::default()).await {
@@ -38,11 +42,18 @@ async fn main() -> anyhow::Result<()> {
                 info!("Pod name: {}", pod.name_any());
                 if let Some(status) = pod.status {
                     if let Some(container_statuses) = status.container_statuses {
+                        let mut container_id_list: SmallVec<[String; 4]>;
                         for container in container_statuses {
                             if let Some(container_id) = container.container_id {
-                                println!("Container ID: {}", container_id);
+                                // println!("Container ID: {}", container_id);
+                                //  remove containerd:// from the string
+                                container_id_list.push(container_id.
+                                    strip_prefix("containerd://").
+                                    map(|s| s.to_string()).
+                                    unwrap_or(container_id));
                             }
                         }
+                        // map.insert(pod.name_any(), container_id_list)
                     }
                 }
             }
@@ -52,6 +63,7 @@ async fn main() -> anyhow::Result<()> {
         }
     }
 
+    println!("{:?}", map);
     // for pod in list {
         // if let Some(pod) = pods.get(pod).await.ok() {
         //     if let Some(status) = pod.status {
