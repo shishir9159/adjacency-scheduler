@@ -30,34 +30,43 @@ async fn main() -> anyhow::Result<()> {
 
     let pods: Api<Pod> = Api::namespaced(client, &namespace);
 
-    let list:ObjectList<Pod>;
+    // let list:ObjectList<Pod>;
     match pods.list(&Default::default()).await {
         Ok(pod_list) => {
-            list = pod_list;
-            // for pod in list {
-            //     info!("Pod name: {}", pod.name_any());
-            // }
+            // list = pod_list;
+            for pod in pod_list {
+                info!("Pod name: {}", pod.name_any());
+                if let Some(status) = pod.status {
+                    if let Some(container_statuses) = status.container_statuses {
+                        for container in container_statuses {
+                            if let Some(container_id) = container.container_id {
+                                println!("Container ID: {}", container_id);
+                            }
+                        }
+                    }
+                }
+            }
         }
         Err(err) => {
             error!("Failed to list pods: {:#?}", err);
         }
     }
 
-    for pod in list {
+    // for pod in list {
         // if let Some(pod) = pods.get(pod).await.ok() {
-            if let Some(status) = pod.status {
-                if let Some(container_statuses) = status.container_statuses {
-                    for container in container_statuses {
-                        if let Some(container_id) = container.container_id {
-                            println!("Container ID: {}", container_id);
-                        }
-                    }
-                }
-            }
+        //     if let Some(status) = pod.status {
+        //         if let Some(container_statuses) = status.container_statuses {
+        //             for container in container_statuses {
+        //                 if let Some(container_id) = container.container_id {
+        //                     println!("Container ID: {}", container_id);
+        //                 }
+        //             }
+        //         }
+        //     }
         // } else {
         // println!("Pod not found");
         // }
-    }
+    // }
 
 
     Ok(())
