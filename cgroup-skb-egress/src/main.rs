@@ -40,5 +40,22 @@ async fn main() -> anyhow::Result<()> {
         }
     }
 
+    for pod in pods {
+        if let Some(pod) = pods.get(pod).await.ok() {
+            if let Some(status) = pod.status {
+                if let Some(container_statuses) = status.container_statuses {
+                    for container in container_statuses {
+                        if let Some(container_id) = container.container_id {
+                            println!("Container ID: {}", container_id);
+                        }
+                    }
+                }
+            }
+        } else {
+        println!("Pod not found");
+        }
+    }
+
+
     Ok(())
 }
