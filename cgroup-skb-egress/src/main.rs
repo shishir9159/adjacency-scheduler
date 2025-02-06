@@ -6,6 +6,7 @@ use tower::BoxError;
 use tracing::*;
 use serde::Deserialize;
 use std::env;
+use kube::api::ObjectList;
 
 #[tokio::main]
 async fn main() -> anyhow::Result<()> {
@@ -29,19 +30,21 @@ async fn main() -> anyhow::Result<()> {
 
     let pods: Api<Pod> = Api::namespaced(client, &namespace);
 
+    let list:ObjectList<Pod>;
     match pods.list(&Default::default()).await {
         Ok(pod_list) => {
-            for pod in pod_list {
-                info!("Pod name: {}", pod.name_any());
-            }
+            list = pod_list;
+            // for pod in list {
+            //     info!("Pod name: {}", pod.name_any());
+            // }
         }
         Err(err) => {
             error!("Failed to list pods: {:#?}", err);
         }
     }
 
-    for pod in pods {
-        if let Some(pod) = pods.get(pod).await.ok() {
+    for pod in list {
+        // if let Some(pod) = pods.get(pod).await.ok() {
             if let Some(status) = pod.status {
                 if let Some(container_statuses) = status.container_statuses {
                     for container in container_statuses {
@@ -51,9 +54,9 @@ async fn main() -> anyhow::Result<()> {
                     }
                 }
             }
-        } else {
-        println!("Pod not found");
-        }
+        // } else {
+        // println!("Pod not found");
+        // }
     }
 
 
