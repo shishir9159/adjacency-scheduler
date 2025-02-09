@@ -7,11 +7,9 @@
     <cargoProject FILE="$PROJECT_DIR$/Cargo.toml" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="750a0656-4394-404c-8d18-871d64c01604" name="Changes" comment="broken state">
+    <list default="true" id="750a0656-4394-404c-8d18-871d64c01604" name="Changes" comment="small fix">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cgroup-skb-egress/Cargo.toml" beforeDir="false" afterPath="$PROJECT_DIR$/cgroup-skb-egress/Cargo.toml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cgroup-skb-egress/src/main.rs" beforeDir="false" afterPath="$PROJECT_DIR$/cgroup-skb-egress/src/main.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -174,15 +172,8 @@
       <workItem from="1738319327355" duration="5000" />
       <workItem from="1738548071434" duration="13294000" />
       <workItem from="1738803191175" duration="2085000" />
-      <workItem from="1738806016064" duration="2683000" />
-    </task>
-    <task id="LOCAL-00042" summary="cargo run">
-      <option name="closed" value="true" />
-      <created>1736629743110</created>
-      <option name="number" value="00042" />
-      <option name="presentableId" value="LOCAL-00042" />
-      <option name="project" value="LOCAL" />
-      <updated>1736629743110</updated>
+      <workItem from="1738806016064" duration="4015000" />
+      <workItem from="1738828814588" duration="9625000" />
     </task>
     <task id="LOCAL-00043" summary="fixing cloudfront">
       <option name="closed" value="true" />
@@ -568,7 +559,15 @@
       <option name="project" value="LOCAL" />
       <updated>1738802490171</updated>
     </task>
-    <option name="localTasksCounter" value="91" />
+    <task id="LOCAL-00091" summary="small fix">
+      <option name="closed" value="true" />
+      <created>1738826891091</created>
+      <option name="number" value="00091" />
+      <option name="presentableId" value="LOCAL-00091" />
+      <option name="project" value="LOCAL" />
+      <updated>1738826891091</updated>
+    </task>
+    <option name="localTasksCounter" value="92" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -586,7 +585,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="fetch-docker-build" />
     <MESSAGE value="ignore lib" />
     <MESSAGE value="empty file" />
     <MESSAGE value="touch empty file" />
@@ -611,6 +609,7 @@
     <MESSAGE value="fist fighting" />
     <MESSAGE value="listing container_id" />
     <MESSAGE value="broken state" />
-    <option name="LAST_COMMIT_MESSAGE" value="broken state" />
+    <MESSAGE value="small fix" />
+    <option name="LAST_COMMIT_MESSAGE" value="small fix" />
   </component>
 </project>
