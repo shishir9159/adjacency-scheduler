@@ -897,9 +897,8 @@
     </cargoProject>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="750a0656-4394-404c-8d18-871d64c01604" name="Changes" comment="build fixed">
+    <list default="true" id="750a0656-4394-404c-8d18-871d64c01604" name="Changes" comment="updating lib rs to main">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cgroup-skb-egress/Cargo.toml" beforeDir="false" afterPath="$PROJECT_DIR$/cgroup-skb-egress/Cargo.toml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -1067,15 +1066,7 @@
       <workItem from="1738828814588" duration="9625000" />
       <workItem from="1744355473602" duration="1294000" />
       <workItem from="1744358535310" duration="706000" />
-      <workItem from="1744410794240" duration="1193000" />
-    </task>
-    <task id="LOCAL-00044" summary="os error file not found">
-      <option name="closed" value="true" />
-      <created>1736632666987</created>
-      <option name="number" value="00044" />
-      <option name="presentableId" value="LOCAL-00044" />
-      <option name="project" value="LOCAL" />
-      <updated>1736632666987</updated>
+      <workItem from="1744410794240" duration="2629000" />
     </task>
     <task id="LOCAL-00045" summary="listing containers, but it is a wrong design choice. Listing should be done with containerd or cri-api by namespace">
       <option name="closed" value="true" />
@@ -1461,7 +1452,15 @@
       <option name="project" value="LOCAL" />
       <updated>1744411482293</updated>
     </task>
-    <option name="localTasksCounter" value="93" />
+    <task id="LOCAL-00093" summary="updating lib rs to main">
+      <option name="closed" value="true" />
+      <created>1744412184565</created>
+      <option name="number" value="00093" />
+      <option name="presentableId" value="LOCAL-00093" />
+      <option name="project" value="LOCAL" />
+      <updated>1744412184565</updated>
+    </task>
+    <option name="localTasksCounter" value="94" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1479,7 +1478,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="empty file" />
     <MESSAGE value="touch empty file" />
     <MESSAGE value="fastest rust docker build from BD" />
     <MESSAGE value="echoed tcp from ether to ether" />
@@ -1504,6 +1502,7 @@
     <MESSAGE value="broken state" />
     <MESSAGE value="small fix" />
     <MESSAGE value="build fixed" />
-    <option name="LAST_COMMIT_MESSAGE" value="build fixed" />
+    <MESSAGE value="updating lib rs to main" />
+    <option name="LAST_COMMIT_MESSAGE" value="updating lib rs to main" />
   </component>
 </project>
