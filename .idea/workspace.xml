@@ -897,7 +897,7 @@
     </cargoProject>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="750a0656-4394-404c-8d18-871d64c01604" name="Changes" comment="removed priority class">
+    <list default="true" id="750a0656-4394-404c-8d18-871d64c01604" name="Changes" comment="updated permission">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/manifests/node-ping-config.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/manifests/node-ping-config.yaml" afterDir="false" />
     </list>
@@ -1070,15 +1070,7 @@
       <workItem from="1744358535310" duration="706000" />
       <workItem from="1744410794240" duration="3781000" />
       <workItem from="1744419190322" duration="12887000" />
-      <workItem from="1744450691763" duration="1736000" />
-    </task>
-    <task id="LOCAL-00071" summary="fastest rust docker build from BD">
-      <option name="closed" value="true" />
-      <created>1738762839400</created>
-      <option name="number" value="00071" />
-      <option name="presentableId" value="LOCAL-00071" />
-      <option name="project" value="LOCAL" />
-      <updated>1738762839400</updated>
+      <workItem from="1744450691763" duration="2381000" />
     </task>
     <task id="LOCAL-00072" summary="echoed tcp from ether to ether">
       <option name="closed" value="true" />
@@ -1464,7 +1456,15 @@
       <option name="project" value="LOCAL" />
       <updated>1744451821062</updated>
     </task>
-    <option name="localTasksCounter" value="120" />
+    <task id="LOCAL-00120" summary="updated permission">
+      <option name="closed" value="true" />
+      <created>1744452499341</created>
+      <option name="number" value="00120" />
+      <option name="presentableId" value="LOCAL-00120" />
+      <option name="project" value="LOCAL" />
+      <updated>1744452499341</updated>
+    </task>
+    <option name="localTasksCounter" value="121" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1485,7 +1485,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="updated initialization" />
     <MESSAGE value="refactoring code organization" />
     <MESSAGE value="removing unnecessary modules" />
     <MESSAGE value="rhel8 specific ip header" />
@@ -1510,6 +1509,7 @@
     <MESSAGE value="added toleartions" />
     <MESSAGE value="added serviceaccount" />
     <MESSAGE value="removed priority class" />
-    <option name="LAST_COMMIT_MESSAGE" value="removed priority class" />
+    <MESSAGE value="updated permission" />
+    <option name="LAST_COMMIT_MESSAGE" value="updated permission" />
   </component>
 </project>
