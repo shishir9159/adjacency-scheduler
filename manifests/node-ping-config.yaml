@@ -119,6 +119,7 @@ spec:
       labels:
         app: prometheus-server
     spec:
+      serviceAccountName: kapetanios
       containers:
         - name: prometheus
           image: prom/prometheus
