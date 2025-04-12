@@ -897,7 +897,7 @@
     </cargoProject>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="750a0656-4394-404c-8d18-871d64c01604" name="Changes" comment="updated namespace">
+    <list default="true" id="750a0656-4394-404c-8d18-871d64c01604" name="Changes" comment="updated daemonset resource type">
       <change beforePath="$PROJECT_DIR$/manifests/node-ping-config.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/manifests/node-ping-config.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -1069,15 +1069,7 @@
       <workItem from="1744358535310" duration="706000" />
       <workItem from="1744410794240" duration="3781000" />
       <workItem from="1744419190322" duration="12887000" />
-      <workItem from="1744450691763" duration="156000" />
-    </task>
-    <task id="LOCAL-00065" summary="removed copying before apt">
-      <option name="closed" value="true" />
-      <created>1738760208394</created>
-      <option name="number" value="00065" />
-      <option name="presentableId" value="LOCAL-00065" />
-      <option name="project" value="LOCAL" />
-      <updated>1738760208394</updated>
+      <workItem from="1744450691763" duration="220000" />
     </task>
     <task id="LOCAL-00066" summary="/var/lib/apt/lists mounted in the dockerfile">
       <option name="closed" value="true" />
@@ -1463,7 +1455,15 @@
       <option name="project" value="LOCAL" />
       <updated>1744450790578</updated>
     </task>
-    <option name="localTasksCounter" value="114" />
+    <task id="LOCAL-00114" summary="updated daemonset resource type">
+      <option name="closed" value="true" />
+      <created>1744450860427</created>
+      <option name="number" value="00114" />
+      <option name="presentableId" value="LOCAL-00114" />
+      <option name="project" value="LOCAL" />
+      <updated>1744450860427</updated>
+    </task>
+    <option name="localTasksCounter" value="115" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1484,7 +1484,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="listing container_id" />
     <MESSAGE value="broken state" />
     <MESSAGE value="small fix" />
     <MESSAGE value="build fixed" />
@@ -1509,6 +1508,7 @@
     <MESSAGE value="updated manifest file to be tested" />
     <MESSAGE value="added prometheus" />
     <MESSAGE value="updated namespace" />
-    <option name="LAST_COMMIT_MESSAGE" value="updated namespace" />
+    <MESSAGE value="updated daemonset resource type" />
+    <option name="LAST_COMMIT_MESSAGE" value="updated daemonset resource type" />
   </component>
 </project>

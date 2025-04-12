@@ -50,7 +50,7 @@ spec:
   template:
     metadata:
       labels:
-        name: node-ping
+        app: node-ping
     spec:
       terminationGracePeriodSeconds: 0
       tolerations:
