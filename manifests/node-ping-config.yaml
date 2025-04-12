@@ -8,15 +8,15 @@ data:
     {
       {
         "name": "robi-infra-poc-1",
-        "ip": "10.1.0.14"
+        "ipAddress": "10.1.0.14"
       },
       {
         "name": "robi-infra-poc-2",
-        "ip": "10.1.0.15"
+        "ipAddress": "10.1.0.15"
       }
       {
         "name": "robi-infra-poc-3",
-        "ip": "10.1.0.16"
+        "ipAddress": "10.1.0.16"
       }
     }
 
