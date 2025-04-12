@@ -68,6 +68,7 @@ async fn main() -> Result<(), anyhow::Error> {
                     let data = unsafe { ptr.read_unaligned() };
                     let src_addr = Ipv4Addr::from(data.ipv4_address);
                     info!("LOG: DST {}, ACTION {}", src_addr, data.action);
+                    println!("Counter: {blocklist:?}");
                 }
             }
         });
