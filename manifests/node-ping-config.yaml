@@ -1,4 +1,3 @@
----
 apiVersion: v1
 kind: ConfigMap
 metadata:
@@ -8,3 +7,81 @@ data:
   nodes.json: >
     {{ .Values.nodePing.nodes | toJson }}
 ---
+apiVersion: v1
+kind: ServiceAccount
+metadata:
+  name: node-ping
+  namespace: kube-prometheus
+---
+kind: ClusterRole
+apiVersion: rbac.authorization.k8s.io/v1
+metadata:
+  name: kube-prometheus:node-ping
+rules:
+  - apiGroups: [""]
+    resources: ["nodes"]
+    verbs: ["list"]
+---
+kind: ClusterRoleBinding
+apiVersion: rbac.authorization.k8s.io/v1
+metadata:
+  name: kube-prometheus:kube-node-ping
+subjects:
+  - kind: ServiceAccount
+    name: node-ping
+    namespace: kube-prometheus
+roleRef:
+  apiGroup: rbac.authorization.k8s.io
+  kind: ClusterRole
+  name: kube-prometheus:node-ping
+---
+apiVersion: extensions/v1beta1
+kind: DaemonSet
+metadata:
+  name: node-ping
+  namespace: kube-prometheus
+  labels:
+    tier: monitoring
+    app: node-ping
+    version: v1
+spec:
+  updateStrategy:
+    type: RollingUpdate
+  template:
+    metadata:
+      labels:
+        name: node-ping
+    spec:
+      terminationGracePeriodSeconds: 0
+      tolerations:
+        - operator: "Exists"
+      serviceAccountName: node-ping
+      priorityClassName: cluster-low
+      containers:
+        - resources:
+            requests:
+              cpu: 0.10
+          image: quay.io/klovercloud/etcd-migration:latest
+          imagePullPolicy: Always
+          name: node-ping
+          env:
+            - name: MY_NODE_NAME
+              valueFrom:
+                fieldRef:
+                  fieldPath: spec.nodeName
+            - name: PROMETHEUS_TEXTFILE_DIR
+              value: /node-exporter-textfile/
+            - name: PROMETHEUS_TEXTFILE_PREFIX
+              value: node-ping_
+          volumeMounts:
+            - name: textfile
+              mountPath: /node-exporter-textfile
+            - name: config
+              mountPath: /config
+      volumes:
+        - name: textfile
+          hostPath:
+            path: /var/run/node-exporter-textfile
+        - name: config
+          configMap:
+            name: node-ping-config
