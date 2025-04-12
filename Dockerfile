@@ -22,7 +22,7 @@ RUN main="fn main() {}" && echo "$main" | tee cgroup-skb-egress*/src/main.rs cgr
 #RUN main=$"#[panic_handler]\nfn main() {}" && echo "$main" | tee cgroup-skb-egress*/src/main.rs
 #RUN echo "fn main() {}" > cgroup-skb-egress-common/src/lib.rs # I will fix you
 
-# Build the dependen    cies without the actual source code to cache dependencies separately
+# Build the dependencies without the actual source code to cache dependencies separately
 # RUN cargo fetch
 RUN cargo build --bins
 COPY . .

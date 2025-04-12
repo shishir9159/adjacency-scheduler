@@ -897,9 +897,10 @@
     </cargoProject>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="750a0656-4394-404c-8d18-871d64c01604" name="Changes" comment="refactoring code organization">
+    <list default="true" id="750a0656-4394-404c-8d18-871d64c01604" name="Changes" comment="removing unnecessary modules">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cgroup-skb-egress/src/main.rs" beforeDir="false" afterPath="$PROJECT_DIR$/cgroup-skb-egress/src/main.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cgroup-skb-egress-ebpf/src/main.rs" beforeDir="false" afterPath="$PROJECT_DIR$/cgroup-skb-egress-ebpf/src/main.rs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -1069,15 +1070,7 @@
       <workItem from="1744355473602" duration="1294000" />
       <workItem from="1744358535310" duration="706000" />
       <workItem from="1744410794240" duration="3781000" />
-      <workItem from="1744419190322" duration="2188000" />
-    </task>
-    <task id="LOCAL-00048" summary="updated producer and consumer, middleware's work is still in progress">
-      <option name="closed" value="true" />
-      <created>1737546151129</created>
-      <option name="number" value="00048" />
-      <option name="presentableId" value="LOCAL-00048" />
-      <option name="project" value="LOCAL" />
-      <updated>1737546151129</updated>
+      <workItem from="1744419190322" duration="4591000" />
     </task>
     <task id="LOCAL-00049" summary="adding old files from the server to github">
       <option name="closed" value="true" />
@@ -1463,7 +1456,15 @@
       <option name="project" value="LOCAL" />
       <updated>1744420939414</updated>
     </task>
-    <option name="localTasksCounter" value="97" />
+    <task id="LOCAL-00097" summary="removing unnecessary modules">
+      <option name="closed" value="true" />
+      <created>1744421668937</created>
+      <option name="number" value="00097" />
+      <option name="presentableId" value="LOCAL-00097" />
+      <option name="project" value="LOCAL" />
+      <updated>1744421668937</updated>
+    </task>
+    <option name="localTasksCounter" value="98" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1481,7 +1482,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="echoed tcp back from ether to ether" />
     <MESSAGE value="common man" />
     <MESSAGE value="cgroup-skb-egress*/src/main.rs" />
     <MESSAGE value="find and exec mkdir cgroup-skb-egress*/src/main.rs" />
@@ -1506,6 +1506,7 @@
     <MESSAGE value="updated xtask binding" />
     <MESSAGE value="updated initialization" />
     <MESSAGE value="refactoring code organization" />
-    <option name="LAST_COMMIT_MESSAGE" value="refactoring code organization" />
+    <MESSAGE value="removing unnecessary modules" />
+    <option name="LAST_COMMIT_MESSAGE" value="removing unnecessary modules" />
   </component>
 </project>

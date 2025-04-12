@@ -42,7 +42,10 @@ fn try_cgroup_skb_egress(ctx: SkBuffContext) -> Result<i32, i64> {
         return Ok(1);
     }
 
-    let destination = u32::from_be(ctx.load(offset_of!(iphdr__bindgen_ty_1__bindgen_ty_1, daddr))?);
+    // need this line to be dynamic
+    // via env value about distros
+    let destination = u32::from_be(ctx.load(offset_of!(iphdr, daddr))?);
+    // let destination = u32::from_be(ctx.load(offset_of!(iphdr__bindgen_ty_1__bindgen_ty_1, daddr))?);
 
     // (3)
     let action = if block_ip(destination) { 0 } else { 1 };
