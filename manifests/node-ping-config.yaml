@@ -62,7 +62,6 @@ spec:
           effect: NoSchedule
       terminationGracePeriodSeconds: 0
       serviceAccountName: node-ping
-      priorityClassName: cluster-low
       containers:
       - image: quay.io/klovercloud/etcd-migration:latest
         imagePullPolicy: Always
