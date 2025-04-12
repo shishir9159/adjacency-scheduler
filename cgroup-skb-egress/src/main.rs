@@ -1,5 +1,5 @@
-mod inspect;
-mod lookuptable;
+// mod inspect;
+// mod lookuptable;
 
 use std::net::Ipv4Addr;
 use aya::{
@@ -37,9 +37,7 @@ async fn main() -> Result<(), anyhow::Error> {
     let program: &mut CgroupSkb =
         bpf.program_mut("cgroup_skb_egress").unwrap().try_into()?;
     let cgroup = std::fs::File::open(opt.cgroup_path)?;
-    // (1)
     program.load()?;
-    // (2)
     program.attach(
         cgroup,
         CgroupSkbAttachType::Egress,
@@ -50,8 +48,6 @@ async fn main() -> Result<(), anyhow::Error> {
         HashMap::try_from(bpf.map_mut("BLOCKLIST").unwrap())?;
 
     let block_addr: u32 = Ipv4Addr::new(1, 1, 1, 1).into();
-
-    // (3)
     blocklist.insert(block_addr, 0, 0)?;
 
     let mut perf_array =

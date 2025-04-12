@@ -897,15 +897,8 @@
     </cargoProject>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="750a0656-4394-404c-8d18-871d64c01604" name="Changes" comment="updated initialization">
-      <change afterPath="$PROJECT_DIR$/orchestrator/Cargo.toml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/orchestrator/build.rs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/orchestrator/src/containers_id.rs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/orchestrator/src/inspect.rs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/orchestrator/src/lookuptable.rs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/orchestrator/src/main.rs" afterDir="false" />
+    <list default="true" id="750a0656-4394-404c-8d18-871d64c01604" name="Changes" comment="refactoring code organization">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cgroup-skb-egress/src/ebpf-lifecycle.rs" beforeDir="false" afterPath="$PROJECT_DIR$/cgroup-skb-egress/src/ebpf-lifecycle.rs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cgroup-skb-egress/src/main.rs" beforeDir="false" afterPath="$PROJECT_DIR$/cgroup-skb-egress/src/main.rs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -1076,15 +1069,7 @@
       <workItem from="1744355473602" duration="1294000" />
       <workItem from="1744358535310" duration="706000" />
       <workItem from="1744410794240" duration="3781000" />
-      <workItem from="1744419190322" duration="1447000" />
-    </task>
-    <task id="LOCAL-00047" summary="switched to clang-dev">
-      <option name="closed" value="true" />
-      <created>1736893254619</created>
-      <option name="number" value="00047" />
-      <option name="presentableId" value="LOCAL-00047" />
-      <option name="project" value="LOCAL" />
-      <updated>1736893254619</updated>
+      <workItem from="1744419190322" duration="2188000" />
     </task>
     <task id="LOCAL-00048" summary="updated producer and consumer, middleware's work is still in progress">
       <option name="closed" value="true" />
@@ -1470,7 +1455,15 @@
       <option name="project" value="LOCAL" />
       <updated>1744419351902</updated>
     </task>
-    <option name="localTasksCounter" value="96" />
+    <task id="LOCAL-00096" summary="refactoring code organization">
+      <option name="closed" value="true" />
+      <created>1744420939414</created>
+      <option name="number" value="00096" />
+      <option name="presentableId" value="LOCAL-00096" />
+      <option name="project" value="LOCAL" />
+      <updated>1744420939414</updated>
+    </task>
+    <option name="localTasksCounter" value="97" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1488,7 +1481,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="echoed tcp from ether to ether" />
     <MESSAGE value="echoed tcp back from ether to ether" />
     <MESSAGE value="common man" />
     <MESSAGE value="cgroup-skb-egress*/src/main.rs" />
@@ -1513,6 +1505,7 @@
     <MESSAGE value="updating lib rs to main" />
     <MESSAGE value="updated xtask binding" />
     <MESSAGE value="updated initialization" />
-    <option name="LAST_COMMIT_MESSAGE" value="updated initialization" />
+    <MESSAGE value="refactoring code organization" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactoring code organization" />
   </component>
 </project>
