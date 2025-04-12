@@ -897,8 +897,7 @@
     </cargoProject>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="750a0656-4394-404c-8d18-871d64c01604" name="Changes" comment="added prometheus">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="750a0656-4394-404c-8d18-871d64c01604" name="Changes" comment="updated namespace">
       <change beforePath="$PROJECT_DIR$/manifests/node-ping-config.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/manifests/node-ping-config.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -1070,15 +1069,7 @@
       <workItem from="1744358535310" duration="706000" />
       <workItem from="1744410794240" duration="3781000" />
       <workItem from="1744419190322" duration="12887000" />
-      <workItem from="1744450691763" duration="89000" />
-    </task>
-    <task id="LOCAL-00064" summary="removed copying before apt">
-      <option name="closed" value="true" />
-      <created>1738757061440</created>
-      <option name="number" value="00064" />
-      <option name="presentableId" value="LOCAL-00064" />
-      <option name="project" value="LOCAL" />
-      <updated>1738757061440</updated>
+      <workItem from="1744450691763" duration="156000" />
     </task>
     <task id="LOCAL-00065" summary="removed copying before apt">
       <option name="closed" value="true" />
@@ -1464,7 +1455,15 @@
       <option name="project" value="LOCAL" />
       <updated>1744447037055</updated>
     </task>
-    <option name="localTasksCounter" value="113" />
+    <task id="LOCAL-00113" summary="updated namespace">
+      <option name="closed" value="true" />
+      <created>1744450790578</created>
+      <option name="number" value="00113" />
+      <option name="presentableId" value="LOCAL-00113" />
+      <option name="project" value="LOCAL" />
+      <updated>1744450790578</updated>
+    </task>
+    <option name="localTasksCounter" value="114" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1485,7 +1484,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="fist fighting" />
     <MESSAGE value="listing container_id" />
     <MESSAGE value="broken state" />
     <MESSAGE value="small fix" />
@@ -1510,6 +1508,7 @@
     <MESSAGE value="updated base image tag" />
     <MESSAGE value="updated manifest file to be tested" />
     <MESSAGE value="added prometheus" />
-    <option name="LAST_COMMIT_MESSAGE" value="added prometheus" />
+    <MESSAGE value="updated namespace" />
+    <option name="LAST_COMMIT_MESSAGE" value="updated namespace" />
   </component>
 </project>

@@ -35,7 +35,7 @@ roleRef:
   kind: ClusterRole
   name: kube-prometheus:node-ping
 ---
-apiVersion: extensions/v1beta1
+apiVersion: apps/v1
 kind: DaemonSet
 metadata:
   name: node-ping
