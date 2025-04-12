@@ -6,7 +6,7 @@ metadata:
 data:
   nodes.json: |
     {
-      {
+      [{
         "name": "robi-infra-poc-1",
         "ipAddress": "10.1.0.14"
       },
@@ -17,11 +17,8 @@ data:
       {
         "name": "robi-infra-poc-3",
         "ipAddress": "10.1.0.16"
-      }
+      }]
     }
-
-#  nodes.json: >
-#    {{ .Values.nodePing.nodes | toJson }}
 ---
 apiVersion: v1
 kind: ServiceAccount
