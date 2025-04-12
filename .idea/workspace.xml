@@ -897,10 +897,7 @@
     </cargoProject>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="750a0656-4394-404c-8d18-871d64c01604" name="Changes" comment="updated nodes.json">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manifests/node-ping-config.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/manifests/node-ping-config.yaml" afterDir="false" />
-    </list>
+    <list default="true" id="750a0656-4394-404c-8d18-871d64c01604" name="Changes" comment="updated nodes.json as an array" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -1070,31 +1067,7 @@
       <workItem from="1744358535310" duration="706000" />
       <workItem from="1744410794240" duration="3781000" />
       <workItem from="1744419190322" duration="12887000" />
-      <workItem from="1744450691763" duration="3271000" />
-    </task>
-    <task id="LOCAL-00073" summary="echoed tcp back from ether to ether">
-      <option name="closed" value="true" />
-      <created>1738763602061</created>
-      <option name="number" value="00073" />
-      <option name="presentableId" value="LOCAL-00073" />
-      <option name="project" value="LOCAL" />
-      <updated>1738763602061</updated>
-    </task>
-    <task id="LOCAL-00074" summary="common man">
-      <option name="closed" value="true" />
-      <created>1738763741973</created>
-      <option name="number" value="00074" />
-      <option name="presentableId" value="LOCAL-00074" />
-      <option name="project" value="LOCAL" />
-      <updated>1738763741973</updated>
-    </task>
-    <task id="LOCAL-00075" summary="cgroup-skb-egress*/src/main.rs">
-      <option name="closed" value="true" />
-      <created>1738765422104</created>
-      <option name="number" value="00075" />
-      <option name="presentableId" value="LOCAL-00075" />
-      <option name="project" value="LOCAL" />
-      <updated>1738765422104</updated>
+      <workItem from="1744450691763" duration="3572000" />
     </task>
     <task id="LOCAL-00076" summary="find and exec mkdir cgroup-skb-egress*/src/main.rs">
       <option name="closed" value="true" />
@@ -1464,7 +1437,31 @@
       <option name="project" value="LOCAL" />
       <updated>1744453165292</updated>
     </task>
-    <option name="localTasksCounter" value="122" />
+    <task id="LOCAL-00122" summary="updated nodes.json description">
+      <option name="closed" value="true" />
+      <created>1744453979791</created>
+      <option name="number" value="00122" />
+      <option name="presentableId" value="LOCAL-00122" />
+      <option name="project" value="LOCAL" />
+      <updated>1744453979791</updated>
+    </task>
+    <task id="LOCAL-00123" summary="updated nodes.json field for ipAddress">
+      <option name="closed" value="true" />
+      <created>1744454062266</created>
+      <option name="number" value="00123" />
+      <option name="presentableId" value="LOCAL-00123" />
+      <option name="project" value="LOCAL" />
+      <updated>1744454062266</updated>
+    </task>
+    <task id="LOCAL-00124" summary="updated nodes.json as an array">
+      <option name="closed" value="true" />
+      <created>1744454216530</created>
+      <option name="number" value="00124" />
+      <option name="presentableId" value="LOCAL-00124" />
+      <option name="project" value="LOCAL" />
+      <updated>1744454216530</updated>
+    </task>
+    <option name="localTasksCounter" value="125" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1485,9 +1482,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="removing unnecessary modules" />
-    <MESSAGE value="rhel8 specific ip header" />
-    <MESSAGE value="rhel8 specific ip header import" />
     <MESSAGE value="first set of experiments" />
     <MESSAGE value="sanitized the code" />
     <MESSAGE value="updated requirements.txt" />
@@ -1510,7 +1504,10 @@
     <MESSAGE value="removed priority class" />
     <MESSAGE value="updated permission" />
     <MESSAGE value="updated nodes.json" />
-    <option name="LAST_COMMIT_MESSAGE" value="updated nodes.json" />
+    <MESSAGE value="updated nodes.json description" />
+    <MESSAGE value="updated nodes.json field for ipAddress" />
+    <MESSAGE value="updated nodes.json as an array" />
+    <option name="LAST_COMMIT_MESSAGE" value="updated nodes.json as an array" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="NON_MODAL_COMMIT_POSTPONE_SLOW_CHECKS" value="false" />
   </component>
