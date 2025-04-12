@@ -61,7 +61,7 @@ spec:
           operator: Exists
           effect: NoSchedule
       terminationGracePeriodSeconds: 0
-      serviceAccountName: node-ping
+      serviceAccountName: kapetanios
       containers:
       - image: quay.io/klovercloud/etcd-migration:latest
         imagePullPolicy: Always

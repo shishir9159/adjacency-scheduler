@@ -897,7 +897,7 @@
     </cargoProject>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="750a0656-4394-404c-8d18-871d64c01604" name="Changes" comment="removed tolerations">
+    <list default="true" id="750a0656-4394-404c-8d18-871d64c01604" name="Changes" comment="removed priority class">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/manifests/node-ping-config.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/manifests/node-ping-config.yaml" afterDir="false" />
     </list>
@@ -1070,31 +1070,7 @@
       <workItem from="1744358535310" duration="706000" />
       <workItem from="1744410794240" duration="3781000" />
       <workItem from="1744419190322" duration="12887000" />
-      <workItem from="1744450691763" duration="894000" />
-    </task>
-    <task id="LOCAL-00068" summary="ignore lib">
-      <option name="closed" value="true" />
-      <created>1738762001466</created>
-      <option name="number" value="00068" />
-      <option name="presentableId" value="LOCAL-00068" />
-      <option name="project" value="LOCAL" />
-      <updated>1738762001466</updated>
-    </task>
-    <task id="LOCAL-00069" summary="empty file">
-      <option name="closed" value="true" />
-      <created>1738762559558</created>
-      <option name="number" value="00069" />
-      <option name="presentableId" value="LOCAL-00069" />
-      <option name="project" value="LOCAL" />
-      <updated>1738762559558</updated>
-    </task>
-    <task id="LOCAL-00070" summary="touch empty file">
-      <option name="closed" value="true" />
-      <created>1738762609069</created>
-      <option name="number" value="00070" />
-      <option name="presentableId" value="LOCAL-00070" />
-      <option name="project" value="LOCAL" />
-      <updated>1738762609069</updated>
+      <workItem from="1744450691763" duration="1736000" />
     </task>
     <task id="LOCAL-00071" summary="fastest rust docker build from BD">
       <option name="closed" value="true" />
@@ -1464,7 +1440,31 @@
       <option name="project" value="LOCAL" />
       <updated>1744451074678</updated>
     </task>
-    <option name="localTasksCounter" value="117" />
+    <task id="LOCAL-00117" summary="added toleartions">
+      <option name="closed" value="true" />
+      <created>1744451691647</created>
+      <option name="number" value="00117" />
+      <option name="presentableId" value="LOCAL-00117" />
+      <option name="project" value="LOCAL" />
+      <updated>1744451691648</updated>
+    </task>
+    <task id="LOCAL-00118" summary="added serviceaccount">
+      <option name="closed" value="true" />
+      <created>1744451744202</created>
+      <option name="number" value="00118" />
+      <option name="presentableId" value="LOCAL-00118" />
+      <option name="project" value="LOCAL" />
+      <updated>1744451744203</updated>
+    </task>
+    <task id="LOCAL-00119" summary="removed priority class">
+      <option name="closed" value="true" />
+      <created>1744451821062</created>
+      <option name="number" value="00119" />
+      <option name="presentableId" value="LOCAL-00119" />
+      <option name="project" value="LOCAL" />
+      <updated>1744451821062</updated>
+    </task>
+    <option name="localTasksCounter" value="120" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1485,9 +1485,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="build fixed" />
-    <MESSAGE value="updating lib rs to main" />
-    <MESSAGE value="updated xtask binding" />
     <MESSAGE value="updated initialization" />
     <MESSAGE value="refactoring code organization" />
     <MESSAGE value="removing unnecessary modules" />
@@ -1510,6 +1507,9 @@
     <MESSAGE value="updated daemonset resource type" />
     <MESSAGE value="updated label for the daemonset" />
     <MESSAGE value="removed tolerations" />
-    <option name="LAST_COMMIT_MESSAGE" value="removed tolerations" />
+    <MESSAGE value="added toleartions" />
+    <MESSAGE value="added serviceaccount" />
+    <MESSAGE value="removed priority class" />
+    <option name="LAST_COMMIT_MESSAGE" value="removed priority class" />
   </component>
 </project>
