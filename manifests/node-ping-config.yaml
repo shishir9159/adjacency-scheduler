@@ -41,9 +41,7 @@ metadata:
   name: node-ping
   namespace: default
   labels:
-    tier: monitoring
     app: node-ping
-    version: v1
 spec:
   updateStrategy:
     type: RollingUpdate
@@ -53,14 +51,9 @@ spec:
         app: node-ping
     spec:
       terminationGracePeriodSeconds: 0
-      tolerations:
-        - operator: "Exists"
       serviceAccountName: node-ping
       priorityClassName: cluster-low
       containers:
-        - resources:
-            requests:
-              cpu: 0.10
           image: quay.io/klovercloud/etcd-migration:latest
           imagePullPolicy: Always
           name: node-ping
