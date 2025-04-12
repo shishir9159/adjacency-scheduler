@@ -42,7 +42,7 @@ async fn main() -> anyhow::Result<()> {
                 info!("Pod name: {}", pod.name_any());
                 if let Some(status) = pod.status {
                     if let Some(container_statuses) = status.container_statuses {
-                        let mut container_id_list: SmallVec<[String; 4]>;
+                        let mut container_id_list = SmallVec::<[String; 4]>::new();
                         for container in container_statuses {
                             if let Some(container_id) = container.container_id {
                                 // println!("Container ID: {}", container_id);
