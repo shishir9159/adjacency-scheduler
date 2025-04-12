@@ -897,8 +897,8 @@
     </cargoProject>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="750a0656-4394-404c-8d18-871d64c01604" name="Changes" comment="first set of experiments">
-      <change afterPath="$PROJECT_DIR$/manifests/node-ping-config.yaml" afterDir="false" />
+    <list default="true" id="750a0656-4394-404c-8d18-871d64c01604" name="Changes" comment="sanitized the code">
+      <change afterPath="$PROJECT_DIR$/node-ping/requirements.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -1069,15 +1069,7 @@
       <workItem from="1744355473602" duration="1294000" />
       <workItem from="1744358535310" duration="706000" />
       <workItem from="1744410794240" duration="3781000" />
-      <workItem from="1744419190322" duration="9872000" />
-    </task>
-    <task id="LOCAL-00052" summary="faster iteration dockerfile">
-      <option name="closed" value="true" />
-      <created>1738136198307</created>
-      <option name="number" value="00052" />
-      <option name="presentableId" value="LOCAL-00052" />
-      <option name="project" value="LOCAL" />
-      <updated>1738136198307</updated>
+      <workItem from="1744419190322" duration="10375000" />
     </task>
     <task id="LOCAL-00053" summary="disabled ebpf bytecode compilation for a bit">
       <option name="closed" value="true" />
@@ -1463,7 +1455,15 @@
       <option name="project" value="LOCAL" />
       <updated>1744434362224</updated>
     </task>
-    <option name="localTasksCounter" value="101" />
+    <task id="LOCAL-00101" summary="sanitized the code">
+      <option name="closed" value="true" />
+      <created>1744444928038</created>
+      <option name="number" value="00101" />
+      <option name="presentableId" value="LOCAL-00101" />
+      <option name="project" value="LOCAL" />
+      <updated>1744444928038</updated>
+    </task>
+    <option name="localTasksCounter" value="102" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1481,7 +1481,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="&amp;&amp; doesn't work with exec" />
     <MESSAGE value="disected" />
     <MESSAGE value="added ;" />
     <MESSAGE value="made it plural" />
@@ -1506,6 +1505,7 @@
     <MESSAGE value="rhel8 specific ip header" />
     <MESSAGE value="rhel8 specific ip header import" />
     <MESSAGE value="first set of experiments" />
-    <option name="LAST_COMMIT_MESSAGE" value="first set of experiments" />
+    <MESSAGE value="sanitized the code" />
+    <option name="LAST_COMMIT_MESSAGE" value="sanitized the code" />
   </component>
 </project>
