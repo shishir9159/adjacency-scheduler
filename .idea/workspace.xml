@@ -897,7 +897,7 @@
     </cargoProject>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="750a0656-4394-404c-8d18-871d64c01604" name="Changes" comment="updated base image tag">
+    <list default="true" id="750a0656-4394-404c-8d18-871d64c01604" name="Changes" comment="updated manifest file to be tested">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/manifests/node-ping-config.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/manifests/node-ping-config.yaml" afterDir="false" />
     </list>
@@ -1069,15 +1069,7 @@
       <workItem from="1744355473602" duration="1294000" />
       <workItem from="1744358535310" duration="706000" />
       <workItem from="1744410794240" duration="3781000" />
-      <workItem from="1744419190322" duration="11592000" />
-    </task>
-    <task id="LOCAL-00062" summary="updated docker">
-      <option name="closed" value="true" />
-      <created>1738755880919</created>
-      <option name="number" value="00062" />
-      <option name="presentableId" value="LOCAL-00062" />
-      <option name="project" value="LOCAL" />
-      <updated>1738755880919</updated>
+      <workItem from="1744419190322" duration="12292000" />
     </task>
     <task id="LOCAL-00063" summary="file already exists">
       <option name="closed" value="true" />
@@ -1463,7 +1455,15 @@
       <option name="project" value="LOCAL" />
       <updated>1744446064346</updated>
     </task>
-    <option name="localTasksCounter" value="111" />
+    <task id="LOCAL-00111" summary="updated manifest file to be tested">
+      <option name="closed" value="true" />
+      <created>1744446356024</created>
+      <option name="number" value="00111" />
+      <option name="presentableId" value="LOCAL-00111" />
+      <option name="project" value="LOCAL" />
+      <updated>1744446356024</updated>
+    </task>
+    <option name="localTasksCounter" value="112" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1484,7 +1484,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="scrapping container ID from the pods" />
     <MESSAGE value="listed pods" />
     <MESSAGE value="fist fighting" />
     <MESSAGE value="listing container_id" />
@@ -1509,6 +1508,7 @@
     <MESSAGE value="updated work directory" />
     <MESSAGE value="updated alpine base image" />
     <MESSAGE value="updated base image tag" />
-    <option name="LAST_COMMIT_MESSAGE" value="updated base image tag" />
+    <MESSAGE value="updated manifest file to be tested" />
+    <option name="LAST_COMMIT_MESSAGE" value="updated manifest file to be tested" />
   </component>
 </project>
