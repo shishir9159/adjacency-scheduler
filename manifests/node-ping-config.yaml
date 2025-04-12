@@ -13,7 +13,7 @@ data:
       {
         "name": "robi-infra-poc-2",
         "ipAddress": "10.1.0.15"
-      }
+      },
       {
         "name": "robi-infra-poc-3",
         "ipAddress": "10.1.0.16"
