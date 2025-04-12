@@ -43,6 +43,9 @@ metadata:
   labels:
     app: node-ping
 spec:
+  selector:
+    matchLabels:
+      app: node-ping
   updateStrategy:
     type: RollingUpdate
   template:
@@ -50,27 +53,34 @@ spec:
       labels:
         app: node-ping
     spec:
+      tolerations:
+        - key: node-role.kubernetes.io/control-plane
+          operator: Exists
+          effect: NoSchedule
+        - key: node-role.kubernetes.io/master
+          operator: Exists
+          effect: NoSchedule
       terminationGracePeriodSeconds: 0
       serviceAccountName: node-ping
       priorityClassName: cluster-low
       containers:
-          image: quay.io/klovercloud/etcd-migration:latest
-          imagePullPolicy: Always
-          name: node-ping
-          env:
-            - name: MY_NODE_NAME
-              valueFrom:
-                fieldRef:
-                  fieldPath: spec.nodeName
-            - name: PROMETHEUS_TEXTFILE_DIR
-              value: /node-exporter-textfile/
-            - name: PROMETHEUS_TEXTFILE_PREFIX
-              value: node-ping_
-          volumeMounts:
-            - name: textfile
-              mountPath: /node-exporter-textfile
-            - name: config
-              mountPath: /config
+      - image: quay.io/klovercloud/etcd-migration:latest
+        imagePullPolicy: Always
+        name: node-ping
+        env:
+          - name: MY_NODE_NAME
+            valueFrom:
+              fieldRef:
+                fieldPath: spec.nodeName
+          - name: PROMETHEUS_TEXTFILE_DIR
+            value: /node-exporter-textfile/
+          - name: PROMETHEUS_TEXTFILE_PREFIX
+            value: node-ping_
+        volumeMounts:
+          - name: textfile
+            mountPath: /node-exporter-textfile
+          - name: config
+            mountPath: /config
       volumes:
         - name: textfile
           hostPath:
