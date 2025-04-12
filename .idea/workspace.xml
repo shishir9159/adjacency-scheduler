@@ -897,8 +897,15 @@
     </cargoProject>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="750a0656-4394-404c-8d18-871d64c01604" name="Changes" comment="updated xtask binding">
+    <list default="true" id="750a0656-4394-404c-8d18-871d64c01604" name="Changes" comment="updated initialization">
+      <change afterPath="$PROJECT_DIR$/orchestrator/Cargo.toml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/orchestrator/build.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/orchestrator/src/containers_id.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/orchestrator/src/inspect.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/orchestrator/src/lookuptable.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/orchestrator/src/main.rs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cgroup-skb-egress/src/ebpf-lifecycle.rs" beforeDir="false" afterPath="$PROJECT_DIR$/cgroup-skb-egress/src/ebpf-lifecycle.rs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cgroup-skb-egress/src/main.rs" beforeDir="false" afterPath="$PROJECT_DIR$/cgroup-skb-egress/src/main.rs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -953,27 +960,28 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.rust.reset.selective.auto.import&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/carmack/adjacency-scheduler&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;org.rust.cargo.project.model.PROJECT_DISCOVERY&quot;: &quot;true&quot;,
-    &quot;org.rust.cargo.project.model.impl.CargoExternalSystemProjectAware.subscribe.first.balloon&quot;: &quot;&quot;,
-    &quot;org.rust.first.attach.projects&quot;: &quot;true&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;language.rust&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.rust.reset.selective.auto.import": "true",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "/home/carmack/Documents/Projects/adjacency-scheduler/orchestrator",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "org.rust.cargo.project.model.PROJECT_DISCOVERY": "true",
+    "org.rust.cargo.project.model.impl.CargoExternalSystemProjectAware.subscribe.first.balloon": "",
+    "org.rust.first.attach.projects": "true",
+    "settings.editor.selected.configurable": "language.rust",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/orchestrator" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/test/producer" />
       <recent name="$PROJECT_DIR$/test/consumer" />
@@ -1068,15 +1076,7 @@
       <workItem from="1744355473602" duration="1294000" />
       <workItem from="1744358535310" duration="706000" />
       <workItem from="1744410794240" duration="3781000" />
-      <workItem from="1744419190322" duration="140000" />
-    </task>
-    <task id="LOCAL-00046" summary="typo in the Dockerfile">
-      <option name="closed" value="true" />
-      <created>1736893121689</created>
-      <option name="number" value="00046" />
-      <option name="presentableId" value="LOCAL-00046" />
-      <option name="project" value="LOCAL" />
-      <updated>1736893121689</updated>
+      <workItem from="1744419190322" duration="1447000" />
     </task>
     <task id="LOCAL-00047" summary="switched to clang-dev">
       <option name="closed" value="true" />
@@ -1462,7 +1462,15 @@
       <option name="project" value="LOCAL" />
       <updated>1744417077706</updated>
     </task>
-    <option name="localTasksCounter" value="95" />
+    <task id="LOCAL-00095" summary="updated initialization">
+      <option name="closed" value="true" />
+      <created>1744419351902</created>
+      <option name="number" value="00095" />
+      <option name="presentableId" value="LOCAL-00095" />
+      <option name="project" value="LOCAL" />
+      <updated>1744419351902</updated>
+    </task>
+    <option name="localTasksCounter" value="96" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1480,7 +1488,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="fastest rust docker build from BD" />
     <MESSAGE value="echoed tcp from ether to ether" />
     <MESSAGE value="echoed tcp back from ether to ether" />
     <MESSAGE value="common man" />
@@ -1505,6 +1512,7 @@
     <MESSAGE value="build fixed" />
     <MESSAGE value="updating lib rs to main" />
     <MESSAGE value="updated xtask binding" />
-    <option name="LAST_COMMIT_MESSAGE" value="updated xtask binding" />
+    <MESSAGE value="updated initialization" />
+    <option name="LAST_COMMIT_MESSAGE" value="updated initialization" />
   </component>
 </project>

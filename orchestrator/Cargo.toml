@@ -1,0 +1,44 @@
+[package]
+name = "cgroup-skb-egress"
+version = "0.1.0"
+edition = "2021"
+publish = false
+
+[dependencies]
+aya = { git = "https://github.com/aya-rs/aya", features = ["async_tokio"] }
+aya-log = { git = "https://github.com/aya-rs/aya" }
+cgroup-skb-egress-common = { path = "../cgroup-skb-egress-common", features = [
+  "user",
+] }
+anyhow = "1"
+clap = { version = "4.1", features = ["derive"] }
+env_logger = "0.11"
+log = "0.4"
+tokio = { version = "1.25", features = [
+  "macros",
+  "rt",
+  "rt-multi-thread",
+  "net",
+  "signal",
+] }
+bytes = "1"
+kube = { version = "0.98.0", features = ["runtime", "derive"] }
+k8s-openapi = { version = "0.24.0", features = ["latest"] }
+tracing-subscriber = "0.3.19"
+tracing = "0.1.41"
+serde = { version = "1.0.216", features = ["derive"] }
+serde_json = "1.0.134"
+reqwest = { version = "0.11", features = ["json"] }
+prost-types = { version = "0.13.4" }
+tonic = "0.12.3"
+dirs = "6.0.0"
+hyper-util = "0.1.10"
+tower = "0.5.2"
+smallvec = "1.13.2"
+
+[build-dependencies]
+aya-build = { git = "https://github.com/aya-rs/aya" }
+anyhow = "1"
+[[bin]]
+name = "cgroup-skb-egress"
+path = "src/main.rs"

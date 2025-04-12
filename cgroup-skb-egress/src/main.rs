@@ -1,85 +1,85 @@
-use anyhow::Context;
-use hyper_util::rt::TokioExecutor;
-use k8s_openapi::api::core::v1::Pod;
-use kube::{client::ConfigExt, Api, Client, Config, ResourceExt};
-use kube::api::ObjectList;
-use std::path::Path;
-use serde::Deserialize;
-use smallvec::SmallVec;
-use std::env;
-use std::collections::HashMap;
-use tower::BoxError;
-use tracing::*;
+mod inspect;
+mod lookuptable;
+
+use std::net::Ipv4Addr;
+use aya::{
+    maps::{perf::AsyncPerfEventArray, HashMap},
+    programs::{CgroupAttachMode, CgroupSkb, CgroupSkbAttachType},
+    util::online_cpus,
+};
+use bytes::BytesMut;
+use clap::Parser;
+use log::info;
+use tokio::{signal, task};
+
+use cgroup_skb_egress_common::PacketLog;
+
+#[derive(Debug, Parser)]
+struct Opt {
+    //    #[clap(short, long, default_value = "/sys/fs/cgroup/unified")]
+    //    targeting the cgroupv2 containing all kubernetes pod
+    //     todo: include memory QOS for next k8s update
+    #[clap(short, long, default_value = "/sys/fs/cgroup/kubepods.slice/kubepods-burstable.slice/")]
+    cgroup_path: String,
+}
 
 #[tokio::main]
-async fn main() -> anyhow::Result<()> {
-    tracing_subscriber::fmt::init();
+async fn main() -> Result<(), anyhow::Error> {
+    let opt = Opt::parse();
 
-    let config = Config::infer()
-        .await
-        .context("Failed to infer Kubernetes configuration")?;
+    env_logger::init();
+    // todo: Ebpf::load_file for runtime updates
+    //  to the updated ebpf bytecodes
+    let mut bpf = aya::Ebpf::load(aya::include_bytes_aligned!(concat!(
+        env!("OUT_DIR"),
+        "/cgroup-skb-egress"
+    )))?;
+    let program: &mut CgroupSkb =
+        bpf.program_mut("cgroup_skb_egress").unwrap().try_into()?;
+    let cgroup = std::fs::File::open(opt.cgroup_path)?;
+    // (1)
+    program.load()?;
+    // (2)
+    program.attach(
+        cgroup,
+        CgroupSkbAttachType::Egress,
+        CgroupAttachMode::Single,
+    )?;
 
-    let https = config.rustls_https_connector()?;
-    let service = tower::ServiceBuilder::new()
-        .layer(config.base_uri_layer())
-        .option_layer(config.auth_layer()?)
-        .map_err(BoxError::from)
-        .service(hyper_util::client::legacy::Client::builder(TokioExecutor::new()).build(https));
+    let mut blocklist: HashMap<_, u32, u32> =
+        HashMap::try_from(bpf.map_mut("BLOCKLIST").unwrap())?;
 
-    let client = Client::new(service, config.default_namespace);
+    let block_addr: u32 = Ipv4Addr::new(1, 1, 1, 1).into();
 
-    let namespace = env::var("KUBE_NAMESPACE").unwrap_or_else(|_| "default".to_string());
-    info!("Using namespace: {}", namespace);
+    // (3)
+    blocklist.insert(block_addr, 0, 0)?;
 
-    let pods: Api<Pod> = Api::namespaced(client, &namespace);
-    let mut map: HashMap<String, SmallVec<[String; 4]>> = HashMap::new();
+    let mut perf_array =
+        AsyncPerfEventArray::try_from(bpf.take_map("EVENTS").unwrap())?;
 
-    // let list:ObjectList<Pod>;
-    match pods.list(&Default::default()).await {
-        Ok(pod_list) => {
-            // list = pod_list;
-            for pod in pod_list {
-                info!("Pod name: {}", pod.name_any());
-                if let Some(status) = pod.status {
-                    if let Some(container_statuses) = status.container_statuses {
-                        let mut container_id_list = SmallVec::<[String; 4]>::new();
-                        for container in container_statuses {
-                            if let Some(container_id) = container.container_id {
-                                // println!("Container ID: {}", container_id);
-                                //  remove containerd:// from the string
-                                container_id_list.push(container_id.
-                                    strip_prefix("containerd://").
-                                    map(|s| s.to_string()).
-                                    unwrap_or(container_id));
-                            }
-                        }
-                        // map.insert(pod.name_any(), container_id_list)
-                    }
+    for cpu_id in online_cpus().map_err(|(_, error)| error)? {
+        let mut buf = perf_array.open(cpu_id, None)?;
+
+        task::spawn(async move {
+            let mut buffers = (0..10)
+                .map(|_| BytesMut::with_capacity(1024))
+                .collect::<Vec<_>>();
+
+            loop {
+                let events = buf.read_events(&mut buffers).await.unwrap();
+                for buf in buffers.iter_mut().take(events.read) {
+                    let ptr = buf.as_ptr() as *const PacketLog;
+                    let data = unsafe { ptr.read_unaligned() };
+                    let src_addr = Ipv4Addr::from(data.ipv4_address);
+                    info!("LOG: DST {}, ACTION {}", src_addr, data.action);
                 }
             }
-        }
-        Err(err) => {
-            error!("Failed to list pods: {:#?}", err);
-        }
+        });
     }
 
-    println!("{:?}", map);
-    // for pod in list {
-        // if let Some(pod) = pods.get(pod).await.ok() {
-        //     if let Some(status) = pod.status {
-        //         if let Some(container_statuses) = status.container_statuses {
-        //             for container in container_statuses {
-        //                 if let Some(container_id) = container.container_id {
-        //                     println!("Container ID: {}", container_id);
-        //                 }
-        //             }
-        //         }
-        //     }
-        // } else {
-        // println!("Pod not found");
-        // }
-    // }
-
+    info!("Waiting for Ctrl-C...");
+    signal::ctrl_c().await?;
+    info!("Exiting...");
 
     Ok(())
 }
