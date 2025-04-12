@@ -897,9 +897,7 @@
     </cargoProject>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="750a0656-4394-404c-8d18-871d64c01604" name="Changes" comment="removing rootfs of alpine fs">
-      <change beforePath="$PROJECT_DIR$/node-ping/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/node-ping/Dockerfile" afterDir="false" />
-    </list>
+    <list default="true" id="750a0656-4394-404c-8d18-871d64c01604" name="Changes" comment="updated work directory" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -1068,31 +1066,7 @@
       <workItem from="1744355473602" duration="1294000" />
       <workItem from="1744358535310" duration="706000" />
       <workItem from="1744410794240" duration="3781000" />
-      <workItem from="1744419190322" duration="11026000" />
-    </task>
-    <task id="LOCAL-00057" summary="mandlebot">
-      <option name="closed" value="true" />
-      <created>1738548694908</created>
-      <option name="number" value="00057" />
-      <option name="presentableId" value="LOCAL-00057" />
-      <option name="project" value="LOCAL" />
-      <updated>1738548694909</updated>
-    </task>
-    <task id="LOCAL-00058" summary="missed command delimiters">
-      <option name="closed" value="true" />
-      <created>1738548851945</created>
-      <option name="number" value="00058" />
-      <option name="presentableId" value="LOCAL-00058" />
-      <option name="project" value="LOCAL" />
-      <updated>1738548851945</updated>
-    </task>
-    <task id="LOCAL-00059" summary="fixed it">
-      <option name="closed" value="true" />
-      <created>1738589420421</created>
-      <option name="number" value="00059" />
-      <option name="presentableId" value="LOCAL-00059" />
-      <option name="project" value="LOCAL" />
-      <updated>1738589420421</updated>
+      <workItem from="1744419190322" duration="11282000" />
     </task>
     <task id="LOCAL-00060" summary="fixed it">
       <option name="closed" value="true" />
@@ -1462,7 +1436,31 @@
       <option name="project" value="LOCAL" />
       <updated>1744445673287</updated>
     </task>
-    <option name="localTasksCounter" value="106" />
+    <task id="LOCAL-00106" summary="copying local directory to container">
+      <option name="closed" value="true" />
+      <created>1744445769390</created>
+      <option name="number" value="00106" />
+      <option name="presentableId" value="LOCAL-00106" />
+      <option name="project" value="LOCAL" />
+      <updated>1744445769390</updated>
+    </task>
+    <task id="LOCAL-00107" summary="installing requirements">
+      <option name="closed" value="true" />
+      <created>1744445925713</created>
+      <option name="number" value="00107" />
+      <option name="presentableId" value="LOCAL-00107" />
+      <option name="project" value="LOCAL" />
+      <updated>1744445925713</updated>
+    </task>
+    <task id="LOCAL-00108" summary="updated work directory">
+      <option name="closed" value="true" />
+      <created>1744445954023</created>
+      <option name="number" value="00108" />
+      <option name="presentableId" value="LOCAL-00108" />
+      <option name="project" value="LOCAL" />
+      <updated>1744445954023</updated>
+    </task>
+    <option name="localTasksCounter" value="109" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1480,9 +1478,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="redirection" />
-    <MESSAGE value="no panic" />
-    <MESSAGE value="no panic handler" />
     <MESSAGE value="removed fetch build" />
     <MESSAGE value="stable point for Dockerfile" />
     <MESSAGE value="scrapping container ID from the pods" />
@@ -1505,6 +1500,9 @@
     <MESSAGE value="updated python3 version" />
     <MESSAGE value="updated python3(non-alpine) version" />
     <MESSAGE value="removing rootfs of alpine fs" />
-    <option name="LAST_COMMIT_MESSAGE" value="removing rootfs of alpine fs" />
+    <MESSAGE value="copying local directory to container" />
+    <MESSAGE value="installing requirements" />
+    <MESSAGE value="updated work directory" />
+    <option name="LAST_COMMIT_MESSAGE" value="updated work directory" />
   </component>
 </project>
