@@ -17,8 +17,11 @@ use cgroup_skb_egress_common::PacketLog;
 #[allow(dead_code)]
 #[rustfmt::skip]
 mod bindings;
+// TODO:
+//  need this line to be dynamic
+//  via env value about distros
 use bindings::iphdr;
-use bindings::iphdr__bindgen_ty_1__bindgen_ty_1;
+// use bindings::iphdr__bindgen_ty_1__bindgen_ty_1;
 
 #[map]
 static EVENTS: PerfEventArray<PacketLog> = PerfEventArray::new(0);
@@ -42,8 +45,9 @@ fn try_cgroup_skb_egress(ctx: SkBuffContext) -> Result<i32, i64> {
         return Ok(1);
     }
 
-    // need this line to be dynamic
-    // via env value about distros
+    // TODO:
+    //  need this line to be dynamic
+    //  via env value about distros
     let destination = u32::from_be(ctx.load(offset_of!(iphdr, daddr))?);
     // let destination = u32::from_be(ctx.load(offset_of!(iphdr__bindgen_ty_1__bindgen_ty_1, daddr))?);
 
