@@ -69,7 +69,7 @@ async fn main() -> Result<(), anyhow::Error> {
                     let ptr = buf.as_ptr() as *const PacketCount;
                     let data = unsafe { ptr.read_unaligned() };
                     let src_addr = Ipv4Addr::from(data.ipv4_address);
-                    info!("LOG: DST {}, ACTION {}", src_addr, data.counter);
+                    info!("LOG: DST {}, COUNT {}", src_addr, data.counter);
                     println!("Counter: {blocklist:?}");
                 }
             }
