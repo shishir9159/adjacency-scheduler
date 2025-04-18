@@ -1,4 +1,4 @@
-// #![no_std]
+#![no_std]
 #![no_main]
 
 use aya_ebpf::cty::int64_t;
@@ -8,7 +8,7 @@ use aya_ebpf::{
     programs::SkBuffContext,
 };
 use cgroup_skb_egress_common::{PacketCount, PacketLog};
-use ipnet::IpNet;
+// use ipnet::IpNet;
 use memoffset::offset_of;
 
 #[allow(clippy::all)]
@@ -26,8 +26,8 @@ use bindings::iphdr;
 // use bindings::iphdr__bindgen_ty_1__bindgen_ty_1;
 
 #[map]
-static EVENTS: PerfEventArray<PacketCount> = PerfEventArray::new(0);
-// static EVENTS: PerfEventArray<PacketLog> = PerfEventArray::new(0);
+// static EVENTS: PerfEventArray<PacketCount> = PerfEventArray::new(0);
+static EVENTS: PerfEventArray<PacketLog> = PerfEventArray::new(0);
 
 #[map]
 static BLOCKLIST: HashMap<u32, u32> = HashMap::with_max_entries(1024, 0);
@@ -55,7 +55,7 @@ fn increment_counter(address: &u32, counter: &u32) -> bool {
 }
 
 fn try_cgroup_skb_egress(ctx: SkBuffContext) -> Result<i32, i64> {
-    let cidr: IpNet = "10.244.0.0/16".parse().unwrap();
+    // let cidr: IpNet = "10.244.0.0/16".parse().unwrap();
 
     let protocol = unsafe { (*ctx.skb.skb).protocol };
     if protocol != ETH_P_IP {
@@ -68,9 +68,10 @@ fn try_cgroup_skb_egress(ctx: SkBuffContext) -> Result<i32, i64> {
     let destination = u32::from_be(ctx.load(offset_of!(iphdr, daddr))?);
     // let destination = u32::from_be(ctx.load(offset_of!(iphdr__bindgen_ty_1__bindgen_ty_1, daddr))?);
 
-    if cidr.contains(&destination) {
-        increment_counter(&destination, &0);
-    }
+    // converted to_be_bytes()
+    // if cidr.contains(&destination.to_be_bytes()) {
+    //     increment_counter(&destination, &0);
+    // }
 
     let action = if block_ip(destination) { 0 } else { 1 };
 
@@ -88,8 +89,8 @@ fn try_cgroup_skb_egress(ctx: SkBuffContext) -> Result<i32, i64> {
 
     // TODO:
 
-    EVENTS.output(&ctx, &packet_counter, 0);
-    // EVENTS.output(&ctx, &log_entry, 0);
+    // EVENTS.output(&ctx, &packet_counter, 0);
+    EVENTS.output(&ctx, &log_entry, 0);
     Ok(action)
 }
 
