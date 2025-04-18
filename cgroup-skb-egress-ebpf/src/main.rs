@@ -41,18 +41,18 @@ fn block_ip(address: u32) -> bool {
     unsafe { BLOCKLIST.get(&address).is_some() }
 }
 
-fn increment_counter(address: &u32, counter: &u32) -> bool {
-    let mut counter = 1;
-
-    unsafe {
-        if BLOCKLIST.get(&address).is_some() {
-            counter = counter + BLOCKLIST.get(&address).unwrap_or(&u32::MAX);
-        }
-
-        BLOCKLIST.insert(address, &counter, 0)
-    }
-    return true;
-}
+// fn increment_counter(address: &u32, counter: &u32) -> bool {
+//     let mut counter = 1;
+//
+//     unsafe {
+//         if BLOCKLIST.get(&address).is_some() {
+//             counter = counter + BLOCKLIST.get(&address).unwrap_or(&u32::MAX);
+//         }
+//
+//         BLOCKLIST.insert(address, &counter, 0)
+//     }
+//     return true;
+// }
 
 fn try_cgroup_skb_egress(ctx: SkBuffContext) -> Result<i32, i64> {
     // let cidr: IpNet = "10.244.0.0/16".parse().unwrap();
