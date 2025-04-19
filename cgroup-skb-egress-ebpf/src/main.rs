@@ -56,7 +56,7 @@ fn ip_in_cidr(ip: u32) -> bool {
     (ip & mask) == (base & mask)
 }
 
-fn increment_counter(address: u32) -> bool {
+fn increment_counter(address: u32) -> u32 {
     let mut counter: u32 = 1;
 
     unsafe {
@@ -69,7 +69,7 @@ fn increment_counter(address: u32) -> bool {
             .expect("TODO: panic message");
     }
 
-    true
+    counter
 }
 
 fn try_cgroup_skb_egress(ctx: SkBuffContext) -> Result<i32, i64> {
@@ -78,18 +78,15 @@ fn try_cgroup_skb_egress(ctx: SkBuffContext) -> Result<i32, i64> {
         return Ok(1);
     }
 
-    // TODO:
-    //  need this line to be dynamic
-    //  via env value about distros
     let destination = u32::from_be(ctx.load(offset_of!(iphdr, daddr))?);
     // let destination = u32::from_be(ctx.load(offset_of!(iphdr__bindgen_ty_1__bindgen_ty_1, daddr))?);
 
-    // converted to_be_bytes()
+    let mut counter: u32 = 1;
     if ip_in_cidr(destination) {
-        increment_counter(destination);
+        counter = increment_counter(destination);
     }
 
-    let action: i32 = if block_ip(destination) { 0 } else { 1 };
+    // let action: i32 = if block_ip(destination) { 0 } else { 1 };
 
     // TODO:
 
@@ -100,7 +97,7 @@ fn try_cgroup_skb_egress(ctx: SkBuffContext) -> Result<i32, i64> {
 
     let packet_counter = PacketCount {
         ipv4_address: destination,
-        counter: 0,
+        counter,
     };
 
     // TODO:
@@ -108,7 +105,8 @@ fn try_cgroup_skb_egress(ctx: SkBuffContext) -> Result<i32, i64> {
 
     EVENTS.output(&ctx, &packet_counter, 0);
     // EVENTS.output(&ctx, &log_entry, 0);
-    Ok(action)
+    // Ok(action)
+    Ok(0)
 }
 
 const ETH_P_IP: u32 = 8;
