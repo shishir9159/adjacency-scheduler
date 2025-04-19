@@ -7,7 +7,7 @@ use aya_ebpf::{
     maps::{HashMap, PerfEventArray},
     programs::SkBuffContext,
 };
-use cgroup_skb_egress_common::{PacketCount, PacketLog};
+use cgroup_skb_egress_common::PacketCount;
 // use ipnet::IpNet;
 use memoffset::offset_of;
 
@@ -45,8 +45,8 @@ fn ip_in_cidr(ip: u32) -> bool {
     // TODO:
     //  from configmap
 
-    let base: u32 = 0xC0A80000; // 192.168.0.0
-    let prefix: u8 = 24; //
+    let base: u32 = 0x0af40000;
+    let prefix: u8 = 16;
 
     let mask = if prefix == 0 {
         0
