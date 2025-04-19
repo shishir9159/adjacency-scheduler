@@ -21,10 +21,7 @@
     </cargoProject>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="750a0656-4394-404c-8d18-871d64c01604" name="Changes" comment="test checkpoint - 1.0.5&#10;Verifier output: last insn is not an exit or jmp">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cgroup-skb-egress-ebpf/src/main.rs" beforeDir="false" afterPath="$PROJECT_DIR$/cgroup-skb-egress-ebpf/src/main.rs" afterDir="false" />
-    </list>
+    <list default="true" id="750a0656-4394-404c-8d18-871d64c01604" name="Changes" comment="test checkpoint - 1.0.6&#10;Verifier output: last insn is not an exit or jmp" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -201,15 +198,7 @@
       <workItem from="1744954405447" duration="844000" />
       <workItem from="1744961160343" duration="94000" />
       <workItem from="1744990000237" duration="5745000" />
-      <workItem from="1745047054190" duration="3494000" />
-    </task>
-    <task id="LOCAL-00094" summary="updated xtask binding">
-      <option name="closed" value="true" />
-      <created>1744417077706</created>
-      <option name="number" value="00094" />
-      <option name="presentableId" value="LOCAL-00094" />
-      <option name="project" value="LOCAL" />
-      <updated>1744417077706</updated>
+      <workItem from="1745047054190" duration="3635000" />
     </task>
     <task id="LOCAL-00095" summary="updated initialization">
       <option name="closed" value="true" />
@@ -595,7 +584,15 @@
       <option name="project" value="LOCAL" />
       <updated>1745050342137</updated>
     </task>
-    <option name="localTasksCounter" value="143" />
+    <task id="LOCAL-00143" summary="test checkpoint - 1.0.6&#10;Verifier output: last insn is not an exit or jmp">
+      <option name="closed" value="true" />
+      <created>1745050742602</created>
+      <option name="number" value="00143" />
+      <option name="presentableId" value="LOCAL-00143" />
+      <option name="project" value="LOCAL" />
+      <updated>1745050742602</updated>
+    </task>
+    <option name="localTasksCounter" value="144" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -616,7 +613,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="added serviceaccount" />
     <MESSAGE value="removed priority class" />
     <MESSAGE value="updated permission" />
     <MESSAGE value="updated nodes.json" />
@@ -641,7 +637,8 @@
     <MESSAGE value="test checkpoint - 1.0.4&#10;invalid indirect read from stack R4 off -24+4 size 16" />
     <MESSAGE value="test checkpoint - 1.0.5&#10;invalid indirect read from stack R4 off -24+4 size 16" />
     <MESSAGE value="test checkpoint - 1.0.5&#10;Verifier output: last insn is not an exit or jmp" />
-    <option name="LAST_COMMIT_MESSAGE" value="test checkpoint - 1.0.5&#10;Verifier output: last insn is not an exit or jmp" />
+    <MESSAGE value="test checkpoint - 1.0.6&#10;Verifier output: last insn is not an exit or jmp" />
+    <option name="LAST_COMMIT_MESSAGE" value="test checkpoint - 1.0.6&#10;Verifier output: last insn is not an exit or jmp" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="NON_MODAL_COMMIT_POSTPONE_SLOW_CHECKS" value="false" />
   </component>
