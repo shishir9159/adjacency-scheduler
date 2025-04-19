@@ -67,20 +67,20 @@ fn try_cgroup_skb_egress(ctx: SkBuffContext) -> Result<i32, i64> {
 
     let mut counter: u32 = 1;
     if ip_in_cidr(destination) {
-        //     unsafe {
-        //         match BLOCKLIST.get(&destination) {
-        //             Some(packet_counter) => {
-        //                 counter = counter + packet_counter;
-        //             }
-        //             None => {
-        //                 return Err(-1);
-        //             }
-        //         }
-        //     }
+        unsafe {
+            match BLOCKLIST.get(&destination) {
+                Some(packet_counter) => {
+                    counter = counter + packet_counter;
+                }
+                None => {
+                    return Err(-1);
+                }
+            }
+        }
 
-        BLOCKLIST
-            .insert(&destination, &counter, 0)
-            .expect("TODO: panic message");
+        // BLOCKLIST
+        //     .insert(&destination, &counter, 0)
+        //     .expect("TODO: panic message");
         //     return Ok(1);
     }
 
