@@ -77,10 +77,10 @@ fn try_cgroup_skb_egress(ctx: SkBuffContext) -> Result<i32, i64> {
         //             }
         //         }
         //     }
-        //
-        //     BLOCKLIST
-        //         .insert(&destination, &counter, 0)
-        //         .expect("TODO: panic message");
+
+        BLOCKLIST
+            .insert(&destination, &counter, 0)
+            .expect("TODO: panic message");
         //     return Ok(1);
     }
 
