@@ -56,22 +56,6 @@ fn ip_in_cidr(ip: u32) -> bool {
     (ip & mask) == (base & mask)
 }
 
-fn increment_counter(address: u32) -> u32 {
-    let mut counter: u32 = 1;
-
-    unsafe {
-        if BLOCKLIST.get(&address).is_some() {
-            counter = counter + BLOCKLIST.get(&address).unwrap_or(&u32::MAX);
-        }
-
-        BLOCKLIST
-            .insert(&address, &counter, 0)
-            .expect("TODO: panic message");
-    }
-
-    counter
-}
-
 fn try_cgroup_skb_egress(ctx: SkBuffContext) -> Result<i32, i64> {
     let protocol: u32 = unsafe { (*ctx.skb.skb).protocol };
     if protocol != ETH_P_IP {
@@ -83,7 +67,16 @@ fn try_cgroup_skb_egress(ctx: SkBuffContext) -> Result<i32, i64> {
 
     let mut counter: u32 = 1;
     if ip_in_cidr(destination) {
-        counter = increment_counter(destination);
+        unsafe {
+            if BLOCKLIST.get(&destination).is_some() {
+                counter = counter + BLOCKLIST.get(&destination).unwrap_or(&u32::MAX);
+            }
+
+            BLOCKLIST
+                .insert(&destination, &counter, 0)
+                .expect("TODO: panic message");
+        }
+
         return Ok(1);
     }
 
