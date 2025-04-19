@@ -26,8 +26,8 @@ use bindings::iphdr;
 // use bindings::iphdr__bindgen_ty_1__bindgen_ty_1;
 
 #[map]
-// static EVENTS: PerfEventArray<PacketCount> = PerfEventArray::new(0);
-static EVENTS: PerfEventArray<PacketLog> = PerfEventArray::new(0);
+static EVENTS: PerfEventArray<PacketCount> = PerfEventArray::new(0);
+// static EVENTS: PerfEventArray<PacketLog> = PerfEventArray::new(0);
 
 #[map]
 static BLOCKLIST: HashMap<u32, u32> = HashMap::with_max_entries(1024, 0);
@@ -57,7 +57,7 @@ fn ip_in_cidr(ip: u32) -> bool {
     (ip & mask) == (base & mask)
 }
 
-fn increment_counter(address: &u32, counter: &u32) -> bool {
+fn increment_counter(address: &u32) -> bool {
     let mut counter = 1;
 
     unsafe {
@@ -67,6 +67,7 @@ fn increment_counter(address: &u32, counter: &u32) -> bool {
 
         BLOCKLIST.insert(address, &counter, 0)
     }
+
     return true;
 }
 
@@ -86,17 +87,17 @@ fn try_cgroup_skb_egress(ctx: SkBuffContext) -> Result<i32, i64> {
 
     // converted to_be_bytes()
     if ip_in_cidr(destination) {
-        increment_counter(&destination, &0);
+        increment_counter(&destination);
     }
 
     let action = if block_ip(destination) { 0 } else { 1 };
 
     // TODO:
 
-    let log_entry = PacketLog {
-        ipv4_address: destination,
-        action,
-    };
+    // let log_entry = PacketLog {
+    //     ipv4_address: destination,
+    //     action,
+    // };
 
     let packet_counter = PacketCount {
         ipv4_address: destination,
@@ -105,8 +106,8 @@ fn try_cgroup_skb_egress(ctx: SkBuffContext) -> Result<i32, i64> {
 
     // TODO:
 
-    // EVENTS.output(&ctx, &packet_counter, 0);
-    EVENTS.output(&ctx, &log_entry, 0);
+    EVENTS.output(&ctx, &packet_counter, 0);
+    // EVENTS.output(&ctx, &log_entry, 0);
     Ok(action)
 }
 

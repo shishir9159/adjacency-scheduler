@@ -12,7 +12,7 @@ use log::info;
 use std::net::Ipv4Addr;
 use tokio::{signal, task};
 
-use cgroup_skb_egress_common::{PacketCount, PacketLog};
+use cgroup_skb_egress_common::PacketCount;
 
 #[derive(Debug, Parser)]
 struct Opt {
@@ -65,15 +65,14 @@ async fn main() -> Result<(), anyhow::Error> {
             loop {
                 let events = buf.read_events(&mut buffers).await.unwrap();
                 for buf in buffers.iter_mut().take(events.read) {
-                    let ptr = buf.as_ptr() as *const PacketLog;
-                    // let ptr = buf.as_ptr() as *const PacketCount;
+                    // let ptr = buf.as_ptr() as *const PacketLog;
+                    let ptr = buf.as_ptr() as *const PacketCount;
                     let data = unsafe { ptr.read_unaligned() };
-                    let src_addr = Ipv4Addr::from(data.ipv4_address);
+                    let dst_addr = Ipv4Addr::from(data.ipv4_address);
                     info!(
                         "LOG: DST {}, COUNT {}, ipv4 format {}",
-                        src_addr, data.action, data.ipv4_address
+                        dst_addr, data.counter, data.ipv4_address
                     );
-                    // info!("LOG: DST {}, COUNT {}", src_addr, data.counter);
                     // println!("Counter: {blocklist:?}");
                 }
             }
