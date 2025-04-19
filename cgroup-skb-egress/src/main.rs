@@ -49,8 +49,8 @@ async fn main() -> Result<(), anyhow::Error> {
 
     let mut blocklist: HashMap<_, u32, u32> = HashMap::try_from(bpf.map_mut("BLOCKLIST").unwrap())?;
 
-    let block_addr: u32 = Ipv4Addr::new(1, 1, 1, 1).into();
-    blocklist.insert(block_addr, 0, 0)?;
+    // let block_addr: u32 = Ipv4Addr::new(1, 1, 1, 1).into();
+    // blocklist.insert(block_addr, 0, 0)?;
 
     let mut perf_array = AsyncPerfEventArray::try_from(bpf.take_map("EVENTS").unwrap())?;
 
@@ -72,7 +72,6 @@ async fn main() -> Result<(), anyhow::Error> {
                         "LOG: DST {}, COUNT {}, ipv4 format {}",
                         dst_addr, data.counter, data.ipv4_address
                     );
-                    // println!("Counter: {blocklist:?}");
                 }
             }
         });

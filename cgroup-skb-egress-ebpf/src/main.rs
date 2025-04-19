@@ -87,10 +87,7 @@ fn try_cgroup_skb_egress(ctx: SkBuffContext) -> Result<i32, i64> {
 
     // TODO:
     //  attach PID to track the origin?
-
     EVENTS.output(&ctx, &packet_counter, 0);
-    // EVENTS.output(&ctx, &log_entry, 0);
-    // Ok(action)
     Ok(0)
 }
 
