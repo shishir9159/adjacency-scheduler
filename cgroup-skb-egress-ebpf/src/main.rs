@@ -50,8 +50,7 @@ fn ip_in_cidr(ip: u32) -> bool {
     let mask = if prefix == 0 {
         0
     } else {
-        0
-        // u32::MAX << (32 - prefix)
+        u32::MAX << (32 - prefix)
     };
 
     (ip & mask) == (base & mask)
@@ -65,7 +64,9 @@ fn increment_counter(address: u32) -> bool {
             counter = counter + BLOCKLIST.get(&address).unwrap_or(&u32::MAX);
         }
 
-        BLOCKLIST.insert(&address, &counter, 0);
+        BLOCKLIST
+            .insert(&address, &counter, 0)
+            .expect("TODO: panic message");
     }
 
     return true;
