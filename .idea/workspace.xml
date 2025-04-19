@@ -21,12 +21,9 @@
     </cargoProject>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="750a0656-4394-404c-8d18-871d64c01604" name="Changes" comment="test checkpoint 1.0.4:&#10;ignoring packets">
+    <list default="true" id="750a0656-4394-404c-8d18-871d64c01604" name="Changes" comment="checkpoint reached:&#10;removed packet based action">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cgroup-skb-egress-common/src/lib.rs" beforeDir="false" afterPath="$PROJECT_DIR$/cgroup-skb-egress-common/src/lib.rs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cgroup-skb-egress-ebpf/src/main.rs" beforeDir="false" afterPath="$PROJECT_DIR$/cgroup-skb-egress-ebpf/src/main.rs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cgroup-skb-egress/need_to_be_converted_to_rust/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/cgroup-skb-egress/need_to_be_converted_to_rust/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cgroup-skb-egress/src/main.rs" beforeDir="false" afterPath="$PROJECT_DIR$/cgroup-skb-egress/src/main.rs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -205,15 +202,7 @@
       <workItem from="1744961160343" duration="94000" />
       <workItem from="1744990000237" duration="5745000" />
       <workItem from="1745047054190" duration="5269000" />
-      <workItem from="1745059646702" duration="1047000" />
-    </task>
-    <task id="LOCAL-00108" summary="updated work directory">
-      <option name="closed" value="true" />
-      <created>1744445954023</created>
-      <option name="number" value="00108" />
-      <option name="presentableId" value="LOCAL-00108" />
-      <option name="project" value="LOCAL" />
-      <updated>1744445954023</updated>
+      <workItem from="1745059646702" duration="2087000" />
     </task>
     <task id="LOCAL-00109" summary="updated alpine base image">
       <option name="closed" value="true" />
@@ -599,7 +588,15 @@
       <option name="project" value="LOCAL" />
       <updated>1745052433404</updated>
     </task>
-    <option name="localTasksCounter" value="157" />
+    <task id="LOCAL-00157" summary="checkpoint reached:&#10;removed packet based action">
+      <option name="closed" value="true" />
+      <created>1745061648991</created>
+      <option name="number" value="00157" />
+      <option name="presentableId" value="LOCAL-00157" />
+      <option name="project" value="LOCAL" />
+      <updated>1745061648992</updated>
+    </task>
+    <option name="localTasksCounter" value="158" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -620,7 +617,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="debugging ip address format" />
     <MESSAGE value="updated cargo.toml file" />
     <MESSAGE value="removing undefined dead functions" />
     <MESSAGE value="fighting with borrow checker" />
@@ -645,7 +641,8 @@
     <MESSAGE value="test checkpoint 1.0.4:&#10;unsafe get" />
     <MESSAGE value="test checkpoint 1.0.4:&#10;BLOCKLIST insert" />
     <MESSAGE value="test checkpoint 1.0.4:&#10;ignoring packets" />
-    <option name="LAST_COMMIT_MESSAGE" value="test checkpoint 1.0.4:&#10;ignoring packets" />
+    <MESSAGE value="checkpoint reached:&#10;removed packet based action" />
+    <option name="LAST_COMMIT_MESSAGE" value="checkpoint reached:&#10;removed packet based action" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="NON_MODAL_COMMIT_POSTPONE_SLOW_CHECKS" value="false" />
   </component>

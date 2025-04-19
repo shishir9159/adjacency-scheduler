@@ -76,16 +76,9 @@ fn try_cgroup_skb_egress(ctx: SkBuffContext) -> Result<i32, i64> {
         }
 
         BLOCKLIST.insert(&destination, &counter, 0)?
+    } else {
+        return Ok(1);
     }
-
-    // let action: i32 = if block_ip(destination) { 0 } else { 1 };
-
-    // TODO:
-
-    // let log_entry = PacketLog {
-    //     ipv4_address: destination,
-    //     action,
-    // };
 
     let packet_counter = PacketCount {
         ipv4_address: destination,
