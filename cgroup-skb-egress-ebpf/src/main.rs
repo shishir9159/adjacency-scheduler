@@ -82,9 +82,10 @@ fn try_cgroup_skb_egress(ctx: SkBuffContext) -> Result<i32, i64> {
     // let destination = u32::from_be(ctx.load(offset_of!(iphdr__bindgen_ty_1__bindgen_ty_1, daddr))?);
 
     let mut counter: u32 = 1;
-    // if ip_in_cidr(destination) {
-    //     counter = increment_counter(destination);
-    // }
+    if ip_in_cidr(destination) {
+        counter = increment_counter(destination);
+        return Ok(1);
+    }
 
     // let action: i32 = if block_ip(destination) { 0 } else { 1 };
 
