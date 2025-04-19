@@ -8,7 +8,6 @@ use aya_ebpf::{
     programs::SkBuffContext,
 };
 use cgroup_skb_egress_common::PacketCount;
-// use ipnet::IpNet;
 use memoffset::offset_of;
 
 #[allow(clippy::all)]
@@ -51,11 +50,11 @@ fn ip_in_cidr(ip: u32) -> bool {
     let mask = if prefix == 0 {
         0
     } else {
-        u32::MAX << (32 - prefix)
+        0
+        // u32::MAX << (32 - prefix)
     };
 
-    // (ip & mask) == (base & mask)
-    true
+    (ip & mask) == (base & mask)
 }
 
 fn increment_counter(address: u32) -> bool {
@@ -73,8 +72,6 @@ fn increment_counter(address: u32) -> bool {
 }
 
 fn try_cgroup_skb_egress(ctx: SkBuffContext) -> Result<i32, i64> {
-    // let cidr: IpNet = "10.244.0.0/16".parse().unwrap();
-
     let protocol = unsafe { (*ctx.skb.skb).protocol };
     if protocol != ETH_P_IP {
         return Ok(1);
