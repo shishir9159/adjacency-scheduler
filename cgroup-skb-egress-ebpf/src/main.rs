@@ -72,7 +72,9 @@ fn try_cgroup_skb_egress(ctx: SkBuffContext) -> Result<i32, i64> {
                 Some(packet_counter) => {
                     counter = counter + packet_counter;
                 }
-                None => {}
+                None => {
+                    return Err(-1);
+                }
             }
         }
 
