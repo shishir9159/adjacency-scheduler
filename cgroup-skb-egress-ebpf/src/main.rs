@@ -65,7 +65,7 @@ fn increment_counter(address: &u32) -> bool {
             counter = counter + BLOCKLIST.get(&address).unwrap_or(&u32::MAX);
         }
 
-        BLOCKLIST.insert(address, &counter, 0)
+        BLOCKLIST.insert(address, &counter, 0);
     }
 
     return true;

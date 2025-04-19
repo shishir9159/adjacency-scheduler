@@ -21,7 +21,9 @@
     </cargoProject>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="750a0656-4394-404c-8d18-871d64c01604" name="Changes" comment="test checkpoint - 1" />
+    <list default="true" id="750a0656-4394-404c-8d18-871d64c01604" name="Changes" comment="test checkpoint - 1.0.1">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -198,15 +200,7 @@
       <workItem from="1744954405447" duration="844000" />
       <workItem from="1744961160343" duration="94000" />
       <workItem from="1744990000237" duration="5745000" />
-      <workItem from="1745047054190" duration="674000" />
-    </task>
-    <task id="LOCAL-00087" summary="stable point for Dockerfile">
-      <option name="closed" value="true" />
-      <created>1738796732938</created>
-      <option name="number" value="00087" />
-      <option name="presentableId" value="LOCAL-00087" />
-      <option name="project" value="LOCAL" />
-      <updated>1738796732938</updated>
+      <workItem from="1745047054190" duration="1925000" />
     </task>
     <task id="LOCAL-00088" summary="scrapping container ID from the pods">
       <option name="closed" value="true" />
@@ -592,7 +586,15 @@
       <option name="project" value="LOCAL" />
       <updated>1745047499216</updated>
     </task>
-    <option name="localTasksCounter" value="136" />
+    <task id="LOCAL-00136" summary="test checkpoint - 1.0.1">
+      <option name="closed" value="true" />
+      <created>1745048053945</created>
+      <option name="number" value="00136" />
+      <option name="presentableId" value="LOCAL-00136" />
+      <option name="project" value="LOCAL" />
+      <updated>1745048053945</updated>
+    </task>
+    <option name="localTasksCounter" value="137" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -613,7 +615,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="updated manifest file to be tested" />
     <MESSAGE value="added prometheus" />
     <MESSAGE value="updated namespace" />
     <MESSAGE value="updated daemonset resource type" />
@@ -638,7 +639,8 @@
     <MESSAGE value="removing undefined dead functions" />
     <MESSAGE value="fighting with borrow checker" />
     <MESSAGE value="test checkpoint - 1" />
-    <option name="LAST_COMMIT_MESSAGE" value="test checkpoint - 1" />
+    <MESSAGE value="test checkpoint - 1.0.1" />
+    <option name="LAST_COMMIT_MESSAGE" value="test checkpoint - 1.0.1" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="NON_MODAL_COMMIT_POSTPONE_SLOW_CHECKS" value="false" />
   </component>
