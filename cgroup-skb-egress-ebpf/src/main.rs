@@ -57,7 +57,7 @@ fn ip_in_cidr(ip: u32) -> bool {
     (ip & mask) == (base & mask)
 }
 
-fn increment_counter(address: &u32) -> bool {
+fn increment_counter(address: u32) -> bool {
     let mut counter = 1;
 
     unsafe {
@@ -65,7 +65,7 @@ fn increment_counter(address: &u32) -> bool {
             counter = counter + BLOCKLIST.get(&address).unwrap_or(&u32::MAX);
         }
 
-        BLOCKLIST.insert(address, &counter, 0);
+        BLOCKLIST.insert(&address, &counter, 0);
     }
 
     return true;
@@ -87,7 +87,7 @@ fn try_cgroup_skb_egress(ctx: SkBuffContext) -> Result<i32, i64> {
 
     // converted to_be_bytes()
     if ip_in_cidr(destination) {
-        increment_counter(&destination);
+        increment_counter(destination);
     }
 
     let action = if block_ip(destination) { 0 } else { 1 };
