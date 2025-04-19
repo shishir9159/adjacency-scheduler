@@ -72,14 +72,13 @@ fn try_cgroup_skb_egress(ctx: SkBuffContext) -> Result<i32, i64> {
                 Some(packet_counter) => {
                     counter = counter + packet_counter;
                 }
-                None => {
-                    return Err(-1);
-                }
+                None => {}
             }
         }
 
         BLOCKLIST.insert(&destination, &counter, 0)?
-        //     .expect("TODO: panic message");
+    } else {
+        return Ok(2);
     }
 
     // let action: i32 = if block_ip(destination) { 0 } else { 1 };
