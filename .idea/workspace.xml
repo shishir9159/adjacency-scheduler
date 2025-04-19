@@ -22,7 +22,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="750a0656-4394-404c-8d18-871d64c01604" name="Changes" comment="test checkpoint 1.0.4:&#10;ignoring packets">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cgroup-skb-egress-common/src/lib.rs" beforeDir="false" afterPath="$PROJECT_DIR$/cgroup-skb-egress-common/src/lib.rs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cgroup-skb-egress-ebpf/src/main.rs" beforeDir="false" afterPath="$PROJECT_DIR$/cgroup-skb-egress-ebpf/src/main.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cgroup-skb-egress/need_to_be_converted_to_rust/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/cgroup-skb-egress/need_to_be_converted_to_rust/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cgroup-skb-egress/src/main.rs" beforeDir="false" afterPath="$PROJECT_DIR$/cgroup-skb-egress/src/main.rs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,7 +45,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="main" />
+        <entry key="$PROJECT_DIR$" value="cidr" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -81,7 +85,7 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.rust.reset.selective.auto.import&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;cidr&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;last_opened_file_path&quot;: &quot;/home/carmack/Documents/Projects/adjacency-scheduler/orchestrator&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
@@ -201,6 +205,7 @@
       <workItem from="1744961160343" duration="94000" />
       <workItem from="1744990000237" duration="5745000" />
       <workItem from="1745047054190" duration="5269000" />
+      <workItem from="1745059646702" duration="1047000" />
     </task>
     <task id="LOCAL-00108" summary="updated work directory">
       <option name="closed" value="true" />

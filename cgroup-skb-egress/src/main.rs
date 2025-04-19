@@ -65,7 +65,6 @@ async fn main() -> Result<(), anyhow::Error> {
             loop {
                 let events = buf.read_events(&mut buffers).await.unwrap();
                 for buf in buffers.iter_mut().take(events.read) {
-                    // let ptr = buf.as_ptr() as *const PacketLog;
                     let ptr = buf.as_ptr() as *const PacketCount;
                     let data = unsafe { ptr.read_unaligned() };
                     let dst_addr = Ipv4Addr::from(data.ipv4_address);

@@ -26,7 +26,6 @@ use bindings::iphdr;
 
 #[map]
 static EVENTS: PerfEventArray<PacketCount> = PerfEventArray::new(0);
-// static EVENTS: PerfEventArray<PacketLog> = PerfEventArray::new(0);
 
 #[map]
 static BLOCKLIST: HashMap<u32, u32> = HashMap::with_max_entries(1024, 0);
@@ -44,7 +43,7 @@ fn ip_in_cidr(ip: u32) -> bool {
     // TODO:
     //  from configmap
 
-    let base: u32 = 0x0af40000;
+    let base: u32 = 0x0af40000; // 10.244.0.0
     let prefix: u8 = 16;
 
     let mask: u32 = if prefix == 0 {
