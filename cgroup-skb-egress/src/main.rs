@@ -55,7 +55,7 @@ async fn main() -> Result<(), anyhow::Error> {
 
     let mut perf_array = AsyncPerfEventArray::try_from(bpf.take_map("EVENTS").unwrap())?;
 
-    env_logger::init();
+    // env_logger::init();
     EbpfLogger::init(&mut bpf)?;
 
     for cpu_id in online_cpus().map_err(|(_, error)| error)? {
