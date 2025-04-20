@@ -6,6 +6,7 @@ use aya::{
     programs::{CgroupAttachMode, CgroupSkb, CgroupSkbAttachType},
     util::online_cpus,
 };
+use aya_log::EbpfLogger;
 use bytes::BytesMut;
 use clap::Parser;
 use log::info;
@@ -62,6 +63,8 @@ async fn main() -> Result<(), anyhow::Error> {
                 .map(|_| BytesMut::with_capacity(1024))
                 .collect::<Vec<_>>();
 
+            env_logger::init();
+            EbpfLogger::init(&mut bpf).unwrap();
             loop {
                 let events = buf.read_events(&mut buffers).await.unwrap();
                 for buf in buffers.iter_mut().take(events.read) {

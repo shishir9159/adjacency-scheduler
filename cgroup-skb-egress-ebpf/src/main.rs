@@ -7,6 +7,7 @@ use aya_ebpf::{
     maps::{HashMap, PerfEventArray},
     programs::SkBuffContext,
 };
+use aya_log_ebpf::info;
 use cgroup_skb_egress_common::PacketCount;
 use memoffset::offset_of;
 
@@ -79,6 +80,9 @@ fn try_cgroup_skb_egress(ctx: SkBuffContext) -> Result<i32, i64> {
     } else {
         return Ok(1);
     }
+
+    let source: u32 = u32::from_be((ctx.load(offset_of!(iphdr, saddr))?));
+    info!(&ctx, "SOURCE {} DST {}", source, destination);
 
     let packet_counter = PacketCount {
         ipv4_address: destination,

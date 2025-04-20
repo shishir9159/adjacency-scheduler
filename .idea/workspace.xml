@@ -22,11 +22,9 @@
     </cargoProject>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="750a0656-4394-404c-8d18-871d64c01604" name="Changes" comment="test checkpoint:&#10;skipping packets outside of relevance">
+    <list default="true" id="750a0656-4394-404c-8d18-871d64c01604" name="Changes" comment="test checkpoint:&#10;test checkpoint 1.0.1">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cgroup-skb-egress-common/src/lib.rs" beforeDir="false" afterPath="$PROJECT_DIR$/cgroup-skb-egress-common/src/lib.rs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cgroup-skb-egress-ebpf/src/main.rs" beforeDir="false" afterPath="$PROJECT_DIR$/cgroup-skb-egress-ebpf/src/main.rs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cgroup-skb-egress/src/ebpf-lifecycle.rs" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/cgroup-skb-egress/src/main.rs" beforeDir="false" afterPath="$PROJECT_DIR$/cgroup-skb-egress/src/main.rs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -46,7 +44,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="cidr" />
+        <entry key="$PROJECT_DIR$" value="main" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -81,25 +79,25 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.rust.reset.selective.auto.import&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/carmack/Documents/Projects/adjacency-scheduler/orchestrator&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;org.rust.cargo.project.model.PROJECT_DISCOVERY&quot;: &quot;true&quot;,
-    &quot;org.rust.cargo.project.model.impl.CargoExternalSystemProjectAware.subscribe.first.balloon&quot;: &quot;&quot;,
-    &quot;org.rust.first.attach.projects&quot;: &quot;true&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;language.rust&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.rust.reset.selective.auto.import": "true",
+    "git-widget-placeholder": "dream",
+    "last_opened_file_path": "/home/carmack/Documents/Projects/adjacency-scheduler/orchestrator",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "org.rust.cargo.project.model.PROJECT_DISCOVERY": "true",
+    "org.rust.cargo.project.model.impl.CargoExternalSystemProjectAware.subscribe.first.balloon": "",
+    "org.rust.first.attach.projects": "true",
+    "settings.editor.selected.configurable": "language.rust",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/orchestrator" />
@@ -223,15 +221,8 @@
       <workItem from="1744990000237" duration="5745000" />
       <workItem from="1745047054190" duration="5269000" />
       <workItem from="1745059646702" duration="4264000" />
-      <workItem from="1745072290536" duration="327000" />
-    </task>
-    <task id="LOCAL-00110" summary="updated base image tag">
-      <option name="closed" value="true" />
-      <created>1744446064346</created>
-      <option name="number" value="00110" />
-      <option name="presentableId" value="LOCAL-00110" />
-      <option name="project" value="LOCAL" />
-      <updated>1744446064346</updated>
+      <workItem from="1745072290536" duration="1743000" />
+      <workItem from="1745076527584" duration="4550000" />
     </task>
     <task id="LOCAL-00111" summary="updated manifest file to be tested">
       <option name="closed" value="true" />
@@ -617,7 +608,15 @@
       <option name="project" value="LOCAL" />
       <updated>1745062304333</updated>
     </task>
-    <option name="localTasksCounter" value="159" />
+    <task id="LOCAL-00159" summary="test checkpoint:&#10;test checkpoint 1.0.1">
+      <option name="closed" value="true" />
+      <created>1745072684521</created>
+      <option name="number" value="00159" />
+      <option name="presentableId" value="LOCAL-00159" />
+      <option name="project" value="LOCAL" />
+      <updated>1745072684522</updated>
+    </task>
+    <option name="localTasksCounter" value="160" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -638,7 +637,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="removing undefined dead functions" />
     <MESSAGE value="fighting with borrow checker" />
     <MESSAGE value="test checkpoint - 1" />
     <MESSAGE value="test checkpoint - 1.0.1" />
@@ -663,7 +661,8 @@
     <MESSAGE value="test checkpoint 1.0.4:&#10;ignoring packets" />
     <MESSAGE value="checkpoint reached:&#10;removed packet based action" />
     <MESSAGE value="test checkpoint:&#10;skipping packets outside of relevance" />
-    <option name="LAST_COMMIT_MESSAGE" value="test checkpoint:&#10;skipping packets outside of relevance" />
+    <MESSAGE value="test checkpoint:&#10;test checkpoint 1.0.1" />
+    <option name="LAST_COMMIT_MESSAGE" value="test checkpoint:&#10;test checkpoint 1.0.1" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="NON_MODAL_COMMIT_POSTPONE_SLOW_CHECKS" value="false" />
   </component>
