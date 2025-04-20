@@ -55,6 +55,9 @@ async fn main() -> Result<(), anyhow::Error> {
 
     let mut perf_array = AsyncPerfEventArray::try_from(bpf.take_map("EVENTS").unwrap())?;
 
+    env_logger::init();
+    EbpfLogger::init(&mut bpf)?;
+
     for cpu_id in online_cpus().map_err(|(_, error)| error)? {
         let mut buf = perf_array.open(cpu_id, None)?;
 
@@ -63,8 +66,6 @@ async fn main() -> Result<(), anyhow::Error> {
                 .map(|_| BytesMut::with_capacity(1024))
                 .collect::<Vec<_>>();
 
-            env_logger::init();
-            EbpfLogger::init(&mut bpf).unwrap();
             loop {
                 let events = buf.read_events(&mut buffers).await.unwrap();
                 for buf in buffers.iter_mut().take(events.read) {
