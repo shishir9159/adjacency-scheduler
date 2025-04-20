@@ -22,7 +22,10 @@
     </cargoProject>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="750a0656-4394-404c-8d18-871d64c01604" name="Changes" comment="Debug:&#10;moving the logger initialization" />
+    <list default="true" id="750a0656-4394-404c-8d18-871d64c01604" name="Changes" comment="Debug:&#10;env_logger::init should not be called after logger initialized: SetLoggerError(())">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cgroup-skb-egress-ebpf/src/main.rs" beforeDir="false" afterPath="$PROJECT_DIR$/cgroup-skb-egress-ebpf/src/main.rs" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -218,15 +221,7 @@
       <workItem from="1745047054190" duration="5269000" />
       <workItem from="1745059646702" duration="4264000" />
       <workItem from="1745072290536" duration="1743000" />
-      <workItem from="1745076527584" duration="4952000" />
-    </task>
-    <task id="LOCAL-00113" summary="updated namespace">
-      <option name="closed" value="true" />
-      <created>1744450790578</created>
-      <option name="number" value="00113" />
-      <option name="presentableId" value="LOCAL-00113" />
-      <option name="project" value="LOCAL" />
-      <updated>1744450790578</updated>
+      <workItem from="1745076527584" duration="5856000" />
     </task>
     <task id="LOCAL-00114" summary="updated daemonset resource type">
       <option name="closed" value="true" />
@@ -612,7 +607,15 @@
       <option name="project" value="LOCAL" />
       <updated>1745126788814</updated>
     </task>
-    <option name="localTasksCounter" value="162" />
+    <task id="LOCAL-00162" summary="Debug:&#10;env_logger::init should not be called after logger initialized: SetLoggerError(())">
+      <option name="closed" value="true" />
+      <created>1745126866898</created>
+      <option name="number" value="00162" />
+      <option name="presentableId" value="LOCAL-00162" />
+      <option name="project" value="LOCAL" />
+      <updated>1745126866898</updated>
+    </task>
+    <option name="localTasksCounter" value="163" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -633,7 +636,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="test checkpoint - 1.0.1" />
     <MESSAGE value="test checkpoint - 1.0.2&#10;adding missing semicolons" />
     <MESSAGE value="test checkpoint - 1.0.2&#10;invalid indirect read from stack R4 off -16+4 size 16" />
     <MESSAGE value="test checkpoint - 1.0.3&#10;invalid indirect read from stack R4 off -24+4 size 16" />
@@ -658,7 +660,8 @@
     <MESSAGE value="test checkpoint:&#10;test checkpoint 1.0.1" />
     <MESSAGE value="Debug:&#10;added source and destination info" />
     <MESSAGE value="Debug:&#10;moving the logger initialization" />
-    <option name="LAST_COMMIT_MESSAGE" value="Debug:&#10;moving the logger initialization" />
+    <MESSAGE value="Debug:&#10;env_logger::init should not be called after logger initialized: SetLoggerError(())" />
+    <option name="LAST_COMMIT_MESSAGE" value="Debug:&#10;env_logger::init should not be called after logger initialized: SetLoggerError(())" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="NON_MODAL_COMMIT_POSTPONE_SLOW_CHECKS" value="false" />
   </component>
