@@ -1,6 +1,8 @@
 // mod inspect;
 // mod lookuptable;
 
+mod path;
+
 use aya::{
     maps::{perf::AsyncPerfEventArray, HashMap},
     programs::{CgroupAttachMode, CgroupSkb, CgroupSkbAttachType},

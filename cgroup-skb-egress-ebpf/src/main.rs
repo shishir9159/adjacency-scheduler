@@ -47,7 +47,7 @@ fn ip_in_cidr(ip: u32) -> bool {
     // let prefix: u8 = 16;
     // let base: u32 = 0x0AF40000; // 10.244.0.0
     let prefix: u8 = 12;
-    let base: u32 = 0x0A600000; // 10.96.0.0
+    let base: u32 = 0x0A600000; // service - 10.96.0.0
 
     let mask: u32 = if prefix == 0 {
         0

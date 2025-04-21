@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="AutoImportSettings">
-    <option name="autoReloadType" value="ALL" />
+    <option name="autoReloadType" value="NONE" />
   </component>
   <component name="CargoProjects">
     <cargoProject FILE="$PROJECT_DIR$/Cargo.toml">
@@ -22,16 +22,21 @@
     </cargoProject>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="750a0656-4394-404c-8d18-871d64c01604" name="Changes" comment="Debug:&#10;env_logger::init should not be called after logger initialized: SetLoggerError(())">
+    <list default="true" id="750a0656-4394-404c-8d18-871d64c01604" name="Changes" comment="Debug:&#10;service CIDR kubernetes">
+      <change afterPath="$PROJECT_DIR$/.plan.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cgroup-skb-egress/src/path.rs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cgroup-skb-egress-ebpf/src/main.rs" beforeDir="false" afterPath="$PROJECT_DIR$/cgroup-skb-egress-ebpf/src/main.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cgroup-skb-egress/Cargo.toml" beforeDir="false" afterPath="$PROJECT_DIR$/cgroup-skb-egress/Cargo.toml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cgroup-skb-egress/src/main.rs" beforeDir="false" afterPath="$PROJECT_DIR$/cgroup-skb-egress/src/main.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node-ping/node-ping.py" beforeDir="false" afterPath="$PROJECT_DIR$/node-ping/node-ping.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="RsBuildProfile:dev" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="RsBuildProfile:bench" />
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
@@ -39,6 +44,9 @@
         <option value="Rust File" />
       </list>
     </option>
+  </component>
+  <component name="FormatOnSaveOptions">
+    <option name="myRunOnSave" value="true" />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
@@ -83,17 +91,22 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "RunOnceActivity.rust.reset.selective.auto.import": "true",
+    "code.cleanup.on.save": "true",
     "git-widget-placeholder": "dream",
     "last_opened_file_path": "/home/carmack/Documents/Projects/adjacency-scheduler/orchestrator",
     "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.stylelint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.stylelint": "",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "org.rust.cargo.project.model.PROJECT_DISCOVERY": "true",
     "org.rust.cargo.project.model.impl.CargoExternalSystemProjectAware.subscribe.first.balloon": "",
     "org.rust.first.attach.projects": "true",
-    "settings.editor.selected.configurable": "language.rust",
+    "rearrange.code.on.save": "true",
+    "settings.build.tools.auto.reload": "ALL",
+    "settings.editor.selected.configurable": "language.rust.cargo.check",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -105,10 +118,13 @@
       <recent name="$PROJECT_DIR$/test/consumer" />
     </key>
   </component>
+  <component name="RsExternalLinterProjectSettings">
+    <option name="tool" value="Clippy" />
+  </component>
   <component name="RunManager" selected="Cargo.Run cgroup-skb-egress">
     <configuration name="Run cgroup-skb-egress" type="CargoCommandRunConfiguration" factoryName="Cargo Command">
-      <option name="buildProfileId" value="dev" />
-      <option name="command" value="run --package cgroup-skb-egress-ebpf --bin cgroup-skb-egress" />
+      <option name="buildProfileId" value="bench" />
+      <option name="command" value="check" />
       <option name="workingDirectory" value="file://$PROJECT_DIR$" />
       <envs />
       <option name="emulateTerminal" value="true" />
@@ -123,7 +139,7 @@
       <method v="2" />
     </configuration>
     <configuration name="Run xtask" type="CargoCommandRunConfiguration" factoryName="Cargo Command">
-      <option name="command" value="run --package xtask --bin xtask" />
+      <option name="command" value="check" />
       <option name="workingDirectory" value="file://$PROJECT_DIR$" />
       <envs />
       <option name="emulateTerminal" value="true" />
@@ -139,7 +155,7 @@
     </configuration>
     <configuration name="Test adjacency-scheduler" type="CargoCommandRunConfiguration" factoryName="Cargo Command">
       <option name="buildProfileId" value="test" />
-      <option name="command" value="test --workspace" />
+      <option name="command" value="check" />
       <option name="workingDirectory" value="file://$PROJECT_DIR$" />
       <envs />
       <option name="emulateTerminal" value="true" />
@@ -154,7 +170,7 @@
       <method v="2" />
     </configuration>
     <configuration default="true" type="CargoCommandRunConfiguration" factoryName="Cargo Command">
-      <option name="command" value="run" />
+      <option name="command" value="" />
       <option name="workingDirectory" value="file://$PROJECT_DIR$" />
       <envs />
       <option name="emulateTerminal" value="true" />
@@ -176,6 +192,9 @@
   </component>
   <component name="RustProjectSettings">
     <option name="toolchainHomeDirectory" value="$USER_HOME$/.cargo/bin" />
+  </component>
+  <component name="RustfmtProjectSettings">
+    <option name="useRustfmt2" value="false" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -221,15 +240,16 @@
       <workItem from="1745047054190" duration="5269000" />
       <workItem from="1745059646702" duration="4264000" />
       <workItem from="1745072290536" duration="1743000" />
-      <workItem from="1745076527584" duration="5856000" />
-    </task>
-    <task id="LOCAL-00114" summary="updated daemonset resource type">
-      <option name="closed" value="true" />
-      <created>1744450860427</created>
-      <option name="number" value="00114" />
-      <option name="presentableId" value="LOCAL-00114" />
-      <option name="project" value="LOCAL" />
-      <updated>1744450860427</updated>
+      <workItem from="1745076527584" duration="9751000" />
+      <workItem from="1745223157652" duration="34000" />
+      <workItem from="1745225535790" duration="312000" />
+      <workItem from="1745225881480" duration="429000" />
+      <workItem from="1745226340818" duration="206000" />
+      <workItem from="1745226564543" duration="55000" />
+      <workItem from="1745226678547" duration="136000" />
+      <workItem from="1745226917249" duration="1243000" />
+      <workItem from="1745238470910" duration="1389000" />
+      <workItem from="1745245686791" duration="250000" />
     </task>
     <task id="LOCAL-00115" summary="updated label for the daemonset">
       <option name="closed" value="true" />
@@ -615,7 +635,15 @@
       <option name="project" value="LOCAL" />
       <updated>1745126866898</updated>
     </task>
-    <option name="localTasksCounter" value="163" />
+    <task id="LOCAL-00163" summary="Debug:&#10;service CIDR kubernetes">
+      <option name="closed" value="true" />
+      <created>1745129987120</created>
+      <option name="number" value="00163" />
+      <option name="presentableId" value="LOCAL-00163" />
+      <option name="project" value="LOCAL" />
+      <updated>1745129987120</updated>
+    </task>
+    <option name="localTasksCounter" value="164" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -636,7 +664,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="test checkpoint - 1.0.2&#10;adding missing semicolons" />
     <MESSAGE value="test checkpoint - 1.0.2&#10;invalid indirect read from stack R4 off -16+4 size 16" />
     <MESSAGE value="test checkpoint - 1.0.3&#10;invalid indirect read from stack R4 off -24+4 size 16" />
     <MESSAGE value="test checkpoint - 1.0.4&#10;invalid indirect read from stack R4 off -24+4 size 16" />
@@ -661,8 +688,13 @@
     <MESSAGE value="Debug:&#10;added source and destination info" />
     <MESSAGE value="Debug:&#10;moving the logger initialization" />
     <MESSAGE value="Debug:&#10;env_logger::init should not be called after logger initialized: SetLoggerError(())" />
-    <option name="LAST_COMMIT_MESSAGE" value="Debug:&#10;env_logger::init should not be called after logger initialized: SetLoggerError(())" />
+    <MESSAGE value="Debug:&#10;service CIDR kubernetes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Debug:&#10;service CIDR kubernetes" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="NON_MODAL_COMMIT_POSTPONE_SLOW_CHECKS" value="false" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
