@@ -3,40 +3,19 @@
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="NONE" />
   </component>
-  <component name="CargoProjects">
-    <cargoProject FILE="$PROJECT_DIR$/Cargo.toml">
-      <package file="$PROJECT_DIR$/cgroup-skb-egress">
-        <enabledFeature name="default" />
-      </package>
-      <package file="$PROJECT_DIR$/cgroup-skb-egress-common">
-        <enabledFeature name="aya" />
-        <enabledFeature name="user" />
-        <enabledFeature name="default" />
-      </package>
-      <package file="$PROJECT_DIR$/cgroup-skb-egress-ebpf">
-        <enabledFeature name="default" />
-      </package>
-      <package file="$PROJECT_DIR$/xtask">
-        <enabledFeature name="default" />
-      </package>
-    </cargoProject>
-  </component>
   <component name="ChangeListManager">
-    <list default="true" id="750a0656-4394-404c-8d18-871d64c01604" name="Changes" comment="Debug:&#10;service CIDR kubernetes">
-      <change afterPath="$PROJECT_DIR$/.plan.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cgroup-skb-egress/src/path.rs" afterDir="false" />
+    <list default="true" id="750a0656-4394-404c-8d18-871d64c01604" name="Changes" comment="added roadmap">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cgroup-skb-egress-ebpf/src/main.rs" beforeDir="false" afterPath="$PROJECT_DIR$/cgroup-skb-egress-ebpf/src/main.rs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cgroup-skb-egress/Cargo.toml" beforeDir="false" afterPath="$PROJECT_DIR$/cgroup-skb-egress/Cargo.toml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cgroup-skb-egress/src/main.rs" beforeDir="false" afterPath="$PROJECT_DIR$/cgroup-skb-egress/src/main.rs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node-ping/node-ping.py" beforeDir="false" afterPath="$PROJECT_DIR$/node-ping/node-ping.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.plan.md" beforeDir="false" afterPath="$PROJECT_DIR$/.plan.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cgroup-skb-egress/build.rs" beforeDir="false" afterPath="$PROJECT_DIR$/cgroup-skb-egress/build.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xtask/src/main.rs" beforeDir="false" afterPath="$PROJECT_DIR$/xtask/src/main.rs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="RsBuildProfile:bench" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="RsBuildProfile:dev" />
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
@@ -86,30 +65,31 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "RunOnceActivity.rust.reset.selective.auto.import": "true",
-    "code.cleanup.on.save": "true",
-    "git-widget-placeholder": "dream",
-    "last_opened_file_path": "/home/carmack/Documents/Projects/adjacency-scheduler/orchestrator",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.stylelint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.stylelint": "",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "org.rust.cargo.project.model.PROJECT_DISCOVERY": "true",
-    "org.rust.cargo.project.model.impl.CargoExternalSystemProjectAware.subscribe.first.balloon": "",
-    "org.rust.first.attach.projects": "true",
-    "rearrange.code.on.save": "true",
-    "settings.build.tools.auto.reload": "ALL",
-    "settings.editor.selected.configurable": "language.rust.cargo.check",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.rust.reset.selective.auto.import&quot;: &quot;true&quot;,
+    &quot;code.cleanup.on.save&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;dream&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/carmack/Documents/Projects/adjacency-scheduler/orchestrator&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.stylelint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.stylelint&quot;: &quot;&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;org.rust.cargo.project.model.PROJECT_DISCOVERY&quot;: &quot;true&quot;,
+    &quot;org.rust.cargo.project.model.impl.CargoExternalSystemProjectAware.subscribe.first.balloon&quot;: &quot;&quot;,
+    &quot;org.rust.first.attach.projects&quot;: &quot;true&quot;,
+    &quot;rearrange.code.on.save&quot;: &quot;true&quot;,
+    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
+    &quot;settings.build.tools.auto.reload&quot;: &quot;ALL&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;language.rust.build.tool.cargo&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/orchestrator" />
@@ -123,7 +103,7 @@
   </component>
   <component name="RunManager" selected="Cargo.Run cgroup-skb-egress">
     <configuration name="Run cgroup-skb-egress" type="CargoCommandRunConfiguration" factoryName="Cargo Command">
-      <option name="buildProfileId" value="bench" />
+      <option name="buildProfileId" value="dev" />
       <option name="command" value="check" />
       <option name="workingDirectory" value="file://$PROJECT_DIR$" />
       <envs />
@@ -191,10 +171,9 @@
     </list>
   </component>
   <component name="RustProjectSettings">
+    <option name="autoShowErrorsInEditor" value="false" />
     <option name="toolchainHomeDirectory" value="$USER_HOME$/.cargo/bin" />
-  </component>
-  <component name="RustfmtProjectSettings">
-    <option name="useRustfmt2" value="false" />
+    <option name="useOffline" value="true" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -249,15 +228,15 @@
       <workItem from="1745226678547" duration="136000" />
       <workItem from="1745226917249" duration="1243000" />
       <workItem from="1745238470910" duration="1389000" />
-      <workItem from="1745245686791" duration="250000" />
-    </task>
-    <task id="LOCAL-00115" summary="updated label for the daemonset">
-      <option name="closed" value="true" />
-      <created>1744450926690</created>
-      <option name="number" value="00115" />
-      <option name="presentableId" value="LOCAL-00115" />
-      <option name="project" value="LOCAL" />
-      <updated>1744450926690</updated>
+      <workItem from="1745245686791" duration="365000" />
+      <workItem from="1745485147748" duration="164000" />
+      <workItem from="1745490334381" duration="690000" />
+      <workItem from="1745526417626" duration="25000" />
+      <workItem from="1745570471879" duration="924000" />
+      <workItem from="1745571838819" duration="242000" />
+      <workItem from="1745572218817" duration="189000" />
+      <workItem from="1745572492258" duration="39000" />
+      <workItem from="1745623611478" duration="2321000" />
     </task>
     <task id="LOCAL-00116" summary="removed tolerations">
       <option name="closed" value="true" />
@@ -643,7 +622,15 @@
       <option name="project" value="LOCAL" />
       <updated>1745129987120</updated>
     </task>
-    <option name="localTasksCounter" value="164" />
+    <task id="LOCAL-00164" summary="added roadmap">
+      <option name="closed" value="true" />
+      <created>1745246047654</created>
+      <option name="number" value="00164" />
+      <option name="presentableId" value="LOCAL-00164" />
+      <option name="project" value="LOCAL" />
+      <updated>1745246047657</updated>
+    </task>
+    <option name="localTasksCounter" value="165" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -664,7 +651,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="test checkpoint - 1.0.2&#10;invalid indirect read from stack R4 off -16+4 size 16" />
     <MESSAGE value="test checkpoint - 1.0.3&#10;invalid indirect read from stack R4 off -24+4 size 16" />
     <MESSAGE value="test checkpoint - 1.0.4&#10;invalid indirect read from stack R4 off -24+4 size 16" />
     <MESSAGE value="test checkpoint - 1.0.5&#10;invalid indirect read from stack R4 off -24+4 size 16" />
@@ -689,7 +675,8 @@
     <MESSAGE value="Debug:&#10;moving the logger initialization" />
     <MESSAGE value="Debug:&#10;env_logger::init should not be called after logger initialized: SetLoggerError(())" />
     <MESSAGE value="Debug:&#10;service CIDR kubernetes" />
-    <option name="LAST_COMMIT_MESSAGE" value="Debug:&#10;service CIDR kubernetes" />
+    <MESSAGE value="added roadmap" />
+    <option name="LAST_COMMIT_MESSAGE" value="added roadmap" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="NON_MODAL_COMMIT_POSTPONE_SLOW_CHECKS" value="false" />
   </component>
